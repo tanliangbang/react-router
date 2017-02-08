@@ -6,6 +6,7 @@ import Index from './Pages/Index/Index';
 //开始
 import Start from './Pages/Start/Index';
 
+import Test   from './Pages/Test/Index';
 //redux案例展示
 import ReduxDom   from './Pages/ReduxDom/ReduxDom'; 
 
@@ -33,6 +34,7 @@ const Routers = React.createClass({
 			      <IndexRoute component={Index} />
 			      <Route path="index" component={Index}/>
 			      <Route path="start" component={Start}/>
+					<Route path="test" component={Test}/>
 			      <Route path="components" component={Components}>
 			        <Route path="htmls" component={Htmls}>
 			        	<Route path="btn" component={HtmlsBtn}/>
