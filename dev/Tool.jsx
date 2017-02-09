@@ -1,5 +1,5 @@
 import merged from 'obj-merged';
-import * as config from 'Config/Config';
+import * as config from './Config/Config';
 
 const {target} = config;
 const Tool = {};

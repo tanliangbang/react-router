@@ -14,7 +14,13 @@ module.exports = {
         historyApiFallback: true,
         hot: true,
         inline: true,
-        progress: true
+        progress: true,
+        proxy: {
+            '/api': {
+                target: 'http://localhost:3000',
+                secure: false
+            }
+        }
     },
     //页面入口文件配置 
     entry: {//需要打包的JS，支持数组
