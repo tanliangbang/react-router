@@ -14,8 +14,8 @@ import rootReducer from './reducers/index'
 
 //注册store
 const store = createStore(
-  rootReducer, 
-  applyMiddleware(thunk)
+  rootReducer,
+	applyMiddleware(thunk)
 )
 
 //保持历史同步

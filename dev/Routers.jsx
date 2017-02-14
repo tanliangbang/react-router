@@ -18,7 +18,7 @@ import Language      from './Pages/Components/Language';
 import HtmlsBtn   from './Pages/Components/HtmlsBtn';
 import HtmlsTable from './Pages/Components/HtmlsTable';
 import Forms      from './Pages/Components/Forms';
-import Plus       from './Pages/Components/Plus'; 
+import Plus       from './Pages/Components/Plus';
 
 //帮助
 import Help from './Pages/Help/Index';

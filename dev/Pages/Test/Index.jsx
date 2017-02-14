@@ -3,6 +3,7 @@ import React, { Component, PropTypes } from 'react'
 import LoadingBox from '../../MTUI/LoadingBox'
 import setMinHeight from '../../Mixins/setMinHeight'
 import { Tool, merged } from '../../Tool';
+import { getData, postData } from '../../utils/fetchData'
 
 
 
@@ -34,15 +35,10 @@ export default class Test extends Component {
             list:[]
         }
     }
-    componentDidMount(){
-        var _this = this;
+    componentWillMount() {
 
-        Tool.get('/api/res/getResContentList', {name:"jsRes",start:0,size:10}, (res) => {
-            _this.setState({
-                list: res.content
-            })
-        }, () => {
-        });
+            console.log(getData)
+
     }
     render() {
         return (
@@ -69,7 +65,6 @@ class ListItem extends React.Component {
 
     render() {
         var currItem = this.props
-        console.log(currItem)
         return (
             <div  className="index-Item" style={{ minHeight: this.state.height+"px"}}>
                 <div >
