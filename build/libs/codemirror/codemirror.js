@@ -5496,8 +5496,8 @@
     mimeModes[mime] = spec;
   };
 
-  // Given a MIME type, a {name, ...options} Config object, or a name
-  // string, return a mode Config object.
+  // Given a MIME type, a {name, ...options} config object, or a name
+  // string, return a mode config object.
   CodeMirror.resolveMode = function(spec) {
     if (typeof spec == "string" && mimeModes.hasOwnProperty(spec)) {
       spec = mimeModes[spec];

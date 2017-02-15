@@ -1,9 +1,22 @@
 import './style.css'
 import React, { Component, PropTypes } from 'react'
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
 import LoadingBox from '../../MTUI/LoadingBox'
 import setMinHeight from '../../Mixins/setMinHeight'
 import { Tool, merged } from '../../Tool';
 import { getData, postData } from '../../utils/fetchData'
+import * as testAction from '../../actions/test';
+
+
+const mapStateToProps= function mapStateToProps(state) {
+    return { navMain: state.test.navMain }
+}
+
+const  mapDispatchToProps = function mapDispatchToProps(dispatch) {
+    return { actions: bindActionCreators(testAction, dispatch) }
+}
+
 
 
 
@@ -27,23 +40,24 @@ class List extends Component {
     }
 }
 
-
-export default class Test extends Component {
+export  class Test extends Component {
     constructor(props) {
         super(props);
-        this.state ={
-            list:[]
-        }
     }
     componentWillMount() {
-
-            console.log(getData)
+     let curr =  this.props.actions.getTest();
+     console.log(curr)
 
     }
+    componentDidMount() {
+        console.log(this.props)
+
+    }
+
     render() {
         return (
             <div className="start" >
-                 <List list = {this.state.list}/>
+               ssssssssssssssss
             </div>
         );
     }
@@ -92,6 +106,6 @@ class ListItem extends React.Component {
 }
 
 
-
+export default connect(mapStateToProps, mapDispatchToProps)(Test)
 
 
