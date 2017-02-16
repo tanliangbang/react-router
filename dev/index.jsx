@@ -15,13 +15,9 @@ import rootReducer from './reducers/index'
 
 //注册store
 const store = configureStore();
-
-/*
-const store = createStore(
-  rootReducer,
-	applyMiddleware(thunk)
-)
-*/
+store.subscribe(() =>
+	console.log(store.getState())
+);
 
 //保持历史同步
 const history = syncHistoryWithStore(browserHistory, store)
