@@ -8,3 +8,15 @@ export function setUserInfo(data) {
   }
 }
 
+
+export const login = () => {
+    return dispatch => {
+      dispatch(setUserInfo({name:'bangbang',photo:'aaaa',tips:'1111'}))
+    }
+}
+
+export const loginOut = () => {
+  return dispatch => {
+    dispatch(setUserInfo({name:'',photo:'',tips:''}))
+  }
+}
