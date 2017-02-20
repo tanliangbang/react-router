@@ -16,12 +16,12 @@ import * as user from '../actions/user';
 
 const App = React.createClass({
   render() {
-	  if(this.props.userInfo.name==""){
+	 /* if(this.props.userInfo.name==""){
 		  return(
 			  <Login>
 			  </Login>
 		  )
-	  }
+	  }*/
 		return (
 			<div className="app">
 			  <Menu />

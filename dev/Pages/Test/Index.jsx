@@ -7,7 +7,7 @@ import setMinHeight from '../../Mixins/setMinHeight'
 import { Tool, merged } from '../../Tool';
 import { getData, postData } from '../../utils/fetchData'
 import * as testAction from '../../actions/test';
-import * as user from '../../actions/user';
+import * as userAction from '../../actions/user';
 /**
  * (循环列表)
  *
@@ -38,7 +38,6 @@ export  class Test extends Component {
         super(props);
     }
     componentWillMount() {
-        this.props.actions.test()
         const { navMain } = this.props
         if (navMain.length === 0) {
             this.props.actions.getTest();
@@ -47,8 +46,6 @@ export  class Test extends Component {
 
     }
     componentDidMount() {
-
-
     }
 
 
@@ -56,8 +53,12 @@ export  class Test extends Component {
     render() {
         const { navMain ,actions} = this.props;
         return (
-            <div className="start" >
-                 <List list={navMain} actions = {actions}></List>
+            <div className="start row" >
+                <div className="col-lg-8">
+                    <List list={navMain} actions = {actions}></List>
+                </div>
+                <div class="col-lg-4">
+                </div>
             </div>
         );
     }
@@ -75,27 +76,31 @@ class ListItem extends React.Component {
     }
 
     testClick() {
-       console.log(this)
+      this.props.actions.loginOut();
     }
 
     render() {
-        let currItem = this.props
+        let item = this.props
         return (
-            <div  className="testItem"  style={{ minHeight: this.state.height+"px"}}>
-                    <div className="item">
-                        <div className="itemLeft">
-                            <img  className="img"  src ={currItem.content.titleImg}/>
+            <div  className="testItem row"  style={{ minHeight: this.state.height+"px"}}>
+                <div className="item">
+
+
+                    <div class="row">
+                        <div className="col-md-5 list1_left">
+                            <img className="currImg" src ={item.content.titleImg} />
                         </div>
-                        <div className="itemRight">
-                            <p className="title">{currItem.content.title}</p>
-                            <p className="content">{currItem.content.breif}</p>
+                        <div className="col-md-7 list1_right">
+                            <p className="title">{item.content.title}</p>
+                            <p className="content">{item.content.breif}</p>
                             <div className="bottom_left">
-                                阅读量:12
+                                阅读量:{item.readyNum}
                             </div>
-                            <div  className="bottom_right" onClick={this.testClick}>
-                                 点赞
+                            <div className="bottom_right">
+
                             </div>
                         </div>
+                    </div>
                 </div>
 
 
@@ -106,15 +111,16 @@ class ListItem extends React.Component {
 }
 
 const mapStateToProps= function mapStateToProps(state) {
+    console.log(state)
     return { navMain: state.test.navMain }
 }
 const  mapDispatchToProps = function mapDispatchToProps(dispatch) {
+    const allAction =Object.assign({},testAction,userAction);
     return {
-        actions: bindActionCreators({testAction}, dispatch)
+        actions: bindActionCreators(allAction, dispatch)
     }
 }
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(Test)
-
+export default  connect(mapStateToProps, mapDispatchToProps)(Test)
 
