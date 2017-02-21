@@ -57,7 +57,12 @@ export  class Test extends Component {
                 <div className="col-lg-8">
                     <List list={navMain} actions = {actions}></List>
                 </div>
-                <div class="col-lg-4">
+                <div className="col-lg-4 right">
+                     <img className="advertiseImg" src="img/3.jpg" />
+                    <img className="advertiseImg" src="img/3.jpg" />
+                    <img className="advertiseImg" src="img/3.jpg" />
+                    <img className="advertiseImg" src="img/3.jpg" />
+                    <img className="advertiseImg" src="img/3.jpg" />
                 </div>
             </div>
         );
@@ -97,7 +102,7 @@ class ListItem extends React.Component {
                                 阅读量:{item.readyNum}
                             </div>
                             <div className="bottom_right">
-
+                               2017-2-17
                             </div>
                         </div>
                     </div>
@@ -111,7 +116,6 @@ class ListItem extends React.Component {
 }
 
 const mapStateToProps= function mapStateToProps(state) {
-    console.log(state)
     return { navMain: state.test.navMain }
 }
 const  mapDispatchToProps = function mapDispatchToProps(dispatch) {

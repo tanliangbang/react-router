@@ -18,12 +18,14 @@ export  class Login extends Component {
     componentWillMount() {
     }
     componentDidMount() {
+       // this.refs.loginBox.style.display = "none"
+        document.body.appendChild(this.refs.loginBox)
     }
 
     render() {
         return (
-            <div className="start" >
-                 <button onClick={this.loginBtn}>登入</button>
+            <div ref="loginBox" className="loginBox" >
+
             </div>
         );
     }

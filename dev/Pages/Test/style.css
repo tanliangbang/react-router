@@ -8,6 +8,7 @@
     border:1px solid #eeeeee;
     background:#ffffff;
     padding:20px;
+    margin:20px auto;
 }
 .title{
     font-size:20px;
@@ -37,4 +38,13 @@
 }
 .list1_right{
     height:200px;
+}
+.advertiseImg{
+    width:100%;
+    margin-bottom:20px;
+}
+.right{
+    margin-top:20px;
+    padding:20px;
+    background:#fff;
 }
