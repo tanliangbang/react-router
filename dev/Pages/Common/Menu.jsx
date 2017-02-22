@@ -3,21 +3,20 @@ import React,{Component, PropTypes} from 'react'
 import { connect} from 'react-redux'
 import { Link } from 'react-router'
 import {ModalShow , Modal} from '../../MTUI/index'
-import Mask from '../../BUI/Mask';
-import Login from '../../Pages/User/Login';
+import { setLogin } from '../../actions/user'
+
+
 
 class Menu extends Component {
     constructor(props) {
         super(props);
-        // 设置 initial state
         this.loginClick = this.loginClick.bind(this);
     }
     loginClick (){
-        alert("登入")
+        this.props.setLogin(true);
+        console.log(this)
     }
   render() {
-      var modal2 = <Modal width='400px' height='240px' background='red' title="登入" drag="true">这个是有头部的弹出窗。</Modal>;
-
       return (
         <div className="navbar navbar-inverse navbar-fixed-top">
             <div className="container">
@@ -42,8 +41,7 @@ class Menu extends Component {
                         <li>
                             <span><a onClick={this.loginClick}>登入</a></span>/
                             <span>
-                               <Mask></Mask>
-                               <Login></Login>
+                                 注册
                             </span>
 
 
@@ -60,6 +58,7 @@ class Menu extends Component {
 export default connect(
   state => ({ 
     tips: state.user.tips,
+    isShowLogin:state.isShowLogin,
     path: state.routing.locationBeforeTransitions.pathname
-  })
+  }),{setLogin}
 )(Menu);

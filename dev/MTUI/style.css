@@ -34,7 +34,7 @@ label {padding-right: 10px; }
 html, body {min-height: 100%; }
 /**
  * 1. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
+ *    User zoom.
  *    https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust
  */
 html {-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }

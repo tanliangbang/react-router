@@ -13,7 +13,8 @@ import { render } from 'react-dom'
 export default class Mask extends Component{
     constructor(props) {
         super(props);
-        // 设置 initial state
+        this.closeMask = this.closeMask.bind(this);
+        this.showMask = this.showMask.bind(this)
     }
     componentWillMount() {
 
@@ -22,12 +23,12 @@ export default class Mask extends Component{
         this.refs.mask.style.display = "none"
         document.body.appendChild(this.refs.mask)
     }
-    handleClickClose(e){
-        console.log("关闭弹窗")
+    closeMask(){
+        this.refs.mask.style.display = "none"
     }
 
-    handleClick(){
-       document.querySelector(".b-maskDiv").style.display="block"
+    showMask(){
+        this.refs.mask.style.display = "block"
     }
     render() {
        return(

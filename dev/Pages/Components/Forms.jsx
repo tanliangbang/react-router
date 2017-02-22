@@ -121,7 +121,7 @@ var codeInput = "import { Input } from '../../MTUI/index'\
 #id: ID //默认无\
 #disabled：默认无\
 ##eg:\
-#<Input disabled placeholder=\"请输入密码\" icon=\"icon-user\" iconplace=\"left\" icon=\"icon-password\" iconplace=\"left\" type=\"password\"/>\
+#<Input disabled placeholder=\"请输入密码\" icon=\"icon-User\" iconplace=\"left\" icon=\"icon-password\" iconplace=\"left\" type=\"password\"/>\
 #<Input type=\"textarea\" placeholder=\"我是textarea\"/>";
 
 // 类

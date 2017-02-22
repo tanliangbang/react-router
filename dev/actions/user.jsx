@@ -1,6 +1,6 @@
-import { SET_USER_INFO } from '../containers/constants'
+const SET_USER_INFO = 'SET_USER_INFO';
+const SET_LOGIN = 'SET_LOGIN';
 
-//设置公司名称
 export function setUserInfo(data) {
   return {
     type: SET_USER_INFO,
@@ -8,10 +8,17 @@ export function setUserInfo(data) {
   }
 }
 
+export function setLogin(isShowLogin) {
+    return {
+        type: SET_LOGIN,
+        isShowLogin :isShowLogin
+    }
+}
+
 
 export const login = () => {
     return dispatch => {
-      dispatch(setUserInfo({name:'bangbang',photo:'aaaa',tips:'1111'}))
+      dispatch(setUserInfo({name:'bangbang',photo:'aaaa',tips:'1'}))
     }
 }
 

@@ -3,38 +3,39 @@
 * @author : Mantou
 * @date : 2016-03-01
 */
-import React from 'react'
+import React ,{Component} from 'react'
 import { Link } from 'react-router'
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
 import Menu from './Common/Menu'
 import Footer from './Common/Footer'
-import Login from './user/login'
 
-import * as user from '../actions/user';
+import Login from './User/Login';
+import  * as user from '../actions/user'
 
-const App = React.createClass({
+
+class App extends Component {
+	constructor(props) {
+		super(props);
+	}
+	componentWillMount() {
+	}
   render() {
-	 /* if(this.props.userInfo.name==""){
-		  return(
-			  <Login>
-			  </Login>
-		  )
-	  }*/
 		return (
 			<div className="app">
 			  <Menu />
-			  {this.props.children}
-		  <Footer/>
-		  </div>
+				<Login isShowLogin={this.props.isShowLogin}/>
+				{this.props.children}
+		      <Footer/>
+			</div>
 		);
   }
-});
+}
 //APP入口
 
 const mapStateToProps= function mapStateToProps(state) {
-	return { userInfo: state.user }
+	return { isShowLogin: state.user.isShowLogin }
 }
 const  mapDispatchToProps = function mapDispatchToProps(dispatch) {
 	return {
@@ -44,4 +45,3 @@ const  mapDispatchToProps = function mapDispatchToProps(dispatch) {
 
 
 export default connect(mapStateToProps, mapDispatchToProps)(App)
-

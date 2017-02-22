@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* -------------CSS 格式化------------ */
-body{ overflow-x:hidden; }
+body{ overflow-x:hidden;position:relative; }
 
 /*小图标*/
 .ico{ display: inline-block; width: 30px; height: 30px; overflow: hidden; vertical-align: middle; background: url(./img/icons.png) no-repeat;}

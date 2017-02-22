@@ -1,7 +1,7 @@
 .b-maskDiv{
   width:100%;
   height:100%;
-  z-index:1000;
+  z-index:999;
   background:#000000;
   opacity:0.5;
   position:fixed;
