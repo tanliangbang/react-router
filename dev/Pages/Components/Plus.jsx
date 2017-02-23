@@ -42,7 +42,7 @@ var codeTreeMenu = "import { TreeMenu } from '../../MTUI/index'\
 #\
 #render:\
 #\
-#<TreeMenu {...treeData}/>#"; 
+#<TreeMenu {...treeData}/>#";
 
 //日历
 var codeDateInput = 'import { DateInput, DateInputs } from \'../../MTUI/index\'\
@@ -73,8 +73,8 @@ var codeDateInput = 'import { DateInput, DateInputs } from \'../../MTUI/index\'\
 ##  多个日期组合：<DateInputs width="190px" format="yyyy-mm-dd" start="now" end="2016/10/5" placeholder="选择时间段..."/> <br/><br/>\
 ##  多个日期组合带格式：<DateInputs width="200px" splitStr="至" format="yyyy-mm" placeholder="选择时间段..."/> <br/><br/>\
 ##  多个日期组合带格式：<DateInputs width="200px" splitStr=" 至 " format="yyyy年" placeholder="选择时间段..."/> <br/><br/>\
-'; 
-//this.iniEditer(codeDateInput,'code-DateInput'); 
+';
+//this.iniEditer(codeDateInput,'code-DateInput');
 
 //分页
 var codePageList = 'import { PageList } from \'../../MTUI/index\'\
@@ -218,7 +218,7 @@ var codeTabs = 'import { Tabs } from \'../../MTUI/index\'\
  #    <div title="其他" className=\'mytabs mytas-c2\'>其他loading...</div>\
  #</Tabs>\
 ';
-//this.iniEditer(codeTabs,'code-Tabs');   
+//this.iniEditer(codeTabs,'code-Tabs');
 
 //Loading
 var codeLoading = "import { Loading , LoadingBox} from '../../MTUI/index'\
@@ -226,7 +226,7 @@ var codeLoading = "import { Loading , LoadingBox} from '../../MTUI/index'\
 # Loading.done() //加载完成\
 ### 占位loading（宽度默认是100%，高度默认是100px；高度可以自己调节） ## <LoadingBox height=\"100px\"/>\
 ";
-//this.iniEditer(codeLoading,'code-Loading'); 
+//this.iniEditer(codeLoading,'code-Loading');
 
 //Loading
 var codePopover = "import { Popover } from '../../MTUI/index'\

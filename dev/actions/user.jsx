@@ -8,13 +8,6 @@ export function setUserInfo(data) {
   }
 }
 
-export function setLogin(isShowLogin) {
-    return {
-        type: SET_LOGIN,
-        isShowLogin :isShowLogin
-    }
-}
-
 
 export const login = () => {
     return dispatch => {

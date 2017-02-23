@@ -7,3 +7,39 @@
   position:fixed;
   top:0px;
 }
+
+.myTabs{
+  width:100%;
+}
+.myTabs-header li {
+  float: left;
+  padding: 5px 20px;
+}
+
+.myTabs-header li {
+  float: left;
+  padding: 5px 20px;
+}
+
+.myTabs-header:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.content-hidden {
+   display:none;
+}
+.myTabs-header li a{
+  color:#999;
+  cursor:pointer;
+}
+
+.myTest .mt-tabs-active {
+  border: 1px solid #e4eaec;
+  border-bottom: none;
+  background: #fff;
+}
+

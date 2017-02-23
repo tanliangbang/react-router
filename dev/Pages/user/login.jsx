@@ -6,7 +6,7 @@ import LoadingBox from '../../MTUI/LoadingBox'
 import { Tool, merged } from '../../Tool';
 import * as user from '../../actions/user';
 import Mask from '../../BUI/Mask';
-import { setLogin } from '../../actions/user'
+import { setUserInfo } from '../../actions/user'
 
 
 export  class Login extends Component {
@@ -30,7 +30,7 @@ export  class Login extends Component {
         }
     }
     closeLoginBox(){
-        this.props.setLogin(false);
+        this.props.setUserInfo({isShowLogin:false});
     }
 
 
@@ -73,9 +73,9 @@ export  class Login extends Component {
 //主页
 export default connect(
     state => ({
-        isShowLogin:state.isShowLogin,
+        isShowLogin:state.user.isShowLogin,
         path: state.routing.locationBeforeTransitions.pathname
-    }),{setLogin}
+    }),{setUserInfo}
 )(Login);
 
 

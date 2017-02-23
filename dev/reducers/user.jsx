@@ -15,12 +15,9 @@ export default function todo(state = initialState, action) {
 		      name : action.data.name,
 		      phone : action.data.phone,
 		      tips : action.data.tips,
-		      tipsNumber : action.data.tipsNumber
+		      tipsNumber : action.data.tipsNumber,
+			  isShowLogin:action.data.isShowLogin
 		    };
-        case 'SET_LOGIN':
-			return{
-				isShowLogin : action.isShowLogin,
-			};
 		default : return state;
 	}
 }

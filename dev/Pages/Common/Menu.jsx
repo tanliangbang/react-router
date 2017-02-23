@@ -3,7 +3,7 @@ import React,{Component, PropTypes} from 'react'
 import { connect} from 'react-redux'
 import { Link } from 'react-router'
 import {ModalShow , Modal} from '../../MTUI/index'
-import { setLogin } from '../../actions/user'
+import { setUserInfo } from '../../actions/user'
 
 
 
@@ -13,7 +13,7 @@ class Menu extends Component {
         this.loginClick = this.loginClick.bind(this);
     }
     loginClick (){
-        this.props.setLogin(true);
+        this.props.setUserInfo({isShowLogin:true});
         console.log(this)
     }
   render() {
@@ -58,7 +58,7 @@ class Menu extends Component {
 export default connect(
   state => ({ 
     tips: state.user.tips,
-    isShowLogin:state.isShowLogin,
+    isShowLogin:state.user.isShowLogin,
     path: state.routing.locationBeforeTransitions.pathname
-  }),{setLogin}
+  }),{setUserInfo}
 )(Menu);

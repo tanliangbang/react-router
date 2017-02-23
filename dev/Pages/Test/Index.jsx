@@ -17,7 +17,6 @@ import * as userAction from '../../actions/user';
 class List extends Component {
     constructor(props) {
         super(props);
-        // 设置 initial state
     }
     render() {
         const {actions} = this.props;
