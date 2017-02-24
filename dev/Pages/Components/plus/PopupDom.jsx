@@ -15,10 +15,10 @@ const PopupDom = React.createClass({
   },
   handleClickPopup2: function(e){
       var clickback = function(mark){
-        console.log(mark);
+          console.log(mark);
       }
       var closeback = function(){
-        console.log("弹窗关闭了~");
+          console.log("弹窗关闭了~");
       }
       Popup({
           title:'系统提示222',

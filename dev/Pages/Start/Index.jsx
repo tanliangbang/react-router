@@ -6,8 +6,8 @@ import setCode from '../../Mixins/setCode'
 const Start = React.createClass({
   mixins:[setMinHeight,setCode],
   iniCode: function(){
-      var shtml ='<!DOCTYPE html>\
-                #<html>\
+      var shtml ='<!DOCTYPE htmlRes>\
+                #<htmlRes>\
                 #<head lang="zh-cn">\
                 #  <meta charset="utf-8">\
                 #  <meta http-equiv="X-UA-Compatible" content="IE=edge">\
@@ -34,7 +34,7 @@ const Start = React.createClass({
                 #<body>\
                 #  <div id="App"></div>\
                 #</body>\
-                #</html>';
+                #</htmlRes>';
       this.iniEditer(shtml,'code-shtml'); 
   },
   render: function() {

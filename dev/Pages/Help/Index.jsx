@@ -6,7 +6,6 @@ import Tabs from '../../BUI/Tabs'
 class Help extends Component{
     constructor(props) {
         super(props);
-        // 设置 initial state
     }
     componentDidMount () {
   }
@@ -20,7 +19,7 @@ class Help extends Component{
               console.log("tabs为：",index);
               console.log("title为：",title);
           }
-      }
+  }
 
 
     return (

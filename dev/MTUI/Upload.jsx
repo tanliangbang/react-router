@@ -86,7 +86,7 @@ const Upload = React.createClass({
     // uploadComplete(evt) {
     //     //服务断接收完文件返回的结果
     //     alert(evt.target.responseText);
-    //     //$(this.refs.text).html('上传完成');
+    //     //$(this.refs.text).htmlRes('上传完成');
     // },
 
     //上传操作完成

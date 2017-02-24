@@ -30,7 +30,7 @@ label {padding-right: 10px; }
  */
 *, *:before, *:after {-moz-box-sizing: border-box; box-sizing: border-box; }
 /* normalize.css v3.0.2 | git.io/normalize */
-/* Set <html> and <body> to inherit the height of the viewport */
+/* Set <htmlRes> and <body> to inherit the height of the viewport */
 html, body {min-height: 100%; }
 /**
  * 1. Prevent iOS text size adjust after orientation change, without disabling

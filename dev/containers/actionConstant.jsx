@@ -1,0 +1,2 @@
+export const INIT_HTML_LIST = 'INIT_HTML_LIST';
+export const INIT_HTML_DETAIL = 'INIT_HTML_DETAIL';

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import * as testActions from '../actions/test';
+import * as testActions from '../actions/htmlRes';
 
 
 export default class Test extends Component {

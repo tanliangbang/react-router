@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Component, PropTypes} from 'react';
 import { Router, Route, IndexRoute} from 'react-router' // 路由
 //首页
 import Index from './Pages/Index/Index';
@@ -6,9 +6,11 @@ import Index from './Pages/Index/Index';
 //开始
 import Start from './Pages/Start/Index';
 
-import Test   from './Pages/Test/Index';
+import htmlRes  from './Pages/htmlRes/Index';
+import Detail   from './Pages/htmlRes/Detail';
+
 //redux案例展示
-import ReduxDom   from './Pages/ReduxDom/ReduxDom'; 
+import ReduxDom   from './Pages/ReduxDom/ReduxDom';
 
 //组件
 import Components from './Pages/Components/Index';
@@ -26,31 +28,64 @@ import Help from './Pages/Help/Index';
 //App为入口
 import App from './Pages/App';
 
-const Routers = React.createClass({
-    render() {
-        return (
-            <Router history={this.props.history}>
-			    <Route path={HOME_PATH+"/"} component={App}>
-			      <IndexRoute component={Index} />
-			      <Route path="index" component={Index}/>
-			      <Route path="start" component={Start}/>
-					<Route path="test" component={Test}/>
-			      <Route path="components" component={Components}>
-			        <Route path="htmls" component={Htmls}>
-			        	<Route path="btn" component={HtmlsBtn}/>
-			        	<Route path="table" component={HtmlsTable}/>
-			        </Route>
-			        <Route path="forms" component={Forms}/>
-			        <Route path="plus" component={Plus}/>
-			        <Route path="icons" component={Icons}/>
-			        <Route path="language" component={Language}/>
-			      </Route>
-			      <Route path="help" component={Help}/> 
-			      <Route path="reduxdom" component={ReduxDom}/>
-			    </Route>
-		  	</Router>
-        );
-    }
-});
+
+
+export const routes = {
+	path: '/',
+	component: App,
+	indexRoute: {component: Index},
+	childRoutes: [{
+		path: '/index',
+		component: Index,
+	}, {
+		path: '/htmlRes',
+		component: htmlRes
+	}, {
+		path: '/detail/:id',
+		component: Detail
+	},
+		{
+			path: '/components',
+			component: Components,
+			childRoutes: [{
+				path: 'plus',
+				component: Plus,
+			}]
+		}
+	]
+}
+
+class Routers extends Component {
+
+	render() {
+		return (
+			<Router history={this.props.history} routes={routes}>
+
+			</Router>
+		);
+	}
+}
 
 export default Routers;
+
+
+/* <Route path={HOME_PATH+"/"} component={App}>
+ <IndexRoute component={Index} />
+ <Route path="index" component={Index}/>
+ <Route path="start" component={Start}/>
+ <Route path="test" component={htmlRes}/>
+ <Route path="detail/:id" component={Detail}/>
+
+ <Route path="components" component={Components}>
+ <Route path="htmls" component={Htmls}>
+ <Route path="btn" component={HtmlsBtn}/>
+ <Route path="table" component={HtmlsTable}/>
+ </Route>
+ <Route path="forms" component={Forms}/>
+ <Route path="plus" component={Plus}/>
+ <Route path="icons" component={Icons}/>
+ <Route path="language" component={Language}/>
+ </Route>
+ <Route path="help" component={Help}/>
+ <Route path="reduxdom" component={ReduxDom}/>
+ </Route>*/
