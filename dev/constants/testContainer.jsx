@@ -5,11 +5,13 @@ import { connect } from 'react-redux';
 import * as testActions from '../actions/htmlRes';
 
 
-export default class Test extends Component {
+export  class Test extends Component {
     constructor(props) {
         super(props);
-
     }
+
+
+
 
     render() {
         return (
@@ -20,3 +22,4 @@ export default class Test extends Component {
     }
 
 }
+

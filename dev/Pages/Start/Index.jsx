@@ -1,4 +1,4 @@
-import './style.css' 
+import './style.css'
 import React from 'react'
 import setMinHeight from '../../Mixins/setMinHeight'
 import setCode from '../../Mixins/setCode'
@@ -9,6 +9,12 @@ const Start = React.createClass({
       var shtml ='<!DOCTYPE htmlRes>\
                 #<htmlRes>\
                 #<head lang="zh-cn">\
+                \
+                \
+                \
+                \
+                \
+                \
                 #  <meta charset="utf-8">\
                 #  <meta http-equiv="X-UA-Compatible" content="IE=edge">\
                 #  <meta name="description" content="">\
@@ -35,7 +41,7 @@ const Start = React.createClass({
                 #  <div id="App"></div>\
                 #</body>\
                 #</htmlRes>';
-      this.iniEditer(shtml,'code-shtml'); 
+      this.iniEditer(shtml,'code-shtml');
   },
   render: function() {
   	return (

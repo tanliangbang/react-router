@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /* -------------CSS 格式化------------ */
-body{ overflow-x:hidden;position:relative; }
+body{ overflow-x:hidden;position:relative; background-color: #F5F5F5;width:100%;height:100%;}
+
+
 
 /*小图标*/
 .ico{ display: inline-block; width: 30px; height: 30px; overflow: hidden; vertical-align: middle; background: url(./img/icons.png) no-repeat;}
@@ -17,5 +19,7 @@ body{ overflow-x:hidden;position:relative; }
 .contents{ padding: 20px;}
 .contents h1{ margin-left: 20px;}
 .contents p{ margin: 8px 0; color: #666;}
+
+
 
 

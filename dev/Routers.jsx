@@ -41,7 +41,7 @@ export const routes = {
 		path: '/htmlRes',
 		component: htmlRes
 	}, {
-		path: '/detail/:id',
+		path: 'htmlResDetail/:id',
 		component: Detail
 	},
 		{

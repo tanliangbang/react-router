@@ -16,6 +16,7 @@ export  class htmlRes extends Component {
         super(props);
     }
     componentWillMount() {
+        window.scrollTo(0,0)
         const { htmlList } = this.props
         if (htmlList.list.length === 0) {
             this.props.actions.getHtmlList();
@@ -31,7 +32,7 @@ export  class htmlRes extends Component {
     render() {
         const { htmlList ,actions} = this.props;
         return (
-            <div className="start row" >
+            <div className="row mtop60" >
                 <div className="col-lg-8">
                     <ul className="index-list" >
                         {
@@ -67,8 +68,8 @@ class ListItem extends React.Component {
     render() {
         let item = this.props
         return (
-            <Link to={`/Detail/${item.id}`}>
-                <div  className="testItem row"  style={{ minHeight: this.state.height+"px"}}>
+            <Link to={`/htmlResDetail/${item.id}`}>
+                <div  className="testItem row" >
                     <div className="item">
                         <div class="row">
                             <div className="col-md-5 list1_left">
@@ -104,4 +105,7 @@ const  mapDispatchToProps = function mapDispatchToProps(dispatch) {
 
 
 export default  connect(mapStateToProps, mapDispatchToProps)(htmlRes)
+
+
+
 

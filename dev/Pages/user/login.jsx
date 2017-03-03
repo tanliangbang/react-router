@@ -49,7 +49,7 @@ export  class Login extends Component {
                 <div className="content">
                     <div className="form-control">
                         <label>用户名:</label>
-                        <input text="password" className="username" />
+                        <input text="password" classNssdseewwefdme="username" />
                     </div>
 
                     <div className="form-control">
