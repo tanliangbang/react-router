@@ -1,17 +1,34 @@
-const SET_USER_INFO = 'SET_USER_INFO';
-const SET_LOGIN = 'SET_LOGIN';
+import { Tool, merged } from '../Tool';
+import * as actionConstant from '../constants/actionConstant';
 
 export function setUserInfo(data) {
-  return {
-    type: SET_USER_INFO,
-    data :data
-  }
+    return {
+        type: actionConstant.SET_USER_INFO,
+        userInfo :data
+    }
+}
+
+export function isShowLogin(isShowLogin) {
+    return {
+        type: actionConstant.SET_LOGIN_MASK,
+        isShowLogin :isShowLogin
+    }
 }
 
 
-export const login = () => {
+export const setLoginMask = (isShowLogin) => {
     return dispatch => {
-      dispatch(setUserInfo({name:'bangbang',photo:'aaaa',tips:'1'}))
+        dispatch(showLogin(isShowLogin))
+    }
+}
+
+export const login = (username,password) => {
+    return dispatch => {
+        Tool.post(`/api/users/login`, {username:username,password:password}, (response) => {
+           console.log(response)
+        }, (error) => {
+            console.log('error: ', error)
+        });
     }
 }
 

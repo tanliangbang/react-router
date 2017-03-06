@@ -3,7 +3,8 @@ import React,{Component, PropTypes} from 'react'
 import { connect} from 'react-redux'
 import { Link } from 'react-router'
 import {ModalShow , Modal} from '../../MTUI/index'
-import { setUserInfo } from '../../actions/user'
+import * as userAction from '../../actions/user';
+import { bindActionCreators } from 'redux';
 
 
 
@@ -13,7 +14,7 @@ class Menu extends Component {
         this.loginClick = this.loginClick.bind(this);
     }
     loginClick (){
-        this.props.setUserInfo({isShowLogin:true});
+        this.props.actions.isShowLogin(true);
         console.log(this)
     }
   render() {
@@ -54,11 +55,14 @@ class Menu extends Component {
     );
   }
 }
-//主页 
-export default connect(
-  state => ({ 
-    tips: state.user.tips,
-    isShowLogin:state.user.isShowLogin,
-    path: state.routing.locationBeforeTransitions.pathname
-  }),{setUserInfo}
-)(Menu);
+
+export default  connect((state)=>{
+    return {
+        path: state.routing.locationBeforeTransitions.pathname
+    }
+}, (dispatch)=>{
+    const allAction =Object.assign({},userAction);
+    return {
+        actions: bindActionCreators(allAction, dispatch)
+    }
+})(Menu)

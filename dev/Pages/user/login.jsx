@@ -2,20 +2,23 @@ import './style.css'
 import React, { Component, PropTypes } from 'react'
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import {reduxForm} from 'redux-form';
 import LoadingBox from '../../MTUI/LoadingBox'
 import { Tool, merged } from '../../Tool';
-import * as user from '../../actions/user';
+import * as userAction from '../../actions/user';
 import Mask from '../../BUI/Mask';
-import { setUserInfo } from '../../actions/user'
-
+import * as htmlResAction from '../../actions/htmlRes';
 
 export  class Login extends Component {
     constructor(props) {
         super(props);
-        this.closeLoginBox = this.closeLoginBox.bind(this)
+        this.closeLoginBox = this.closeLoginBox.bind(this);
+        this.login = this.login.bind(this);
     }
 
-
+    login(){
+        this.props.actions.login(this.refs.username.value,this.refs.password.value)
+    }
     componentDidMount() {
        this.refs.loginBox.style.display = "none"
     }
@@ -30,7 +33,7 @@ export  class Login extends Component {
         }
     }
     closeLoginBox(){
-        this.props.setUserInfo({isShowLogin:false});
+        this.props.actions.isShowLogin(false);
     }
 
 
@@ -49,17 +52,17 @@ export  class Login extends Component {
                 <div className="content">
                     <div className="form-control">
                         <label>用户名:</label>
-                        <input text="password" classNssdseewwefdme="username" />
+                        <input text="text" ref="username" classNssdseewwefdme="username"  />
                     </div>
 
                     <div className="form-control">
                         <label>密码:</label>
-                        <input text="text" className="password" />
+                        <input text="password" ref="password" className="password"  />
                     </div>
                     <div className="remember">
                         记住密码: <input type="checkbox"/>
                     </div>
-                    <button className="login-Btn" >确&nbsp;&nbsp;&nbsp;&nbsp;定</button>
+                    <button className="login-Btn" onClick={this.login}>确&nbsp;&nbsp;&nbsp;&nbsp;定</button>
 
                 </div>
             </div>
@@ -70,13 +73,15 @@ export  class Login extends Component {
 }
 
 
-//主页
-export default connect(
-    state => ({
+export default  connect((state)=>{
+    return {
         isShowLogin:state.user.isShowLogin,
         path: state.routing.locationBeforeTransitions.pathname
-    }),{setUserInfo}
-)(Login);
-
-
+    }
+}, (dispatch)=>{
+    const allAction =Object.assign({},htmlResAction,userAction);
+    return {
+        actions: bindActionCreators(allAction, dispatch)
+    }
+})(Login)
 

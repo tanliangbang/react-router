@@ -12,7 +12,7 @@ let initTestList = {
     htmlDetail:null
 }
 
-export default function test(state = initTestList, action) {
+export default function htmlRes(state = initTestList, action) {
     switch (action.type) {
         case actionConstant.INIT_HTML_LIST:
 

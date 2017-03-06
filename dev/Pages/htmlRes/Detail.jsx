@@ -30,7 +30,7 @@ export class Detail extends Component {
                 <div className="col-lg-8">
                     <div  dangerouslySetInnerHTML={{__html: content.content}}></div>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-lg-4 right">
                     <img className="advertiseImg" src="../img/3.jpg" />
                     <img className="advertiseImg" src="../img/3.jpg" />
                     <img className="advertiseImg" src="../img/3.jpg" />

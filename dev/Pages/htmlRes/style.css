@@ -9,7 +9,7 @@
     border:1px solid #eeeeee;
     background:#ffffff;
     padding:20px;
-    margin:20px auto;
+    margin:0px auto 20px auto;
 }
 .title{
     font-size:20px;
@@ -44,8 +44,4 @@
     width:100%;
     margin-bottom:20px;
 }
-.right{
-    margin-top:20px;
-    padding:20px;
-    background:#fff;
-}
+

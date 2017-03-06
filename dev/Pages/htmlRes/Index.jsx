@@ -7,7 +7,7 @@ import LoadingBox from '../../MTUI/LoadingBox'
 import setMinHeight from '../../Mixins/setMinHeight'
 import { Tool, merged } from '../../Tool';
 import { getData, postData } from '../../utils/fetchData'
-import * as testAction from '../../actions/htmlRes';
+import * as htmlResAction from '../../actions/htmlRes';
 import * as userAction from '../../actions/user';
 
 
@@ -33,7 +33,7 @@ export  class htmlRes extends Component {
         const { htmlList ,actions} = this.props;
         return (
             <div className="row mtop60" >
-                <div className="col-lg-8">
+                <div className="col-md-8">
                     <ul className="index-list" >
                         {
                             this.props.htmlList.list.map((item, index) => {
@@ -42,7 +42,7 @@ export  class htmlRes extends Component {
                         }
                     </ul>
                 </div>
-                <div className="col-lg-4 right">
+                <div className="col-md-4 right">
                     <img className="advertiseImg" src="img/3.jpg" />
                     <img className="advertiseImg" src="img/3.jpg" />
                     <img className="advertiseImg" src="img/3.jpg" />
@@ -93,18 +93,14 @@ class ListItem extends React.Component {
     }
 }
 
-const mapStateToProps= function mapStateToProps(state) {
+export default  connect((state)=>{
     return { htmlList: state.htmlRes.htmlList }
-}
-const  mapDispatchToProps = function mapDispatchToProps(dispatch) {
-    const allAction =Object.assign({},testAction,userAction);
+}, (dispatch)=>{
+    const allAction =Object.assign({},htmlResAction,userAction);
     return {
         actions: bindActionCreators(allAction, dispatch)
     }
-}
-
-
-export default  connect(mapStateToProps, mapDispatchToProps)(htmlRes)
+})(htmlRes)
 
 
 

@@ -41,6 +41,7 @@
     "redux-devtools-log-monitor": "^1.0.5",
     "redux-devtools-monitor-dock": "0.0.4",
     "redux-thunk": "^2.0.1",
+    "redux-form" : "^6.5.0",
     "sass-loader": "^3.0.0",
     "style-loader": "^0.13.0",
     "swiper": "^3.3.1",
