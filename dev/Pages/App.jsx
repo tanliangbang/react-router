@@ -12,7 +12,7 @@ import Menu from './Common/Menu'
 import Footer from './Common/Footer'
 
 import Login from './User/Login';
-import  * as user from '../actions/user'
+import  * as userAction from '../actions/user'
 
 
 class App extends Component {
@@ -20,26 +20,28 @@ class App extends Component {
 		super(props);
 	}
 	componentWillMount() {
+	    this.props.actions.getUserInfo();
 	}
   render() {
-		return (
-			<div className="app">
-			  <Menu />
-				<Login isShowLogin={this.props.isShowLogin}/>
-				{this.props.children}
-		      <Footer/>
-			</div>
-		);
+			return (
+				<div className="app">
+					<Menu />
+					<Login isShowLogin={this.props.isShowLogin}/>
+					{this.props.children}
+					<Footer/>
+				</div>
+			);
+
   }
 }
 //APP入口
 
 const mapStateToProps= function mapStateToProps(state) {
-	return { isShowLogin: state.user.isShowLogin }
+	return {userInfo:state.user.userInfo}
 }
 const  mapDispatchToProps = function mapDispatchToProps(dispatch) {
 	return {
-		actions: bindActionCreators(user, dispatch)
+		actions: bindActionCreators(userAction, dispatch)
 	}
 }
 

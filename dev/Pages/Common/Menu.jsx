@@ -12,12 +12,36 @@ class Menu extends Component {
     constructor(props) {
         super(props);
         this.loginClick = this.loginClick.bind(this);
+        this.loginOut = this.loginOut.bind(this);
     }
     loginClick (){
         this.props.actions.isShowLogin(true);
-        console.log(this)
+    }
+    loginOut(){
+        this.props.actions.loginOut();
     }
   render() {
+      let loginNav = "";
+      if(this.props.userInfo==null){
+          loginNav  = (
+             <li>
+                <span><a onClick={this.loginClick}>登入</a></span>/
+                 <span>
+                      注册
+                 </span>
+             </li>
+          )
+      }else{
+          loginNav  = (
+              <li>
+                  <span><a>{this.props.userInfo.username}</a></span>/
+                 <span>
+                      <a onClick={this.loginOut}>退出</a>
+                 </span>
+              </li>
+          )
+      }
+
       return (
         <div className="navbar navbar-inverse navbar-fixed-top">
             <div className="container">
@@ -39,14 +63,7 @@ class Menu extends Component {
                         <li><Link onlyActiveOnIndex={true} activeClassName="active" to={HOME_PATH+"/help"}>帮助</Link></li>
                     </ul>
                     <ul className="navbar-right loginBtn">
-                        <li>
-                            <span><a onClick={this.loginClick}>登入</a></span>/
-                            <span>
-                                 注册
-                            </span>
-
-
-                        </li>
+                        {loginNav}
                     </ul>
                 </div>
             </div>
@@ -58,6 +75,7 @@ class Menu extends Component {
 
 export default  connect((state)=>{
     return {
+        userInfo:state.user.userInfo,
         path: state.routing.locationBeforeTransitions.pathname
     }
 }, (dispatch)=>{

@@ -26,7 +26,7 @@ const PageListDom = React.createClass({
 
       }.bind(this),1000);
   },
-  render: function() { 
+  render: function() {
 
     return (
     	<div className="mt-page-content">
@@ -42,7 +42,7 @@ const PageListDom = React.createClass({
             */}
             <p ref="">当前总数：{this.state.count}</p>
             <div>{this.state.reData}</div>
-            <PageList jumpShow={false} id="pageList1" count={this.state.count} showPage="7" callback={this.setCallBack}/> 
+            <PageList jumpShow={false} id="pageList1" count={this.state.count} showPage="7" callback={this.setCallBack}/>
 
           </div>
 

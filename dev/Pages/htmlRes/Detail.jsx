@@ -1,4 +1,4 @@
-import './style.css'
+import './../../Components/htmlRes/style.css'
 import React, { Component, PropTypes } from 'react'
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';

@@ -17,13 +17,22 @@ export  class Login extends Component {
     }
 
     login(){
-        this.props.actions.login(this.refs.username.value,this.refs.password.value)
+        this.props.actions.login(this.refs.username.value,$.md5(this.refs.password.value));
+        if(this.refs.remember.checked){
+            Tool.saveData('user',JSON.stringify({username:this.refs.username.value,password:$.md5(this.refs.password.value)}),60*3)
+        }
     }
     componentDidMount() {
-       this.refs.loginBox.style.display = "none"
+        var user = Tool.readData('user');
+        if(user){
+            user = JSON.parse(user);
+            this.refs.remember.checked = true;
+            this.refs.username.value = user.username;
+        }
+
+       this.refs.loginBox.style.display = "none";
     }
     componentDidUpdate(){
-        console.log(this)
         if(this.props.isShowLogin){
             this.refs.mask.showMask();
             this.refs.loginBox.style.display = "block"
@@ -52,15 +61,15 @@ export  class Login extends Component {
                 <div className="content">
                     <div className="form-control">
                         <label>用户名:</label>
-                        <input text="text" ref="username" classNssdseewwefdme="username"  />
+                        <input type="text" ref="username" classNssdseewwefdme="username"  />
                     </div>
 
                     <div className="form-control">
                         <label>密码:</label>
-                        <input text="password" ref="password" className="password"  />
+                        <input type="password" ref="password" className="password"  />
                     </div>
                     <div className="remember">
-                        记住密码: <input type="checkbox"/>
+                        记住密码: <input ref="remember"  type="checkbox"/>
                     </div>
                     <button className="login-Btn" onClick={this.login}>确&nbsp;&nbsp;&nbsp;&nbsp;定</button>
 

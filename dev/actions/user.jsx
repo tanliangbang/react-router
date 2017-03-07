@@ -24,16 +24,39 @@ export const setLoginMask = (isShowLogin) => {
 
 export const login = (username,password) => {
     return dispatch => {
-        Tool.post(`/api/users/login`, {username:username,password:password}, (response) => {
-           console.log(response)
+        Tool.post(`/api/users/login`, {username:username,password:password}, (res) => {
+            if(res.statusCode==200){
+               dispatch(setUserInfo(res.data))
+               dispatch(isShowLogin(false))
+
+           }
         }, (error) => {
             console.log('error: ', error)
         });
     }
 }
 
+export const getUserInfo = () => {
+    return dispatch => {
+        Tool.get(`/api/users/getUserInfo`, {}, (res) => {
+            if(res.statusCode==200){
+                dispatch(setUserInfo(res.data))
+            }
+        }, (error) => {
+            console.log('error: ', error)
+        });
+    }
+}
+
+
 export const loginOut = () => {
   return dispatch => {
-    dispatch(setUserInfo({name:'',photo:'',tips:''}))
+      Tool.get(`/api/users/loginOut`, {}, (res) => {
+          if(res.statusCode==200){
+              dispatch(setUserInfo(null))
+          }
+      }, (error) => {
+          console.log('error: ', error)
+      });
   }
 }
