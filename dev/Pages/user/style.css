@@ -62,7 +62,9 @@
 .remember input{
     vertical-align:-2px;
 }
-
+.fr{
+    float:right;
+}
 
 
 

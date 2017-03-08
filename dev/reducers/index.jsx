@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux'
 import { routerReducer } from 'react-router-redux'
+import { reducer as formReducer } from 'redux-form'
 
 //todos
 import htmlRes from './htmlRes'
@@ -10,6 +11,7 @@ import user from './user'
 const rootReducer = combineReducers({
 	htmlRes,
 	user, //用户的一些信息
+	form: formReducer,
 	routing: routerReducer //整合路由
 })
 

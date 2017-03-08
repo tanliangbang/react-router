@@ -6,7 +6,8 @@ import * as actionConstant from '../constants/actionConstant';
 
 export const initHtmlList = (response) => ({
     type: actionConstant.INIT_HTML_LIST,
-    list: response.data.content
+    list: response.data.content,
+    count:response.data.pageTotal,
 })
 
 export const initHtmlDetail = (response) => ({
@@ -17,10 +18,10 @@ export const initHtmlDetail = (response) => ({
 
 
 
-export const getHtmlList = () => {
+export const getHtmlList = (start,size) => {
     return dispatch => {
-        Tool.get(`/api/res/getResContentList`, {name:"jsRes"}, (response) => {
-            dispatch(initHtmlList(response))
+        Tool.get(`/api/res/getResContentList`, {name:"jsRes",start:start,size:size}, (res) => {
+            dispatch(initHtmlList(res))
         }, (error) => {
             console.log('error: ', error)
         });

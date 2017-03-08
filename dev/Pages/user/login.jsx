@@ -2,7 +2,7 @@ import './style.css'
 import React, { Component, PropTypes } from 'react'
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import {reduxForm} from 'redux-form';
+import {reduxForm,Field} from 'redux-form';
 import LoadingBox from '../../MTUI/LoadingBox'
 import { Tool, merged } from '../../Tool';
 import * as userAction from '../../actions/user';
@@ -16,13 +16,17 @@ export  class Login extends Component {
         this.login = this.login.bind(this);
     }
 
-    login(){
-        this.props.actions.login(this.refs.username.value,$.md5(this.refs.password.value));
+    login(formProps){
+        let username = formProps.username;
+        let password = formProps.password;
+        this.props.actions.login(username,$.md5(password));
         if(this.refs.remember.checked){
-            Tool.saveData('user',JSON.stringify({username:this.refs.username.value,password:$.md5(this.refs.password.value)}),60*3)
+            Tool.saveData('user',JSON.stringify({username:username,password:$.md5(password)}),60*3)
         }
     }
+
     componentDidMount() {
+
         var user = Tool.readData('user');
         if(user){
             user = JSON.parse(user);
@@ -49,37 +53,52 @@ export  class Login extends Component {
 
 
     render() {
+        const {handleSubmit} = this.props;
+        const renderField = ({ input, label, type, meta: { touched, error, warning } }) => (
+            <div >
+                <label>{label}</label>
+                <div>
+                    <input {...input} placeholder={label} type={type}/>
+                    {touched && ((error && <span>{error}</span>))}
+                </div>
+            </div>
+        )
         return (
-
             <div ref="loginBox"  className="login-box">
                 <Mask ref="mask"/>
-
                 <div className="top">
                     <div>登入</div>
                     <a onClick={this.closeLoginBox}>关闭</a>
                 </div>
-                <div className="content">
-                    <div className="form-control">
-                        <label>用户名:</label>
-                        <input type="text" ref="username" classNssdseewwefdme="username"  />
+                <form onSubmit={handleSubmit(this.login)}>
+                    <div className="content">
+                        <Field  name="username" type="text" component={renderField} label="用户名"/>
+                        <Field  name="password" type="password" component={renderField} label="密码"/>
+                        <div className="remember">
+                            记住密码: <input ref="remember"  type="checkbox"/>
+                        </div>
+                        <button  className="login-Btn" type="submit" >确&nbsp;&nbsp;&nbsp;&nbsp;定</button>
                     </div>
-
-                    <div className="form-control">
-                        <label>密码:</label>
-                        <input type="password" ref="password" className="password"  />
-                    </div>
-                    <div className="remember">
-                        记住密码: <input ref="remember"  type="checkbox"/>
-                    </div>
-                    <button className="login-Btn" onClick={this.login}>确&nbsp;&nbsp;&nbsp;&nbsp;定</button>
-
-                </div>
+                </form>
             </div>
-
         );
     }
 
 }
+
+
+function validate(values) {
+    const errors = {};
+    console.log();
+    if (!values.username) {
+        errors.username = '请输入用户名'
+    }
+    if (!values.password) {
+        errors.password = '请输入密码'
+    }
+    return errors
+}
+
 
 
 export default  connect((state)=>{
@@ -92,5 +111,8 @@ export default  connect((state)=>{
     return {
         actions: bindActionCreators(allAction, dispatch)
     }
-})(Login)
+})(reduxForm({
+    form: 'loginForm',
+
+})(Login))
 

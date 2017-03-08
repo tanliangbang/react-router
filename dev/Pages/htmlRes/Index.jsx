@@ -9,7 +9,6 @@ import List from '../../Components/htmlRes/list';
 import {PageList} from '../../MTUI/index';
 import PageListDom from '../Components/plus/PageListDom'
 
-
 export  class htmlRes extends Component {
     constructor(props) {
         super(props);
@@ -21,15 +20,15 @@ export  class htmlRes extends Component {
     componentWillMount() {
         window.scrollTo(0,0)
         const { htmlList } = this.props
-        if (htmlList.list.length === 0) {
-            this.props.actions.getHtmlList();
-        }
     }
 
     //分页回调
     setCallBack (nowpage,eachPageCount){
         //模拟ajax请求
-        var count = 300;
+        var start = (nowpage-1)*eachPageCount
+        this.props.actions.getHtmlList(start,eachPageCount);
+        var count = this.props.htmlList.count;
+        window.scrollTo(0,0)
         this.setState({
             count : count
         });
@@ -42,7 +41,7 @@ export  class htmlRes extends Component {
             <div className="row mtop60" >
                 <div className="col-md-8">
                       <List actions={actions} {...htmlList}></List>
-                     <PageList jumpShow={false} id="pageList1" count={this.state.count} showPage="7" callback={this.setCallBack}/>
+                     <PageList jumpShow={false} selectShow={false}  id="pageList1" count={htmlList.count} showPage="7" callback={this.setCallBack}/>
 
                 </div>
                 <div className="col-md-4 right">
@@ -57,6 +56,7 @@ export  class htmlRes extends Component {
     }
 
 }
+
 
 
 

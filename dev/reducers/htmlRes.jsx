@@ -6,7 +6,7 @@ import * as actionConstant from '../constants/actionConstant';
 // 初始化状态
 let initTestList = {
     htmlList:{
-        current: 1,
+        count:0,
         list:[]
     },
     htmlDetail:null
@@ -19,7 +19,7 @@ export default function htmlRes(state = initTestList, action) {
 
             return Object.assign({}, state, {
                 htmlList:{
-                    current: 1,
+                    count:action.count,
                     list:action.list
                 }
             });
