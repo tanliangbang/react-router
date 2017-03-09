@@ -27,9 +27,18 @@ body{ overflow-x:hidden;position:relative; background-color: #F5F5F5;width:100%;
     background:#fff;
 }
 
+.none{
+    display:none;
+}
 
 
+.t-align{
+    text-align: center;
+}
 
+.sexCls{
+    margin-top:25px;
+}
 
 
 

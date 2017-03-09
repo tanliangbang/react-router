@@ -62,9 +62,70 @@
 .remember input{
     vertical-align:-2px;
 }
-.fr{
-    float:right;
+.error{
+    text-align: right;
+    padding-right:20px;
+    padding-top:5px;
+    color:red;
+    font-size:12px;
+}
+
+.loginFail{
+    font-size:12px;
+    text-align: center;
+    margin-top:5px;
+    color:red;
+}
+
+/*
+  ------------------------------------------------- 注册样式-----------------------------------------------------------------------------------------------
+*/
+
+.register{
+    width:60%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:100px;
+}
+
+.reTitle{
+    text-align: center;
+    font-size:18px;
+    font-weight: bold;
+}
+
+.label-right{
+    text-align: right;
+    margin-top:25px;
+}
+
+.mrgin_25{
+    margin-top:25px;
 }
 
 
+.regist-Btn{
+    width:35%;
+    height:40px;
+    line-height:40px;
+    background:#005387;
+    color:#fff;
+    font-size:16px;
+    margin:40px auto;
+    border-radius:4px;
+}
 
+.reError{
+    font-size:12px;
+    text-align: left;
+    color:red;
+}
+
+.registSuccessImg{
+    margin:100px auto 50px auto;
+}
+.toOtherPromit{
+    font-size:25px;
+    margin-bottom:100px;
+
+}

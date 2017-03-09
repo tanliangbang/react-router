@@ -8,6 +8,22 @@ import { Tool, merged } from '../../Tool';
 import * as userAction from '../../actions/user';
 import Mask from '../../BUI/Mask';
 import * as htmlResAction from '../../actions/htmlRes';
+import {nomalTextInput} from '../../components/form';
+
+
+
+
+const getInitDate = ()=>{
+    let currData ={};
+    let user = Tool.readData('user');
+    if(user){
+        user = JSON.parse(user);
+        currData.username = user.username;
+        currData.remember = true;
+    }
+    return currData;
+}
+
 
 export  class Login extends Component {
     constructor(props) {
@@ -20,20 +36,12 @@ export  class Login extends Component {
         let username = formProps.username;
         let password = formProps.password;
         this.props.actions.login(username,$.md5(password));
-        if(this.refs.remember.checked){
+        if(formProps.remember){
             Tool.saveData('user',JSON.stringify({username:username,password:$.md5(password)}),60*3)
         }
     }
 
     componentDidMount() {
-
-        var user = Tool.readData('user');
-        if(user){
-            user = JSON.parse(user);
-            this.refs.remember.checked = true;
-            this.refs.username.value = user.username;
-        }
-
        this.refs.loginBox.style.display = "none";
     }
     componentDidUpdate(){
@@ -53,16 +61,11 @@ export  class Login extends Component {
 
 
     render() {
-        const {handleSubmit} = this.props;
-        const renderField = ({ input, label, type, meta: { touched, error, warning } }) => (
-            <div >
-                <label>{label}</label>
-                <div>
-                    <input {...input} placeholder={label} type={type}/>
-                    {touched && ((error && <span>{error}</span>))}
-                </div>
-            </div>
-        )
+        const {handleSubmit,loginFail} = this.props;
+        let loginFailClass = 'loginFail ';
+        if(!loginFail){
+            loginFailClass = loginFailClass+"none"
+        }
         return (
             <div ref="loginBox"  className="login-box">
                 <Mask ref="mask"/>
@@ -72,11 +75,12 @@ export  class Login extends Component {
                 </div>
                 <form onSubmit={handleSubmit(this.login)}>
                     <div className="content">
-                        <Field  name="username" type="text" component={renderField} label="用户名"/>
-                        <Field  name="password" type="password" component={renderField} label="密码"/>
+                        <Field  name="username" type="text" component={nomalTextInput} label="用户名"/>
+                        <Field  name="password" type="password" component={nomalTextInput} label="密码"/>
                         <div className="remember">
-                            记住密码: <input ref="remember"  type="checkbox"/>
+                            记住密码: <Field  name="remember" type="checkbox" component="input" />
                         </div>
+                        <div className={loginFailClass}>用户名密码错误</div>
                         <button  className="login-Btn" type="submit" >确&nbsp;&nbsp;&nbsp;&nbsp;定</button>
                     </div>
                 </form>
@@ -89,14 +93,23 @@ export  class Login extends Component {
 
 function validate(values) {
     const errors = {};
-    console.log();
     if (!values.username) {
         errors.username = '请输入用户名'
+        return errors;
+    }
+    if (values.username.length>15) {
+        errors.username = '用户名不能超过十五位'
+        return errors;
     }
     if (!values.password) {
         errors.password = '请输入密码'
+        return errors;
     }
-    return errors
+    if (values.password.length>15) {
+        errors.password = '密码不能超过十五位';
+        return errors;
+    }
+
 }
 
 
@@ -104,7 +117,8 @@ function validate(values) {
 export default  connect((state)=>{
     return {
         isShowLogin:state.user.isShowLogin,
-        path: state.routing.locationBeforeTransitions.pathname
+        loginFail:state.user.loginFail,
+        path: state.routing.locationBeforeTransitions.pathname,
     }
 }, (dispatch)=>{
     const allAction =Object.assign({},htmlResAction,userAction);
@@ -113,6 +127,7 @@ export default  connect((state)=>{
     }
 })(reduxForm({
     form: 'loginForm',
-
+    initialValues:getInitDate(),
+    validate
 })(Login))
 

@@ -8,7 +8,7 @@ import Start from './Pages/Start/Index';
 
 import htmlRes  from './Pages/htmlRes/Index';
 import Detail   from './Pages/htmlRes/Detail';
-
+import Register   from './Pages/User/Register';
 //redux案例展示
 import ReduxDom   from './Pages/ReduxDom/ReduxDom';
 
@@ -44,14 +44,18 @@ export const routes = {
 		path: 'htmlResDetail/:id',
 		component: Detail
 	},
-		{
+	{
+		path: 'register',
+		component: Register
+	},
+	{
 			path: '/components',
 			component: Components,
 			childRoutes: [{
 				path: 'plus',
 				component: Plus,
 			}]
-		}
+	}
 	]
 }
 

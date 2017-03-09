@@ -27,7 +27,7 @@ class Menu extends Component {
              <li>
                 <span><a onClick={this.loginClick}>登入</a></span>/
                  <span>
-                      注册
+                      <Link  to={HOME_PATH+"/register"}>注册</Link>
                  </span>
              </li>
           )

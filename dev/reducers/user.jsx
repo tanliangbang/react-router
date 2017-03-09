@@ -5,7 +5,9 @@ import * as actionConstant from '../constants/actionConstant';
 //初始化数据
 const initialState = {
   userInfo:null,
-  isShowLogin:false
+  isShowLogin:false,
+  loginFail:false,
+  registerFail:false,
 }
 
 
@@ -18,6 +20,14 @@ export default function user(state = initialState, action) {
 		case actionConstant.SET_LOGIN_MASK:
 			return Object.assign({}, state, {
 				isShowLogin:action.isShowLogin
+			});
+		case actionConstant.SET_LOGIN_FAIL:
+			return Object.assign({}, state, {
+				loginFail:action.loginFail
+			});
+		case actionConstant.SET_REGISTER_FAIL:
+			return Object.assign({}, state, {
+				registerFail:action.registerFail
 			});
 		default : return state;
 	}

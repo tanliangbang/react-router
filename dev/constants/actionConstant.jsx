@@ -2,3 +2,5 @@ export const INIT_HTML_LIST = 'INIT_HTML_LIST';
 export const INIT_HTML_DETAIL = 'INIT_HTML_DETAIL';
 export const SET_USER_INFO = 'SET_USER_INFO';
 export const SET_LOGIN_MASK = 'SET_LOGIN_MASK';
+export const SET_LOGIN_FAIL = 'SET_LOGIN_FAIL';
+export const SET_REGISTER_FAIL = 'SET_REGISTER_FAIL';

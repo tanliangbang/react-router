@@ -15,6 +15,20 @@ export function isShowLogin(isShowLogin) {
     }
 }
 
+export function loginFail(isFail) {
+    return {
+        type: actionConstant.SET_LOGIN_FAIL,
+        loginFail :isFail
+    }
+}
+
+export function registerFail(isFail) {
+    return {
+        type: actionConstant.SET_REGISTER_FAIL,
+        registerFail :isFail
+    }
+}
+
 
 export const setLoginMask = (isShowLogin) => {
     return dispatch => {
@@ -28,8 +42,27 @@ export const login = (username,password) => {
             if(res.statusCode==200){
                dispatch(setUserInfo(res.data))
                dispatch(isShowLogin(false))
+            }else if(res.statusCode==500) {
+                dispatch(loginFail(true));
+                setTimeout(()=>{
+                    dispatch(loginFail(false));
+                },2000)
+            }
+        }, (error) => {
+            console.log('error: ', error)
+        });
+    }
+}
 
-           }
+
+export const register = (user) => {
+    return dispatch => {
+        Tool.post(`/api/users/register`, user, (res) => {
+            if(res.statusCode==200){
+                registerFail(false)
+            }else if(res.statusCode==500) {
+                registerFail(true)
+            }
         }, (error) => {
             console.log('error: ', error)
         });
