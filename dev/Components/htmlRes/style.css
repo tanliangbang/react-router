@@ -45,3 +45,18 @@
     margin-bottom:20px;
 }
 
+
+/*
+-------------------------------------------------------详情样式------------------------------------------------------------------------
+*/
+
+.htmlResTitle{
+    font-size:24px;
+    color:#337ab7;
+    text-align: center;
+}
+
+.htmlResDetail{
+    background:#fff;
+    padding:20px 20px;
+}

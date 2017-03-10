@@ -1,4 +1,4 @@
-import './../../Components/htmlRes/style.css'
+import './style.css'
 import React, { Component, PropTypes } from 'react'
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
@@ -10,7 +10,6 @@ export  class htmlRes extends Component {
 
     }
     render() {
-        console.log(this.props)
         const { List ,actions} = this.props;
         return (
                     <ul className="index-list" >

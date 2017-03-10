@@ -7,7 +7,7 @@ const initialState = {
   userInfo:null,
   isShowLogin:false,
   loginFail:false,
-  registerFail:false,
+  registerState:0,
 }
 
 
@@ -27,7 +27,7 @@ export default function user(state = initialState, action) {
 			});
 		case actionConstant.SET_REGISTER_FAIL:
 			return Object.assign({}, state, {
-				registerFail:action.registerFail
+				registerState:action.registerState
 			});
 		default : return state;
 	}

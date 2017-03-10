@@ -1,0 +1,44 @@
+.faceImg{
+   background:url(../../img/sprites.png) no-repeat;
+   background-position: 0 -12px;
+    display: block;
+    width: 19px !important;
+    height: 19px;
+    float: left;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.faceImg:hover{
+    background-position: 0 -31px;
+}
+
+.qqFace{
+    padding: 10px;
+    background: #ffffff;
+    border: 1px solid #cfcfcf;
+    z-index: 99;
+    margin: 14px 0px 0px 0px;
+    box-shadow: 0px 1px 10px rgba(204,204,204,1);
+    border-radius: 2px;
+}
+
+.qqFace table td img {
+    cursor: pointer;
+    border: 1px #fff solid;
+}
+
+.commentTextArea{
+    height:120px !important;
+}
+
+.commentBtn{
+    width:70px;
+    height:35px;
+    float:right;
+    margin-right:20px;
+    margin-top:10px;
+    background:#00a5eb;
+    color:#fff;
+    border-radius:5px;
+}

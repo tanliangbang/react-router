@@ -22,10 +22,10 @@ export function loginFail(isFail) {
     }
 }
 
-export function registerFail(isFail) {
+export function registerFail(state) {
     return {
         type: actionConstant.SET_REGISTER_FAIL,
-        registerFail :isFail
+        registerState :state
     }
 }
 
@@ -59,9 +59,10 @@ export const register = (user) => {
     return dispatch => {
         Tool.post(`/api/users/register`, user, (res) => {
             if(res.statusCode==200){
-                registerFail(false)
+                dispatch(registerFail(1));
+                dispatch(setUserInfo(res.data));
             }else if(res.statusCode==500) {
-                registerFail(true)
+                dispatch( registerFail(2))
             }
         }, (error) => {
             console.log('error: ', error)

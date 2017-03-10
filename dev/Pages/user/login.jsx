@@ -70,15 +70,16 @@ export  class Login extends Component {
             <div ref="loginBox"  className="login-box">
                 <Mask ref="mask"/>
                 <div className="top">
-                    <div>登入</div>
-                    <a onClick={this.closeLoginBox}>关闭</a>
+                    <label className="loginTitle">登入</label>
+                    <a onClick={this.closeLoginBox}></a>
                 </div>
+                <hr className="loginLine"/>
                 <form onSubmit={handleSubmit(this.login)}>
                     <div className="content">
                         <Field  name="username" type="text" component={nomalTextInput} label="用户名"/>
                         <Field  name="password" type="password" component={nomalTextInput} label="密码"/>
                         <div className="remember">
-                            记住密码: <Field  name="remember" type="checkbox" component="input" />
+                            记住我: <Field  name="remember" type="checkbox" component="input" />
                         </div>
                         <div className={loginFailClass}>用户名密码错误</div>
                         <button  className="login-Btn" type="submit" >确&nbsp;&nbsp;&nbsp;&nbsp;定</button>

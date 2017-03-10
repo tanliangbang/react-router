@@ -7,6 +7,7 @@ import { Tool, merged } from '../../Tool';
 import { getData, postData } from '../../utils/fetchData'
 import * as testAction from '../../actions/htmlRes';
 import * as userAction from '../../actions/user';
+import Comments from '../../Components/Comment/comment';
 
 
 export class Detail extends Component {
@@ -19,6 +20,10 @@ export class Detail extends Component {
         this.props.actions.getHtmlDetail(this.props.params.id);
     }
 
+    componentDidMount() {
+
+    }
+
     render() {
          let  content = {};
          if(this.props.htmlDetail){
@@ -27,8 +32,13 @@ export class Detail extends Component {
 
         return(
             <div className="mtop60 row">
-                <div className="col-lg-8">
+                <div className="col-lg-8 htmlResDetail">
+                    <div className="htmlResTitle">{content.title}</div>
+
                     <div  dangerouslySetInnerHTML={{__html: content.content}}></div>
+                     <hr/>
+                    <Comments></Comments>
+
                 </div>
                 <div className="col-lg-4 right">
                     <img className="advertiseImg" src="../img/3.jpg" />

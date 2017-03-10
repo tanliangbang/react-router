@@ -3,6 +3,8 @@ import React, { Component, PropTypes } from 'react'
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import {reduxForm,Field} from 'redux-form';
+import {browserHistory } from 'react-router';
+
 import { Tool, merged } from '../../Tool';
 import * as userAction from '../../actions/user';
 import * as htmlResAction from '../../actions/htmlRes';
@@ -17,37 +19,52 @@ export  class Register extends Component {
         super(props);
         this.registerSubmit = this.registerSubmit.bind(this);
         this.state = {
-            time:3
-        }
+            time:3,
+            isInterval:true
+
+    }
     }
 
     registerSubmit(formProps){
-        formProps.password = $.md5(formProps.password)
-        this.props.actions.register(formProps);
+        var currDate = {};
+        for(var curr in formProps){
+            currDate[curr] = formProps[curr]
+        }
+        currDate.password = $.md5(currDate.password)
+        this.props.actions.register(currDate);
     }
 
     componentWillMount() {
-        this.props.actions.getHtmlList(0,10);
     }
 
     componentDidUpdate(){
-        let time = 3;
-        let toInterval =  setInterval(function(){
-            time--;
-            if(time<=0){
-                console.log("aaaaaaaaaaaaa")
-                clearInterval(toInterval)
-            }
-        },1000)
+        this.props.actions.getHtmlList(0,10);
+        console.log(this.props.registerState==1 &&  this.state.isInterval);
+        if(this.props.registerState==1 && this.state.isInterval){
+            var time = 3;
+            var toInterval =  setInterval(function(){
+                time--;
+                this.setState({
+                    time:time,
+                    isInterval:false
+                });
+                if(time<=0){
+                    clearInterval(toInterval);
+                    browserHistory.push("/");
+                    this.props.actions.registerFail(0)
+                }
+            }.bind(this),1000)
+        }
+
     }
 
 
 
 
     render() {
-        const {handleSubmit,time} = this.props;
-        console.log(this.props)
-        if(this.props.registerFail){
+        const {handleSubmit} = this.props;
+        const {time} = this.state;
+        if(this.props.registerState==0||this.props.registerState==2){
             return (
                 <div  className="register mtop60">
                     <div className="reTitle">填写用户信息</div>
@@ -108,7 +125,7 @@ function validate(values) {
 export default  connect((state)=>{
     return {
         path: state.routing.locationBeforeTransitions.pathname,
-        registerFail:state.user.registerFail,
+        registerState:state.user.registerState,
     }
 }, (dispatch)=>{
     const allAction =Object.assign({},htmlResAction,userAction);

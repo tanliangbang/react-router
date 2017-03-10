@@ -8,29 +8,45 @@
     left:50%;
     margin-left:-200px;
     margin-top:-160px;
+    border-radius:8px;
 }
 
-.top{
+.login-box .top{
     text-align: center;
     font-size:20px;
-    background:#005387;
     color:#fff;
     height:50px;
     line-height:50px;
     position:relative;
 }
 
-.top a{
-   position:absolute;
-    right:10px;
-    height:100%;
-    top:0px;
-    font-size:16px;
-    color:#fff;
+.login-box .top a{
+    position: absolute;
+    width: 21px;
+    height: 20px;
+    right: 18px;
+    top: 18px;
     cursor: pointer;
+    background: url("../../img/ck_closebg.png") no-repeat 0 0;
+}
+
+.login-box .top .loginTitle{
+   color:#00a5eb;
+    float:left;
+    font-size:18px;
+    margin-left:10px;
+    margin-bottom:0px;
+
+}
+.loginLine{
+    margin-top:0px;
+}
+
+.login-box .top a:hover{
+   background-position: 0px -20px;
 }
 .content{
-    padding:20px;
+    padding:0px 20px 20px;
 }
 .form-control{
     margin-top:20px;
@@ -50,8 +66,8 @@
     width:100%;
     height:40px;
     line-height:40px;
-    background:#005387;
-    margin-top:40px;
+    background:#00a5eb;
+    margin-top:30px;
     color:#fff;
     font-size:16px;
     border-radius:4px;

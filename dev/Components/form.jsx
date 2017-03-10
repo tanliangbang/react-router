@@ -3,7 +3,6 @@ import React, { Component, PropTypes } from 'react'
 export const nomalTextInput = ({ input, label, type, meta: { touched, error, warning } }) => (
     <div>
         <div className="form-control">
-            <label>{label}</label>
             <input {...input} placeholder={label} type={type}/>
         </div>
         <div className="error">
