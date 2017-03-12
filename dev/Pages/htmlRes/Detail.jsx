@@ -8,6 +8,7 @@ import { getData, postData } from '../../utils/fetchData'
 import * as testAction from '../../actions/htmlRes';
 import * as userAction from '../../actions/user';
 import Comments from '../../Components/Comment/comment';
+import CommentList from '../../Components/Comment/commentList';
 
 
 export class Detail extends Component {
@@ -26,10 +27,11 @@ export class Detail extends Component {
 
     render() {
          let  content = {};
+         let  id = null;
          if(this.props.htmlDetail){
-             content = this.props.htmlDetail.content
+             content = this.props.htmlDetail.content;
+             id = this.props.htmlDetail.id;
          }
-
         return(
             <div className="mtop60 row">
                 <div className="col-lg-8 htmlResDetail">
@@ -37,8 +39,8 @@ export class Detail extends Component {
 
                     <div  dangerouslySetInnerHTML={{__html: content.content}}></div>
                      <hr/>
-                    <Comments></Comments>
-
+                    <Comments topicId={id}></Comments>
+                    <CommentList></CommentList>
                 </div>
                 <div className="col-lg-4 right">
                     <img className="advertiseImg" src="../img/3.jpg" />

@@ -42,3 +42,40 @@
     color:#fff;
     border-radius:5px;
 }
+
+/*
+---------------------------------评论列表样式------------------------------
+*/
+
+.commentList{
+  .commentListTitle{
+    font-size:14px;
+    color:#00a5eb;
+    border-bottom:1px solid #eaedf6;
+    padding-bottom:8px;
+  }
+  >ul{
+     padding:5px 10px;
+    li{
+      border-bottom:1px dashed #eaedf6;
+
+      .top{
+        margin-top:5px;
+        font-size:12px;
+        >div:nth-child(1){
+          color:#00a5eb;
+        }
+      }
+      .cContent{
+        margin:5px 0px;
+        font-size:12px;
+      }
+      .bottom{
+        margin-bottom:5px;
+      }
+    }
+
+  }
+
+}
+

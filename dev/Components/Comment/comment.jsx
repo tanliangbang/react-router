@@ -1,9 +1,11 @@
-import './style.css'
+import './style.scss'
 import React, { Component, PropTypes } from 'react'
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { Router, Route, IndexRoute, browserHistory, Link } from 'react-router';
 import {reduxForm,Field} from 'redux-form';
+import { Tool, merged } from '../../Tool';
+
 
 import * as userAction from '../../actions/user';
 
@@ -11,18 +13,29 @@ export  class comments extends Component {
     constructor(props) {
         super(props);
         this.commentSubmit = this.commentSubmit.bind(this);
+
     }
     commentSubmit(){
-        console.log("aaaaaaaa")
+        var topic_id = this.props.topicId;
+
         if(this.props.userInfo==null){
             this.props.actions.isShowLogin(true);
         }
+        if(this.refs.commentTextarea.value==""){
+            return;
+        }
+
+        Tool.post(`/api/comments/comment`, {topic_id:topic_id,content:this.refs.commentTextarea.value}, (res) => {
+        }, (error) => {
+            console.log('error: ', error)
+        });
+
     }
 
     componentDidMount() {
         $('.faceImg').qqFace({
             id : 'facebox',
-            assign:'saytext',
+            assign:'commentTextarea',
             path:'/img/arclist/'	//表情存放的路径
 
         });
@@ -35,9 +48,10 @@ export  class comments extends Component {
 
             <div className="com_form" >
                 <form onSubmit={handleSubmit(this.commentSubmit)}>
-                   <Field className="form-control commentTextArea" component="textarea" id="saytext" name="saytext"></Field>
+                   <textarea ref="commentTextarea" className="form-control commentTextArea"  id="commentTextarea" name="commentTextarea"></textarea>
                     <div>
                         <a className="faceImg" title="插入表情"></a>    <button  className="commentBtn" type="submit" >确&nbsp;&nbsp;&nbsp;&nbsp;定</button>
+                        <br className="clear"/>
                     </div>
                 </form>
 

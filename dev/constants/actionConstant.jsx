@@ -4,3 +4,6 @@ export const SET_USER_INFO = 'SET_USER_INFO';
 export const SET_LOGIN_MASK = 'SET_LOGIN_MASK';
 export const SET_LOGIN_FAIL = 'SET_LOGIN_FAIL';
 export const SET_REGISTER_FAIL = 'SET_REGISTER_FAIL';
+
+//评论
+export const GET_COMMENT_LIST = 'GET_COMMENT_LIST';
