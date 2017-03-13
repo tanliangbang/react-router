@@ -30,8 +30,8 @@ export const getCommentList = (topic_id,start:start,size:size) => {
 export const comment = (topic_id,content) => {
     return dispatch => {
         Tool.post(`/api/comments/comment`, {topic_id:topic_id,content:content}, (res) => {
-            dispatch(getCommentList(topic_id));
             dispatch(commentsSuccess())
+            dispatch(getCommentList(topic_id))
         }, (error) => {
             console.log('error: ', error)
         });

@@ -9,7 +9,6 @@ const initialState = {
         list:[],
     },
     commentSuccess:false
-
 }
 
 

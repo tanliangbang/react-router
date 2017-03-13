@@ -24,6 +24,13 @@ export  class comments extends Component {
 
     }
 
+    componentDidUpdate(){
+        console.log(this.props)
+        if(this.props.commentSuccess){
+            this.refs.commentTextarea.value="";
+        }
+    }
+
     componentDidMount() {
         $('.faceImg').qqFace({
             id : 'facebox',
