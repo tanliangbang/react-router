@@ -8,77 +8,59 @@ import { Tool, merged } from '../../Tool';
 
 
 import * as userAction from '../../actions/user';
-import * as commentAction from '../../actions/comment';
 
 export  class commentList extends Component {
     constructor(props) {
         super(props);
     }
-
-    componentDidMount() {
-        if(this.props.commentList.list.length<=0){
-            this.props.actions.getCommentList()
-        }
-    }
-
-
     render() {
         const { commentList ,actions} = this.props;
-        return (
-          <div className="commentList">
-              <div className="commentListTitle">评论列表</div>
-              <ul>
-                  {
-                      this.props.commentList.list.map((item, index) => {
-                          return <ListItem  actions={actions} key={item.id} {...item} />
-                      })
-                  }
-              </ul>
-          </div>
-        );
-    }
+            return (
+                <div className="commentList">
+                    <div className="commentListTitle">评论列表</div>
+                    <ul>
+                        {
+                            this.props.commentList.list.map((item, index) => {
+                                return <ListItem currId={this.props.params.id}  actions={actions} key={item.id} {...item} />
+                            })
+                        }
+                    </ul>
+                </div>
+            );
 
+        }
 }
 
 
-class ListItem extends React.Component {
+class ListItem extends Component {
 
     render() {
-        console.log(this.props)
-        const {actions} = this.props;
+            const {cTime,content,user,actions} = this.props;
+            if(this.props.topic_id==this.props.currId) {
+                return (
+                    <li>
+                        <div className="top">
+                            <div className="fl">{this.props.user.userName}</div>
+                            <div className="fr">{Tool.formatDate(this.props.cTime)}</div>
+                            <br className="clear"/>
+                        </div>
 
-        return (
-             <li>
-                 <div className="top">
-                     <div className="fl">首都师范大学</div>
-                     <div className="fr">2017-3-4 8:50</div>
-                     <br className="clear"/>
-                 </div>
-                 <p className="cContent">就是肯定就放开手的减肥快圣诞节疯狂送到家附近开始对方</p>
-                 <div className="bottom">
-                     <div className="oparetion fr">回复</div>
-                     <br className="clear"/>
-                 </div>
-             </li>
+                        <p className="cContent" dangerouslySetInnerHTML={{__html: Tool.replace_em(this.props.content)}}></p>
+                        <div className="bottom">
+                            <div className="oparetion fr">回复</div>
+                            <br className="clear"/>
+                        </div>
+                    </li>
+                );
+            }
+            return (
+                <div></div>
+            )
 
-        );
+
     }
 
 }
 
 
-
-export default  connect((state)=>{
-    return {
-        userInfo:state.user.userInfo,
-        commentList:state.comment.commentList,
-        path: state.routing.locationBeforeTransitions.pathname
-    }
-}, (dispatch)=>{
-    const allAction =Object.assign({},commentAction,userAction);
-    return {
-        actions: bindActionCreators(allAction, dispatch)
-    }
-})(reduxForm({
-    form: 'commentForm',
-})(commentList))
+export default  commentList;

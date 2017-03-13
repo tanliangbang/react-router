@@ -24,7 +24,7 @@ export  class htmlRes extends Component {
 
 }
 
-class ListItem extends React.Component {
+class ListItem extends Component {
     constructor(props) {
         super(props);
         this.state = {};

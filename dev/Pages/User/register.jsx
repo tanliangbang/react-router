@@ -39,7 +39,6 @@ export  class Register extends Component {
 
     componentDidUpdate(){
         this.props.actions.getHtmlList(0,10);
-        console.log(this.props.registerState==1 &&  this.state.isInterval);
         if(this.props.registerState==1 && this.state.isInterval){
             var time = 3;
             var toInterval =  setInterval(function(){

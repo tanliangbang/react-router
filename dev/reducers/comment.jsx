@@ -6,8 +6,10 @@ import * as actionConstant from '../constants/actionConstant';
 const initialState = {
     commentList:{
         count:0,
-        list:[]
+        list:[],
     },
+    commentSuccess:false
+
 }
 
 
@@ -19,6 +21,10 @@ export default function comment(state = initialState, action) {
                     count:action.count,
                     list:action.list
                 }
+            });
+        case actionConstant.COMMENT_SUCCESS:
+            return Object.assign({}, state, {
+                commentSuccess:action.commentSuccess
             });
         default : return state;
     }

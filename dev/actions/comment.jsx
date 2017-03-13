@@ -11,17 +11,33 @@ export const innerComments = (response) => ({
 })
 
 
+export const commentsSuccess = () => ({
+    type: actionConstant.COMMENT_SUCCESS,
+    commentSuccess: true,
+})
 
 
-export const getCommentList = (start:start,size:size) => {
+export const getCommentList = (topic_id,start:start,size:size) => {
     return dispatch => {
-        Tool.get(`/api/comments/commentList`, {start:start,size:size}, (res) => {
+        Tool.get(`/api/comments/commentList`, {topic_id:topic_id,start:start,size:size}, (res) => {
             dispatch(innerComments(res))
         }, (error) => {
             console.log('error: ', error)
         });
     }
 }
+
+export const comment = (topic_id,content) => {
+    return dispatch => {
+        Tool.post(`/api/comments/comment`, {topic_id:topic_id,content:content}, (res) => {
+            dispatch(getCommentList(topic_id));
+            dispatch(commentsSuccess())
+        }, (error) => {
+            console.log('error: ', error)
+        });
+    }
+}
+
 
 
 

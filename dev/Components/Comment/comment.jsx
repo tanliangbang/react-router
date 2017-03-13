@@ -6,9 +6,6 @@ import { Router, Route, IndexRoute, browserHistory, Link } from 'react-router';
 import {reduxForm,Field} from 'redux-form';
 import { Tool, merged } from '../../Tool';
 
-
-import * as userAction from '../../actions/user';
-
 export  class comments extends Component {
     constructor(props) {
         super(props);
@@ -16,19 +13,14 @@ export  class comments extends Component {
 
     }
     commentSubmit(){
-        var topic_id = this.props.topicId;
-
+        let topic_id = this.props.htmlDetail.id;
         if(this.props.userInfo==null){
             this.props.actions.isShowLogin(true);
         }
         if(this.refs.commentTextarea.value==""){
             return;
         }
-
-        Tool.post(`/api/comments/comment`, {topic_id:topic_id,content:this.refs.commentTextarea.value}, (res) => {
-        }, (error) => {
-            console.log('error: ', error)
-        });
+        this.props.actions.comment(topic_id,this.refs.commentTextarea.value);
 
     }
 
@@ -37,13 +29,13 @@ export  class comments extends Component {
             id : 'facebox',
             assign:'commentTextarea',
             path:'/img/arclist/'	//表情存放的路径
-
         });
     }
 
 
     render() {
         const {handleSubmit} = this.props;
+        console.log(this.props)
         return (
 
             <div className="com_form" >
@@ -63,16 +55,6 @@ export  class comments extends Component {
 
 
 
-export default  connect((state)=>{
-    return {
-        userInfo:state.user.userInfo,
-        path: state.routing.locationBeforeTransitions.pathname
-    }
-}, (dispatch)=>{
-    const allAction =Object.assign({},userAction);
-    return {
-        actions: bindActionCreators(allAction, dispatch)
-    }
-})(reduxForm({
+export default  reduxForm({
     form: 'commentForm',
-})(comments))
+})(comments);
