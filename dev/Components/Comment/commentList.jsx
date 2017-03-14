@@ -47,6 +47,7 @@ class ListItem extends Component {
         var commentShow = !this.state.commentShow;
         var reply_id = reply_id?reply_id:0;
         var from_uid = from_uid?from_uid:0;
+        console.log(from_uid);
         this.setState({
             commentShow:commentShow,
             reply_id:reply_id,
@@ -56,6 +57,7 @@ class ListItem extends Component {
     render() {
             const {cTime,content,user,actions,id,reply} = this.props;
             const {commentShow,reply_id,from_uid} = this.state;
+            console.log(this.props)
             if(this.props.topic_id==this.props.params.id) {
                 return (
                     <li>
@@ -68,7 +70,7 @@ class ListItem extends Component {
                         <p className="cContent" dangerouslySetInnerHTML={{__html: Tool.replace_em(content)}}></p>
                         <div className="bottom">
                                 <div>
-                                    <a className="oparetion fr replyBtn" onClick={this.replyShow.bind(this,id)}>回复</a>
+                                    <a className="oparetion fr replyBtn" onClick={this.replyShow.bind(this,id,this.props.from_uid)}>回复</a>
                                     <br className="clear"/>
                                 </div>
 
@@ -77,7 +79,7 @@ class ListItem extends Component {
                                         return (
                                             <div className="reply">
                                                 <div className="top">
-                                                    <div className="fl">{user.userName}</div>
+                                                    <div className="fl">{item.user.userName+"回复"+item.to_user.userName}</div>
                                                     <div className="fr">{Tool.formatDate(item.cTime)}</div>
                                                     <br className="clear"/>
                                                 </div>
