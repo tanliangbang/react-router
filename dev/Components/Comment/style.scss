@@ -70,9 +70,24 @@
         margin:5px 0px;
         font-size:12px;
         line-height: 25px;
+        position:relative;
       }
       .bottom{
         margin-bottom:10px;
+      }
+      .replyBtn{
+        cursor: pointer;
+        margin-bottom:10px;
+      }
+      .reply{
+        background:#F5F7FA;
+        padding:5px 20px;
+      }
+      .replyBtn1{
+        font-size:12px;
+        position:absolute;right:20px;
+        bottom:0px;
+        cursor: pointer;
       }
     }
 

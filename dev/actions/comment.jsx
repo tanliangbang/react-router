@@ -27,9 +27,9 @@ export const getCommentList = (topic_id,start:start,size:size) => {
     }
 }
 
-export const comment = (topic_id,content) => {
+export const comment = (topic_id,content,to_uid,reply_id) => {
     return dispatch => {
-        Tool.post(`/api/comments/comment`, {topic_id:topic_id,content:content}, (res) => {
+        Tool.post(`/api/comments/comment`, {topic_id:topic_id,content:content,to_uid:to_uid,reply_id:reply_id}, (res) => {
             dispatch(commentsSuccess())
             dispatch(getCommentList(topic_id))
         }, (error) => {
