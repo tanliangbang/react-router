@@ -4,7 +4,7 @@
 * @date : 2016-03-01
 */
 let Conf = {
-  pageAnimate : 'fadeInLeft animated' 
+  pageAnimate : 'bounceInRight animated'
 }
 //配置信息
 module.exports = Conf;

@@ -1,4 +1,4 @@
-import './../../Components/htmlRes/style.css'
+import './../../Components/htmlRes/style.scss'
 import React, { Component, PropTypes } from 'react'
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
@@ -43,7 +43,7 @@ export class Detail extends Component {
                      <div className="col-lg-8 htmlResDetail">
                          <div className="htmlResTitle">{content.title}</div>
 
-                         <div  dangerouslySetInnerHTML={{__html: content.content}}></div>
+                         <div className="detailContent"  dangerouslySetInnerHTML={{__html: content.content}}></div>
                          <hr/>
                          <Comments {...this.props}></Comments>
                          <CommentList {...this.props} ></CommentList>

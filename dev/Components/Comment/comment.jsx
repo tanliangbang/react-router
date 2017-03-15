@@ -50,7 +50,7 @@ export  class comments extends Component {
 
             <div className="com_form" >
                 <form onSubmit={handleSubmit(this.commentSubmit)}>
-                   <textarea ref="commentTextarea" className="form-control commentTextArea"  id={textVal} name={textVal}></textarea>
+                   <textarea ref="commentTextarea" className="form-control commentTextArea" placeholder={this.props.to_user?"回复: "+this.props.to_user.userName:""}  id={textVal} name={textVal}></textarea>
                     <div>
                         <a className={faceClass} title="插入表情"></a>    <button  className="commentBtn" type="submit" >确&nbsp;&nbsp;&nbsp;&nbsp;定</button>
                         <br className="clear"/>

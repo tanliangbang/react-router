@@ -8,6 +8,7 @@ import * as userAction from '../../actions/user';
 import List from '../../Components/htmlRes/list';
 import {PageList} from '../../MTUI/index';
 import PageListDom from '../Components/plus/PageListDom'
+import conf from '../Conf/Conf'
 
 export  class htmlRes extends Component {
     constructor(props) {
@@ -34,7 +35,6 @@ export  class htmlRes extends Component {
         });
 
     }
-
     render() {
         const { htmlList ,actions} = this.props;
         return (
