@@ -36,23 +36,28 @@ export  class htmlRes extends Component {
 
     }
     render() {
-        const { htmlList ,actions} = this.props;
-        return (
-            <div className="row mtop60" >
-                <div className="col-md-8">
-                      <List actions={actions} {...htmlList}></List>
-                     <PageList jumpShow={false} selectShow={false}  id="pageList1" count={htmlList.count} showPage="7" callback={this.setCallBack}/>
+        const { htmlList ,actions,loading} = this.props;
+        console.log(this.props.loading)
+        if(this.props.loading){
+            return (
+                <div className="row mtop60" >
+                    <div className="col-md-8">
+                        <List actions={actions} {...htmlList}></List>
+                        <PageList jumpShow={false} selectShow={false}  id="pageList1" count={htmlList.count} showPage="7" callback={this.setCallBack}/>
+                    </div>
+                    <div className="col-md-4 right">
+                        <img className="advertiseImg" src="img/3.jpg" />
+                        <img className="advertiseImg" src="img/3.jpg" />
+                        <img className="advertiseImg" src="img/3.jpg" />
+                        <img className="advertiseImg" src="img/3.jpg" />
+                        <img className="advertiseImg" src="img/3.jpg" />
+                    </div>
+                </div>
+            );
+        }else{
+            return <div></div>
+        }
 
-                </div>
-                <div className="col-md-4 right">
-                    <img className="advertiseImg" src="img/3.jpg" />
-                    <img className="advertiseImg" src="img/3.jpg" />
-                    <img className="advertiseImg" src="img/3.jpg" />
-                    <img className="advertiseImg" src="img/3.jpg" />
-                    <img className="advertiseImg" src="img/3.jpg" />
-                </div>
-            </div>
-        );
     }
 
 }
@@ -61,7 +66,10 @@ export  class htmlRes extends Component {
 
 
 export default  connect((state)=>{
-    return { htmlList: state.htmlRes.htmlList }
+    return {
+        htmlList: state.htmlRes.htmlList,
+        loading:state.user.loading
+    }
 }, (dispatch)=>{
     const allAction =Object.assign({},htmlResAction,userAction);
     return {

@@ -15,8 +15,6 @@ let initTestList = {
 export default function htmlRes(state = initTestList, action) {
     switch (action.type) {
         case actionConstant.INIT_HTML_LIST:
-
-
             return Object.assign({}, state, {
                 htmlList:{
                     count:action.count,

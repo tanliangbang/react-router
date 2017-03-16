@@ -16,12 +16,18 @@ export const initHtmlDetail = (response) => ({
 })
 
 
+export const setLoading = (isLoading) => ({
+    type: actionConstant.LOADING,
+    loading: isLoading
+})
+
 
 
 export const getHtmlList = (start,size) => {
     return dispatch => {
         Tool.get(`/api/res/getResContentList`, {name:"jsRes",start:start,size:size}, (res) => {
             dispatch(initHtmlList(res))
+            dispatch(setLoading(true))
         }, (error) => {
             console.log('error: ', error)
         });

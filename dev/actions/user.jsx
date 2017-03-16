@@ -8,6 +8,13 @@ export function setUserInfo(data) {
     }
 }
 
+export function setLoading(isLoading) {
+    return {
+        type: actionConstant.LOADING,
+        loading :isLoading
+    }
+}
+
 export function isShowLogin(isShowLogin) {
     return {
         type: actionConstant.SET_LOGIN_MASK,
@@ -53,6 +60,7 @@ export const login = (username,password) => {
         });
     }
 }
+
 
 
 export const register = (user) => {

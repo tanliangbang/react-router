@@ -56,11 +56,8 @@ class Menu extends Component {
                 </div>
                 <div className="navbar-collapse collapse" role="navigation" aria-expanded="false" >
                     <ul className="nav navbar-nav">
-                        <li><Link onlyActiveOnIndex={true} activeClassName="active" to={HOME_PATH+"/htmlRes"}>测试专用</Link></li>
-                        <li><Link onlyActiveOnIndex={true} activeClassName="active" to={HOME_PATH+"/reduxdom"}>Redux Dom {this.props.tips==0?"":<span className="tips">{this.props.tips}</span>}</Link></li>
-                        <li><Link onlyActiveOnIndex={true} activeClassName="active" to={HOME_PATH+"/start"}>开始使用</Link></li>
-                        <li><Link onlyActiveOnIndex={true} activeClassName="active" to={HOME_PATH+"/components/plus"}>组件库</Link></li>
-                        <li><Link onlyActiveOnIndex={true} activeClassName="active" to={HOME_PATH+"/help"}>帮助</Link></li>
+                        <li><Link onlyActiveOnIndex={true} activeClassName="active" to={HOME_PATH+"/htmlRes"}>html资源</Link></li>
+                        <li><Link onlyActiveOnIndex={true} activeClassName="active" to={HOME_PATH+"/reduxdom"}>js资源 </Link></li>
                     </ul>
                     <ul className="navbar-right loginBtn">
                         {loginNav}

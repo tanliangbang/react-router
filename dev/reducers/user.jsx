@@ -8,11 +8,17 @@ const initialState = {
   isShowLogin:false,
   loginFail:false,
   registerState:0,
+  loading:false
 }
 
 
 export default function user(state = initialState, action) {
+
 	switch(action.type) {
+		case actionConstant.LOADING:
+			return Object.assign({}, state, {
+				loading:action.loading
+			});
 		case actionConstant.SET_USER_INFO:
 			return Object.assign({}, state, {
 				userInfo:action.userInfo

@@ -5,6 +5,10 @@ export const SET_LOGIN_MASK = 'SET_LOGIN_MASK';
 export const SET_LOGIN_FAIL = 'SET_LOGIN_FAIL';
 export const SET_REGISTER_FAIL = 'SET_REGISTER_FAIL';
 
+export const LOADING = 'LOADING';
+
+
 //评论
 export const GET_COMMENT_LIST = 'GET_COMMENT_LIST';
 export const COMMENT_SUCCESS = 'COMMENT_SUCCESS';
+
