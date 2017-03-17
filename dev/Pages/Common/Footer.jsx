@@ -9,9 +9,9 @@ const Footer = React.createClass({
   render() {
     return (
         <div className="footer">
-            作者：Mantou&nbsp;&nbsp;&nbsp;
-            QQ：676015863&nbsp;&nbsp;&nbsp;
-            一款永久免费的React前端组件库
+            作者：谭亮邦&nbsp;&nbsp;&nbsp;
+            QQ：648103576&nbsp;&nbsp;&nbsp;
+            程序员技术文章网站 本站展示页用的是react-router-redux 文章管理用的还angular 后端用的是node js
         </div>
     );
   }

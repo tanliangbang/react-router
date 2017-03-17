@@ -1,4 +1,4 @@
-import './style.css';
+import './style.scss';
 import React,{Component, PropTypes} from 'react'
 import { connect} from 'react-redux'
 import { Link } from 'react-router'
@@ -57,7 +57,7 @@ class Menu extends Component {
                 <div className="navbar-collapse collapse" role="navigation" aria-expanded="false" >
                     <ul className="nav navbar-nav">
                         <li><Link onlyActiveOnIndex={true} activeClassName="active" to={HOME_PATH+"/htmlRes"}>html资源</Link></li>
-                        <li><Link onlyActiveOnIndex={true} activeClassName="active" to={HOME_PATH+"/reduxdom"}>js资源 </Link></li>
+                        <li><Link onlyActiveOnIndex={true} activeClassName="active" to={HOME_PATH+"/jsRes"}>js资源 </Link></li>
                     </ul>
                     <ul className="navbar-right loginBtn">
                         {loginNav}

@@ -130,7 +130,6 @@ const PageList = React.createClass({
 	iniLiDom(this_nowpage, count){
 		var pagecount = Math.ceil(count/eachPageCount);//计算有多少页
 		var arr = [];
-
 		//渲染数据
 		for(var i=0; i < pagecount; i++){
 			if(this_nowpage == (i+1)){
@@ -185,7 +184,7 @@ const PageList = React.createClass({
 	//每次渲染后执行
 	componentWillReceiveProps(nextProps){
 	 	//返回true 执行动画，如果count没变，不用重新渲染pages
-		if(nextProps.count != this.props.count){
+		if((nextProps.count != this.props.count) || this.state.pages==null){
 			this.iniLiDom(nowpage, nextProps.count , this.props.eachPageCount);
 		}
 	},
@@ -197,7 +196,7 @@ const PageList = React.createClass({
 
 	//渲染数据
 	render(){
-
+		console.log()
 		var selectProp = {
 	        width : '90px',
 	        value : eachPageCount,

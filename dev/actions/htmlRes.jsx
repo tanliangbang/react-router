@@ -23,9 +23,10 @@ export const setLoading = (isLoading) => ({
 
 
 
-export const getHtmlList = (start,size) => {
+export const getHtmlList = (start,size,name) => {
     return dispatch => {
-        Tool.get(`/api/res/getResContentList`, {name:"jsRes",start:start,size:size}, (res) => {
+        dispatch(setLoading(false))
+        Tool.get(`/api/res/getResContentList`, {name:name,start:start,size:size}, (res) => {
             dispatch(initHtmlList(res))
             dispatch(setLoading(true))
         }, (error) => {
@@ -35,9 +36,9 @@ export const getHtmlList = (start,size) => {
 }
 
 
-export const getHtmlDetail = (id) => {
+export const getHtmlDetail = (id,name) => {
     return dispatch => {
-        Tool.get(`/api/res/getResContentById`, {name:"jsRes",id:id}, (response) => {
+        Tool.get(`/api/res/getResContentById`, {name:name,id:id}, (response) => {
             dispatch(initHtmlDetail(response.data[0]))
         }, (error) => {
             console.log('error: ', error)

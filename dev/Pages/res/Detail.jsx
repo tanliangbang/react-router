@@ -1,4 +1,4 @@
-import './../../Components/htmlRes/style.scss'
+import '../../Components/list/style.scss'
 import React, { Component, PropTypes } from 'react'
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
@@ -20,14 +20,14 @@ export class Detail extends Component {
 
     componentWillReceiveProps(nextProps) {
         if (nextProps.params.id != this.props.params.id) {
-            this.props.actions.getHtmlDetail(this.props.params.id);
+            this.props.actions.getHtmlDetail(this.props.params.id,"htmlRes");
             this.props.actions.getCommentList(this.props.params.id)
         }
     }
 
     componentDidMount() {
         window.scrollTo(0,0);
-        this.props.actions.getHtmlDetail(this.props.params.id);
+        this.props.actions.getHtmlDetail(this.props.params.id,"htmlRes");
         this.props.actions.getCommentList(this.props.params.id)
     }
 

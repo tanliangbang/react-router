@@ -48,11 +48,7 @@ class ListItem extends Component {
     replyShow(reply_id,from_uid,to_user,curr_id){
         var reply_id = reply_id?reply_id:0;
         var from_uid = from_uid?from_uid:0;
-<<<<<<< HEAD
         var curr_id = curr_id==this.state.curr_id?0:curr_id
-=======
-        console.log(from_uid);
->>>>>>> 77ebe015c5b6e91aa99f392e352b0ed8cbd04f5b
         this.setState({
             reply_id:reply_id,
             from_uid:from_uid,
@@ -62,15 +58,9 @@ class ListItem extends Component {
     }
     render() {
             const {cTime,content,user,actions,id,reply} = this.props;
-<<<<<<< HEAD
             const {reply_id,from_uid,to_user,curr_id} = this.state;
 
         if(this.props.topic_id==this.props.params.id) {
-=======
-            const {commentShow,reply_id,from_uid} = this.state;
-            console.log(this.props)
-            if(this.props.topic_id==this.props.params.id) {
->>>>>>> 77ebe015c5b6e91aa99f392e352b0ed8cbd04f5b
                 return (
                     <li>
                         <div className="top">
@@ -82,7 +72,6 @@ class ListItem extends Component {
                         <p className="cContent" dangerouslySetInnerHTML={{__html: Tool.replace_em(content)}}></p>
                         <div className="bottom">
                                 <div>
-<<<<<<< HEAD
                                     <a className="oparetion fr replyBtn" onClick={this.replyShow.bind(this,id,this.props.from_uid,user,id)}>回复</a>
                                     <br className="clear"/>
                                 </div>
@@ -91,26 +80,6 @@ class ListItem extends Component {
                                             <Comments {...this.props} id={id} reply_id ={reply_id} from_uid={from_uid} to_user={to_user} ></Comments>
                                         ):(
                                             null
-=======
-                                    <a className="oparetion fr replyBtn" onClick={this.replyShow.bind(this,id,this.props.from_uid)}>回复</a>
-                                    <br className="clear"/>
-                                </div>
-
-                                {
-                                    this.props.reply.list.map((item, index) => {
-                                        return (
-                                            <div className="reply">
-                                                <div className="top">
-                                                    <div className="fl">{item.user.userName+"回复"+item.to_user.userName}</div>
-                                                    <div className="fr">{Tool.formatDate(item.cTime)}</div>
-                                                    <br className="clear"/>
-                                                </div>
-                                                <div className="cContent" >
-                                                    <p dangerouslySetInnerHTML={{__html: Tool.replace_em(item.content)}}></p>
-                                                    <a className="replyBtn1" onClick={this.replyShow.bind(this,id,item.from_uid)}>回复</a>
-                                                </div>
-                                            </div>
->>>>>>> 77ebe015c5b6e91aa99f392e352b0ed8cbd04f5b
                                         )
                                     }
 

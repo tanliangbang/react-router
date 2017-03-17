@@ -21,91 +21,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Index.jsx" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dev/Pages/htmlRes/Index.jsx">
+      <file leaf-file-name="HtmlRes.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev/Pages/res/HtmlRes.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33333334">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="44" column="46" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev/Components/htmlRes/style.scss">
+        <entry file="file://$PROJECT_DIR$/dev/Components/list/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.7083333">
-              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+            <state vertical-scroll-proportion="-6.854839">
+              <caret line="74" column="5" selection-start-line="72" selection-start-column="4" selection-end-line="74" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="htmlRes.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev/actions/htmlRes.jsx">
+      <file leaf-file-name="commentList.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev/Components/Comment/commentList.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="36" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="36" />
+              <caret line="93" column="13" selection-start-line="93" selection-start-column="13" selection-end-line="93" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev/reducers/user.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.035714">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev/actions/user.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.866667">
-              <caret line="58" column="23" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="comment.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev/reducers/comment.jsx">
+      <file leaf-file-name="jsRes.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev/Components/list/jsRes.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+              <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="htmlRes.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev/reducers/htmlRes.jsx">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+            <state vertical-scroll-proportion="-20.588236">
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev/reducers/index.jsx">
+      <file leaf-file-name="JsRes.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev/Pages/res/JsRes.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+              <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="actionConstant.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev/constants/actionConstant.jsx">
+      <file leaf-file-name="htmlRes.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dev/Components/list/htmlRes.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.34640524">
+              <caret line="45" column="52" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Routers.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev/Routers.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-38.392857">
+              <caret line="46" column="24" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Menu.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev/Pages/Common/Menu.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+              <caret line="59" column="105" selection-start-line="59" selection-start-column="105" selection-end-line="59" selection-end-column="105" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Detail.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev/Pages/res/Detail.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="29" column="70" selection-start-line="29" selection-start-column="70" selection-end-line="29" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -126,16 +136,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dev/Pages/Components/plus/PopupDom.jsx" />
-        <option value="$PROJECT_DIR$/dev/Pages/Test/Detail.jsx" />
-        <option value="$PROJECT_DIR$/dev/Pages/Test/style.css" />
-        <option value="$PROJECT_DIR$/dev/containers/actionConstant.jsx" />
-        <option value="$PROJECT_DIR$/dev/reducers/test.jsx" />
-        <option value="$PROJECT_DIR$/dev/actions/test.jsx" />
-        <option value="$PROJECT_DIR$/dev/Pages/Test/Index.jsx" />
-        <option value="$PROJECT_DIR$/dev/Pages/html/Index.jsx" />
-        <option value="$PROJECT_DIR$/dev/constants/testContainer.jsx" />
-        <option value="$PROJECT_DIR$/dev/Pages/Start/Index.jsx" />
         <option value="$PROJECT_DIR$/build/libs/js/bootstrap.js" />
         <option value="$PROJECT_DIR$/build/libs/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/dev/Pages/htmlRes/style.css" />
@@ -147,7 +147,6 @@
         <option value="$PROJECT_DIR$/dev/Pages/App.jsx" />
         <option value="$PROJECT_DIR$/dev/Pages/Components/plus/PageListDom.jsx" />
         <option value="$PROJECT_DIR$/dev/reducers/index.jsx" />
-        <option value="$PROJECT_DIR$/dev/style.css" />
         <option value="$PROJECT_DIR$/dev/Components/comment.jsx" />
         <option value="$PROJECT_DIR$/dev/Components/commont/comment.jsx" />
         <option value="$PROJECT_DIR$/build/libs/js/jquery.qqFace.js" />
@@ -158,25 +157,36 @@
         <option value="$PROJECT_DIR$/dev/Tool.jsx" />
         <option value="$PROJECT_DIR$/dev/index.html" />
         <option value="$PROJECT_DIR$/dev/Pages/User/register.jsx" />
-        <option value="$PROJECT_DIR$/dev/Routers.jsx" />
         <option value="$PROJECT_DIR$/dev/index.jsx" />
         <option value="$PROJECT_DIR$/dev/reducers/comment.jsx" />
         <option value="$PROJECT_DIR$/dev/actions/comment.jsx" />
         <option value="$PROJECT_DIR$/dev/Components/Comment/style.scss" />
         <option value="$PROJECT_DIR$/dev/Components/htmlRes/style.css" />
-        <option value="$PROJECT_DIR$/dev/Pages/htmlRes/Detail.jsx" />
         <option value="$PROJECT_DIR$/dev/Components/Comment/comment.jsx" />
-        <option value="$PROJECT_DIR$/dev/Components/Comment/commentList.jsx" />
         <option value="$PROJECT_DIR$/dev/Pages/Conf/Conf.jsx" />
-        <option value="$PROJECT_DIR$/dev/Pages/Common/Menu.jsx" />
         <option value="$PROJECT_DIR$/dev/Components/htmlRes/style.scss" />
-        <option value="$PROJECT_DIR$/dev/Components/htmlRes/list.jsx" />
         <option value="$PROJECT_DIR$/dev/constants/actionConstant.jsx" />
         <option value="$PROJECT_DIR$/dev/reducers/htmlRes.jsx" />
         <option value="$PROJECT_DIR$/dev/actions/user.jsx" />
-        <option value="$PROJECT_DIR$/dev/actions/htmlRes.jsx" />
         <option value="$PROJECT_DIR$/dev/reducers/user.jsx" />
+        <option value="$PROJECT_DIR$/dev/Components/Comment/commentList.jsx" />
+        <option value="$PROJECT_DIR$/dev/MTUI/PageList.jsx" />
+        <option value="$PROJECT_DIR$/dev/Pages/Common/Footer.jsx" />
+        <option value="$PROJECT_DIR$/dev/Pages/Common/loading.jsx" />
+        <option value="$PROJECT_DIR$/dev/Pages/Common/style.scss" />
+        <option value="$PROJECT_DIR$/dev/actions/htmlRes.jsx" />
         <option value="$PROJECT_DIR$/dev/Pages/htmlRes/Index.jsx" />
+        <option value="$PROJECT_DIR$/dev/Pages/htmlRes/Detail.jsx" />
+        <option value="$PROJECT_DIR$/dev/Pages/res/Detail.jsx" />
+        <option value="$PROJECT_DIR$/dev/Routers.jsx" />
+        <option value="$PROJECT_DIR$/dev/Pages/Common/Menu.jsx" />
+        <option value="$PROJECT_DIR$/dev/Components/htmlRes/list.jsx" />
+        <option value="$PROJECT_DIR$/dev/Pages/res/JsRes.jsx" />
+        <option value="$PROJECT_DIR$/dev/Pages/res/HtmlRes.jsx" />
+        <option value="$PROJECT_DIR$/dev/style.css" />
+        <option value="$PROJECT_DIR$/dev/Components/list/jsRes.jsx" />
+        <option value="$PROJECT_DIR$/dev/Components/list/style.scss" />
+        <option value="$PROJECT_DIR$/dev/Components/list/htmlRes.jsx" />
       </list>
     </option>
   </component>
@@ -218,7 +228,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -287,7 +297,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="htmlRes" />
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -305,7 +315,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="constants" />
+              <option name="myItemId" value="Components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -323,13 +333,35 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="actions" />
+              <option name="myItemId" value="Components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="list" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mtui-react-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-router" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BUI" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -344,19 +376,19 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Apache\htdocs\reactProject\react-router\dev\Components\list" />
+      <recent name="E:\Apache\htdocs\reactProject\react-router\dev\Pages\res" />
+      <recent name="E:\Apache\htdocs\reactProject\react-router\dev\img" />
+      <recent name="E:\Apache\htdocs\reactProject\react-router\build\img" />
+      <recent name="E:\Apache\htdocs\reactProject\react-router\build\libs\js" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Apache\htdocs\reactProject\react-router\dev\Components\commont" />
       <recent name="E:\Apache\htdocs\reactProject\react-router\dev\Pages" />
       <recent name="E:\Apache\htdocs\reactProject\react-router\dev\Components\htmlRes" />
       <recent name="E:\Apache\htdocs\reactProject\react-router\dev\Components" />
       <recent name="E:\Apache\htdocs\reactProject\react-router\dev\containers" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Apache\htdocs\reactProject\react-router\dev\img" />
-      <recent name="E:\Apache\htdocs\reactProject\react-router\build\libs\js" />
-      <recent name="E:\Apache\htdocs\reactProject\react-router\build\img" />
-      <recent name="E:\Apache\htdocs\reactProject\react-router\dev\Components" />
-      <recent name="E:\Apache\htdocs\reactProject\react-router\build\libs\css" />
     </key>
   </component>
   <component name="RunManager">
@@ -423,7 +455,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -466,80 +498,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build/libs/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26985982">
-          <caret line="4" column="95826" selection-start-line="4" selection-start-column="95826" selection-end-line="4" selection-end-column="95826" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.382353">
-          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/jQuery.md5.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/Pages/Components/Index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/Pages/Index/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/Pages/App.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3540305">
-          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/Pages/Components/plus/PageListDom.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.13616557">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/MTUI/PageList.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/Pages/Index/Index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/img/timg.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/img/icons.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/redux-form/lib/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13616557">
@@ -572,7 +530,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -605,26 +562,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/Routers.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="65" column="47" selection-start-line="65" selection-start-column="40" selection-end-line="65" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dev/Pages/User/register.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="74" column="28" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/Pages/htmlRes/Detail.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -645,14 +586,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dev/Pages/Components/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/Pages/Common/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -716,14 +649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/Components/Comment/commentList.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dev/Pages/Conf/Conf.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -732,35 +657,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/Pages/Common/Menu.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59912854">
-          <caret line="59" column="70" selection-start-line="59" selection-start-column="70" selection-end-line="59" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.65625">
-          <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/Components/htmlRes/list.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dev/store/configureStore.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -768,7 +668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="50" selection-start-line="0" selection-start-column="50" selection-end-line="0" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -788,18 +687,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/reducers/htmlRes.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build/js/917d0568.index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3438202">
           <caret line="1" column="15294" selection-start-line="1" selection-start-column="15294" selection-end-line="1" selection-end-column="15294" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/reducers/user.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/actions/user.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="58" column="23" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -812,10 +719,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/Components/htmlRes/style.scss">
+    <entry file="file://$PROJECT_DIR$/dev/MTUI/PageList.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.7083333">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+        <state vertical-scroll-proportion="9.74138">
+          <caret line="190" column="0" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/img/timg.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/MTUI/img/loading.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/BUI/Mask.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/BUI/Tabs.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/BUI/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="11.5">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/Pages/Common/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21135266">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/Pages/Common/loading.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27233115">
+          <caret line="10" column="39" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="39" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/Pages/Common/codemirror.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="7" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/Pages/Common/Footer.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/reducers/htmlRes.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -823,31 +810,87 @@
     <entry file="file://$PROJECT_DIR$/dev/actions/htmlRes.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="36" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="36" />
+          <caret line="40" column="57" selection-start-line="40" selection-start-column="57" selection-end-line="40" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/reducers/user.jsx">
+    <entry file="file://$PROJECT_DIR$/dev/Pages/res/Detail.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.035714">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="70" selection-start-line="29" selection-start-column="70" selection-end-line="29" selection-end-column="70" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/actions/user.jsx">
+    <entry file="file://$PROJECT_DIR$/dev/Routers.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.866667">
-          <caret line="58" column="23" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="23" />
+        <state vertical-scroll-proportion="-38.392857">
+          <caret line="46" column="24" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/Pages/htmlRes/Index.jsx">
+    <entry file="file://$PROJECT_DIR$/dev/Pages/Common/Menu.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="105" selection-start-line="59" selection-start-column="105" selection-end-line="59" selection-end-column="105" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/Pages/res/JsRes.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/Components/list/jsRes.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.588236">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/Components/list/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.854839">
+          <caret line="74" column="5" selection-start-line="72" selection-start-column="4" selection-end-line="74" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/Components/Comment/commentList.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="93" column="13" selection-start-line="93" selection-start-column="13" selection-end-line="93" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/Pages/res/HtmlRes.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="44" column="46" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/Components/list/htmlRes.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34640524">
+          <caret line="45" column="52" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
           <folding />
         </state>
       </provider>

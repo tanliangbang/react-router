@@ -5,10 +5,11 @@ import { Router, Route, IndexRoute, browserHistory, Link } from 'react-router';
 import { Tool, merged } from '../../Tool';
 import * as htmlResAction from '../../actions/htmlRes';
 import * as userAction from '../../actions/user';
-import List from '../../Components/htmlRes/list';
+import List from '../../Components/list/htmlRes';
 import {PageList} from '../../MTUI/index';
 import PageListDom from '../Components/plus/PageListDom'
 import conf from '../Conf/Conf'
+import Loading from '../Common/loading'
 
 export  class htmlRes extends Component {
     constructor(props) {
@@ -27,7 +28,7 @@ export  class htmlRes extends Component {
     setCallBack (nowpage,eachPageCount){
         //模拟ajax请求
         var start = (nowpage-1)*eachPageCount
-        this.props.actions.getHtmlList(start,eachPageCount);
+        this.props.actions.getHtmlList(start,eachPageCount,"htmlRes");
         var count = this.props.htmlList.count;
         window.scrollTo(0,0)
         this.setState({
@@ -37,26 +38,27 @@ export  class htmlRes extends Component {
     }
     render() {
         const { htmlList ,actions,loading} = this.props;
-        console.log(this.props.loading)
-        if(this.props.loading){
             return (
-                <div className="row mtop60" >
-                    <div className="col-md-8">
-                        <List actions={actions} {...htmlList}></List>
-                        <PageList jumpShow={false} selectShow={false}  id="pageList1" count={htmlList.count} showPage="7" callback={this.setCallBack}/>
+                    <div className="row mtop60" >
+                        <div className="col-md-8" >
+                            <div className={this.props.loading?"":"none"}>
+                                <List  actions={actions} {...htmlList}></List>
+                                <PageList jumpShow={false} selectShow={false}  id="pageList1" count={htmlList.count} showPage="7" callback={this.setCallBack}/>
+                            </div>
+                            <div className={this.props.loading?"none":""}>
+                                <Loading></Loading>
+                            </div>
+
+                        </div>
+                        <div className="col-md-4 right">
+                            <img className="advertiseImg" src="img/3.jpg" />
+                            <img className="advertiseImg" src="img/3.jpg" />
+                            <img className="advertiseImg" src="img/3.jpg" />
+                            <img className="advertiseImg" src="img/3.jpg" />
+                            <img className="advertiseImg" src="img/3.jpg" />
+                        </div>
                     </div>
-                    <div className="col-md-4 right">
-                        <img className="advertiseImg" src="img/3.jpg" />
-                        <img className="advertiseImg" src="img/3.jpg" />
-                        <img className="advertiseImg" src="img/3.jpg" />
-                        <img className="advertiseImg" src="img/3.jpg" />
-                        <img className="advertiseImg" src="img/3.jpg" />
-                    </div>
-                </div>
             );
-        }else{
-            return <div></div>
-        }
 
     }
 

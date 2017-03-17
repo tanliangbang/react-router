@@ -17,13 +17,13 @@ export  class htmlRes extends Component {
     }
     render() {
         const { List ,actions} = this.props;
-        var items =  this.props.list.map((item, index) => {
-            return <ListItem  actions={actions} key={item.id} index={index} {...item} />
-        })
-
         return (
-                    <ul className="index-list" >
-                        {items}
+                    <ul className="htmlRes" >
+                        {
+                            this.props.list.map((item, index) => {
+                                return <ListItem  actions={actions} key={item.id} index={index} {...item} />
+                            })
+                        }
                     </ul>
         );
     }
@@ -39,9 +39,12 @@ class ListItem extends Component {
 
     render() {
         let item = this.props;
+
+        let style= {animation: "htmlAnimation 0.5s linear "+parseFloat(this.props.index*0.2)+"s",animationFillMode:"forwards" }
+        console.log(style)
         return (
             <Link to={`/htmlResDetail/${item.id}`} >
-                <div  className="testItem row my_class" style={{animation: "myfirst 0.5s linear "+this.props.index*0.2+"s",animationFillMode:"forwards"  }}>
+                <div  className="testItem row my_class" style={style}>
                     <div className="item">
                         <div className="row">
                             <div className="col-md-5 list1_left currImg">

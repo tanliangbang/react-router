@@ -6,8 +6,10 @@ import Index from './Pages/Index/Index';
 //开始
 import Start from './Pages/Start/Index';
 
-import htmlRes  from './Pages/htmlRes/Index';
-import Detail   from './Pages/htmlRes/Detail';
+import jsRes  from './Pages/res/jsRes';
+
+import htmlRes  from './Pages/res/HtmlRes';
+import Detail   from './Pages/res/Detail';
 import Register   from './Pages/User/Register';
 //redux案例展示
 import ReduxDom   from './Pages/ReduxDom/ReduxDom';
@@ -40,6 +42,9 @@ export const routes = {
 	}, {
 		path: '/htmlRes',
 		component: htmlRes
+	},{
+		path: '/jsRes',
+		component: jsRes
 	}, {
 		path: 'htmlResDetail/:id',
 		component: Detail
@@ -71,25 +76,3 @@ class Routers extends Component {
 }
 
 export default Routers;
-
-
-/* <Route path={HOME_PATH+"/"} component={App}>
- <IndexRoute component={Index} />
- <Route path="index" component={Index}/>
- <Route path="start" component={Start}/>
- <Route path="test" component={htmlRes}/>
- <Route path="detail/:id" component={Detail}/>
-
- <Route path="components" component={Components}>
- <Route path="htmls" component={Htmls}>
- <Route path="btn" component={HtmlsBtn}/>
- <Route path="table" component={HtmlsTable}/>
- </Route>
- <Route path="forms" component={Forms}/>
- <Route path="plus" component={Plus}/>
- <Route path="icons" component={Icons}/>
- <Route path="language" component={Language}/>
- </Route>
- <Route path="help" component={Help}/>
- <Route path="reduxdom" component={ReduxDom}/>
- </Route>*/
