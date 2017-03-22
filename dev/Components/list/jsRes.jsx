@@ -3,7 +3,7 @@ import React, { Component, PropTypes } from 'react'
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { Router, Route, IndexRoute, browserHistory, Link } from 'react-router';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group' // ES6
+import { Tool, merged } from '../../Tool';
 
 export  class jsRes extends Component {
     constructor(props) {
@@ -50,15 +50,17 @@ export  class jsRes extends Component {
 class ListItem extends Component {
     constructor(props) {
         super(props);
-        this.state = {style:{}};
+
     }
 
 
     render() {
         let item = this.props;
+        var style= {animation: "jsAnimation 0.3s linear",animationDelay:+parseFloat(this.props.index*0.2)+"s",animationFillMode:"both" }
+
         return (
-            <Link to={`/htmlResDetail/${item.id}`} >
-                <div  className="jsItem" style={{animation: "jsAnimation 0.3s linear "+this.props.index*0.2+"s",animationFillMode:"forwards"  }}>
+            <Link to={{pathname:`/resDetail/${item.id}`,query:{name:"jsRes"}}} >
+                <div  className="jsItem" style={style}>
                     <div>
                       <img  src ={item.content.titleImg} />
                    </div>
@@ -70,7 +72,7 @@ class ListItem extends Component {
                           阅读量:{item.readyNum}
                       </div>
                       <div className="fr">
-                          2017-2-17
+                          {Tool.formatDate(item.createTime)}
                       </div>
                       <br className="clear"/>
                   </div>

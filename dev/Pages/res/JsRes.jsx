@@ -20,7 +20,9 @@ export  class jsRes extends Component {
         };
     }
     componentWillMount() {
+/*
         window.scrollTo(0,0)
+*/
         const { htmlList } = this.props
     }
 
@@ -28,9 +30,8 @@ export  class jsRes extends Component {
     setCallBack (nowpage,eachPageCount){
         //模拟ajax请求
         var start = (nowpage-1)*eachPageCount
-        this.props.actions.getHtmlList(start,eachPageCount,"jsRes");
+        this.props.actions.getHtmlList(start,9,"jsRes");
         var count = this.props.htmlList.count;
-        window.scrollTo(0,0)
         this.setState({
             count : count
         });

@@ -15,10 +15,11 @@ let initTestList = {
 export default function htmlRes(state = initTestList, action) {
     switch (action.type) {
         case actionConstant.INIT_HTML_LIST:
+            var list = state.htmlList.list.concat(action.list)
             return Object.assign({}, state, {
                 htmlList:{
                     count:action.count,
-                    list:action.list
+                    list:list
                 }
             });
 

@@ -29,6 +29,8 @@ export function loginFail(isFail) {
     }
 }
 
+
+//sate 1 注册成功 2  用户名已存在  3 注册失败
 export function registerFail(state) {
     return {
         type: actionConstant.SET_REGISTER_FAIL,
@@ -62,18 +64,19 @@ export const login = (username,password) => {
 }
 
 
-
 export const register = (user) => {
     return dispatch => {
         Tool.post(`/api/users/register`, user, (res) => {
             if(res.statusCode==200){
                 dispatch(registerFail(1));
                 dispatch(setUserInfo(res.data));
-            }else if(res.statusCode==500) {
+            }else if(res.statusCode==511) {
                 dispatch( registerFail(2))
+            }else{
+                dispatch( registerFail(3))
             }
         }, (error) => {
-            console.log('error: ', error)
+               dispatch( registerFail(3))
         });
     }
 }

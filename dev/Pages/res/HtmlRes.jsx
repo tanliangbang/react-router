@@ -16,12 +16,21 @@ export  class htmlRes extends Component {
         super(props);
         this.setCallBack = this.setCallBack.bind(this)
         this.state ={
-            count : 0
+            count : 0,
+            start:1,
         };
+    }
+
+    moreList(){
+      var start=  this.state.start +1;
+      this.props.actions.getHtmlList((this.state.start-1)*10,10,"htmlRes");
+      this.setState({start:start})
+
     }
     componentWillMount() {
         window.scrollTo(0,0)
         const { htmlList } = this.props
+        this.props.actions.getHtmlList(0,10,"htmlRes");
     }
 
     //分页回调
@@ -42,8 +51,9 @@ export  class htmlRes extends Component {
                     <div className="row mtop60" >
                         <div className="col-md-8" >
                             <div className={this.props.loading?"":"none"}>
+
                                 <List  actions={actions} {...htmlList}></List>
-                                <PageList jumpShow={false} selectShow={false}  id="pageList1" count={htmlList.count} showPage="7" callback={this.setCallBack}/>
+                                <a className="moreBtn" onClick={this.moreList.bind(this)}>查看更多</a>
                             </div>
                             <div className={this.props.loading?"none":""}>
                                 <Loading></Loading>
@@ -65,7 +75,9 @@ export  class htmlRes extends Component {
 }
 
 
-
+/*
+<PageList jumpShow={false} selectShow={false}  id="pageList1" count={htmlList.count} showPage="7" callback={this.setCallBack}/>
+*/
 
 export default  connect((state)=>{
     return {

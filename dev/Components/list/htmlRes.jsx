@@ -4,6 +4,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { Router, Route, IndexRoute, browserHistory, Link } from 'react-router';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group' // ES6
+import { Tool, merged } from '../../Tool';
 
 export  class htmlRes extends Component {
     constructor(props) {
@@ -16,12 +17,13 @@ export  class htmlRes extends Component {
 
     }
     render() {
-        const { List ,actions} = this.props;
+        const { list ,actions} = this.props;
+
         return (
                     <ul className="htmlRes" >
                         {
-                            this.props.list.map((item, index) => {
-                                return <ListItem  actions={actions} key={item.id} index={index} {...item} />
+                            this.props.list.map((item, key) => {
+                                return <ListItem   actions={actions} key={key} index={key} {...item} />
                             })
                         }
                     </ul>
@@ -33,18 +35,14 @@ export  class htmlRes extends Component {
 class ListItem extends Component {
     constructor(props) {
         super(props);
-        this.state = {style:{}};
     }
 
-
     render() {
+        var style= {animation: "htmlAnimation 0.5s linear",animationDelay:+parseFloat(this.props.index*0.2)+"s",animationFillMode:"both" }
         let item = this.props;
-
-        let style= {animation: "htmlAnimation 0.5s linear "+parseFloat(this.props.index*0.2)+"s",animationFillMode:"forwards" }
-        console.log(style)
         return (
-            <Link to={`/htmlResDetail/${item.id}`} >
-                <div  className="testItem row my_class" style={style}>
+            <Link to={{pathname:`/resDetail/${item.id}`,query:{name:"htmlRes"}}} style={style}>
+                <div  className="testItem row my_class" >
                     <div className="item">
                         <div className="row">
                             <div className="col-md-5 list1_left currImg">
@@ -59,7 +57,7 @@ class ListItem extends Component {
                                     阅读量:{item.readyNum}
                                 </div>
                                 <div className="bottom_right">
-                                    2017-2-17
+                                    {Tool.formatDate(item.createTime)}
                                 </div>
                             </div>
                         </div>

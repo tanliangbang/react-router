@@ -1,4 +1,4 @@
-import './style.css'
+import './style.scss'
 import React, { Component, PropTypes } from 'react'
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
@@ -38,7 +38,6 @@ export  class Register extends Component {
     }
 
     componentDidUpdate(){
-        this.props.actions.getHtmlList(0,10);
         if(this.props.registerState==1 && this.state.isInterval){
             var time = 3;
             var toInterval =  setInterval(function(){
@@ -63,7 +62,7 @@ export  class Register extends Component {
     render() {
         const {handleSubmit} = this.props;
         const {time} = this.state;
-        if(this.props.registerState==0||this.props.registerState==2){
+        if(this.props.registerState==0||this.props.registerState==2||this.props.registerState==3){
             return (
                 <div  className="register mtop60">
                     <div className="reTitle">填写用户信息</div>
@@ -75,6 +74,8 @@ export  class Register extends Component {
                         <Field  name="nick" label="昵称" component={registerTextInput} type="text"/>
                         <Field  name="moblie" label="电话号码" component={registerTextInput} type="text"/>
                         <Field name="email" label="邮箱" component={registerTextInput} type="email"/>
+                        <div className="registEror">{this.props.registerState==3?'注册失败':''}</div>
+                        <div className="registEror">{this.props.registerState==2?'用户名已存在':''}</div>
                         <div className="row t-align">
                             <button className="regist-Btn" type="submit" >确&nbsp;&nbsp;&nbsp;&nbsp;定</button>
                         </div>

@@ -220,6 +220,13 @@ Tool.replace_em = (str) =>{
 }
 
 
+Tool.getQueryString=function(str,name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+    var r = str.substr(1).match(reg);
+    if (r != null) return unescape(r[2]); return null;
+}
+
+
 export { Tool, merged, config }
 
 

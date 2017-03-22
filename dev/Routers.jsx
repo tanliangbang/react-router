@@ -46,7 +46,7 @@ export const routes = {
 		path: '/jsRes',
 		component: jsRes
 	}, {
-		path: 'htmlResDetail/:id',
+		path: 'resDetail/:id',
 		component: Detail
 	},
 	{

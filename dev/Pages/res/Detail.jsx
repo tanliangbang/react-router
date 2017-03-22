@@ -27,7 +27,8 @@ export class Detail extends Component {
 
     componentDidMount() {
         window.scrollTo(0,0);
-        this.props.actions.getHtmlDetail(this.props.params.id,"htmlRes");
+        var type = Tool.getQueryString(this.props.location.search,"name")
+        this.props.actions.getHtmlDetail(this.props.params.id,type);
         this.props.actions.getCommentList(this.props.params.id)
     }
 
