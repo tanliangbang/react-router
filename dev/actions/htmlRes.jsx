@@ -4,11 +4,21 @@ import { Tool, merged } from '../Tool';
 import * as actionConstant from '../constants/actionConstant';
 
 
-export const initHtmlList = (response) => ({
+export const initHtmlList = (response,nowpage) => ({
     type: actionConstant.INIT_HTML_LIST,
     list: response.data.content,
     count:response.data.pageTotal,
+    nowpage:nowpage
 })
+
+export const initjsList = (response,nowpage) => ({
+    type: actionConstant.INIT_JS_LIST,
+    list: response.data.content,
+    count:response.data.pageTotal,
+    nowpage:nowpage,
+})
+
+
 
 export const initHtmlDetail = (response) => ({
     type: actionConstant.INIT_HTML_DETAIL,
@@ -23,11 +33,16 @@ export const setLoading = (isLoading) => ({
 
 
 
-export const getHtmlList = (start,size,name) => {
+export const getHtmlList = (nowpage,size,name) => {
+    var start = (nowpage-1)*size
     return dispatch => {
         dispatch(setLoading(false))
         Tool.get(`/api/res/getResContentList`, {name:name,start:start,size:size}, (res) => {
-            dispatch(initHtmlList(res))
+            if(name=="jsRes"){
+                dispatch(initjsList(res,nowpage))
+            }else{
+                dispatch(initHtmlList(res,nowpage))
+            }
             dispatch(setLoading(true))
         }, (error) => {
             console.log('error: ', error)

@@ -8,15 +8,13 @@ import { Tool, merged } from '../../Tool';
 export  class jsRes extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            htmlList:[]
-        }
     }
     componentDidMount() {
 
     }
     render() {
         const { List ,actions} = this.props;
+        console.log(this.props)
         return (
             <div className="jsRes-list row" >
                 <div className="col-md-4">

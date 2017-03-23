@@ -15,36 +15,35 @@ export  class jsRes extends Component {
     constructor(props) {
         super(props);
         this.setCallBack = this.setCallBack.bind(this)
-        this.state ={
-            count : 0
-        };
     }
     componentWillMount() {
-/*
         window.scrollTo(0,0)
-*/
-        const { htmlList } = this.props
+        const { jsList } = this.props;
+        var nowpage = jsList.nowpage;
+        var pageSize = jsList.pageSize;
+        this.setCallBack(nowpage,pageSize);
     }
 
     //分页回调
     setCallBack (nowpage,eachPageCount){
         //模拟ajax请求
+        window.scrollTo(0,0)
         var start = (nowpage-1)*eachPageCount
-        this.props.actions.getHtmlList(start,9,"jsRes");
-        var count = this.props.htmlList.count;
+        this.props.actions.getHtmlList(nowpage,9,"jsRes");
+        var count = this.props.jsList.count;
         this.setState({
             count : count
         });
 
     }
     render() {
-        const { htmlList ,actions,loading} = this.props;
+        const { jsList ,actions,loading} = this.props;
             return (
                     <div className="row mtop60" >
                         <div className="col-md-8" >
                             <div className={this.props.loading?"":"none"}>
-                                <List  actions={actions} {...htmlList}></List>
-                                <PageList jumpShow={false} selectShow={false}  id="pageList1" count={htmlList.count} showPage="7" callback={this.setCallBack}/>
+                                <List  actions={actions} {...jsList}></List>
+                                <PageList jumpShow={false} selectShow={false}  id="pageList1" count={jsList.count} nowpage={jsList.nowpage}  showPage="5" callback={this.setCallBack.bind(this)}/>
                             </div>
                             <div className={this.props.loading?"none":""}>
                                 <Loading></Loading>
@@ -70,7 +69,7 @@ export  class jsRes extends Component {
 
 export default  connect((state)=>{
     return {
-        htmlList: state.htmlRes.htmlList,
+        jsList: state.htmlRes.jsList,
         loading:state.user.loading
     }
 }, (dispatch)=>{

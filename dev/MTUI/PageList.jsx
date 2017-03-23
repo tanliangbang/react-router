@@ -35,7 +35,6 @@ const PageList = React.createClass({
 
 	//页面跳转
 	gotoPage(this_nowpage){
-		console.log(this_nowpage);
 		this.iniLiDom(this_nowpage, this.props.count , eachPageCount);
 		this.runTo(this_nowpage);
 		this.callback();
@@ -154,8 +153,10 @@ const PageList = React.createClass({
 		var $ul = $(this.refs.pagesUl);
 		var {pagecount} = this.state;
 		var num = this.getCenterNum(showPage);
-		var pix = -parseInt($ul.position().left/liWid);//偏移量,当前偏移多少个
-
+		var pix =0;
+		if($ul.length>0){
+			pix = -parseInt($ul.position().left/liWid);//偏移量,当前偏移多少个
+		}
 		if(pagecount <= showPage) return; 
         //如果点击的是中点，保持
         if(this_nowpage == pix+num){
@@ -191,12 +192,13 @@ const PageList = React.createClass({
 
 	//第一次渲染后执行
 	componentDidMount() {
-	    this.callback();
+		setTimeout(()=>{
+			this.runTo(this.props.nowpage)
+		},0)
 	},
 
 	//渲染数据
 	render(){
-		console.log()
 		var selectProp = {
 	        width : '90px',
 	        value : eachPageCount,

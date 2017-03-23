@@ -7,6 +7,8 @@ export const SET_REGISTER_FAIL = 'SET_REGISTER_FAIL';
 
 export const LOADING = 'LOADING';
 
+export const INIT_JS_LIST = 'INIT_JS_LIST';
+
 
 //评论
 export const GET_COMMENT_LIST = 'GET_COMMENT_LIST';

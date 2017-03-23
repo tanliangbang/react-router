@@ -14,30 +14,25 @@ import Loading from '../Common/loading'
 export  class htmlRes extends Component {
     constructor(props) {
         super(props);
-        this.setCallBack = this.setCallBack.bind(this)
-        this.state ={
-            count : 0,
-            start:1,
-        };
     }
 
-    moreList(){
+   /* moreList(){
       var start=  this.state.start +1;
       this.props.actions.getHtmlList((this.state.start-1)*10,10,"htmlRes");
       this.setState({start:start})
-
-    }
+    }*/
     componentWillMount() {
         window.scrollTo(0,0)
-        const { htmlList } = this.props
-        this.props.actions.getHtmlList(0,10,"htmlRes");
+        const { htmlList } = this.props;
+        var nowpage = htmlList.nowpage;
+        var pageSize = htmlList.pageSize;
+        this.setCallBack(nowpage,pageSize);
     }
 
     //分页回调
     setCallBack (nowpage,eachPageCount){
         //模拟ajax请求
-        var start = (nowpage-1)*eachPageCount
-        this.props.actions.getHtmlList(start,eachPageCount,"htmlRes");
+        this.props.actions.getHtmlList(nowpage,10,"htmlRes");
         var count = this.props.htmlList.count;
         window.scrollTo(0,0)
         this.setState({
@@ -46,14 +41,15 @@ export  class htmlRes extends Component {
 
     }
     render() {
-        const { htmlList ,actions,loading} = this.props;
-            return (
+        const { htmlList } = this.props;
+        return (
                     <div className="row mtop60" >
                         <div className="col-md-8" >
                             <div className={this.props.loading?"":"none"}>
 
-                                <List  actions={actions} {...htmlList}></List>
-                                <a className="moreBtn" onClick={this.moreList.bind(this)}>查看更多</a>
+                                <List  {...this.props}></List>
+                                <PageList jumpShow={false} selectShow={false}  id="pageList1" count={htmlList.count} nowpage={htmlList.nowpage}    showPage="5" callback={this.setCallBack.bind(this)}/>
+
                             </div>
                             <div className={this.props.loading?"none":""}>
                                 <Loading></Loading>
@@ -77,6 +73,8 @@ export  class htmlRes extends Component {
 
 /*
 <PageList jumpShow={false} selectShow={false}  id="pageList1" count={htmlList.count} showPage="7" callback={this.setCallBack}/>
+ <a className="moreBtn" onClick={this.moreList.bind(this)}>查看更多</a>
+
 */
 
 export default  connect((state)=>{

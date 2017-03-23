@@ -9,20 +9,14 @@ import { Tool, merged } from '../../Tool';
 export  class htmlRes extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            htmlList:[]
-        }
     }
-    componentDidMount() {
 
-    }
     render() {
-        const { list ,actions} = this.props;
-
+        const { htmlList ,actions} = this.props;
         return (
                     <ul className="htmlRes" >
                         {
-                            this.props.list.map((item, key) => {
+                            this.props.htmlList.list.map((item, key) => {
                                 return <ListItem   actions={actions} key={key} index={key} {...item} />
                             })
                         }
@@ -36,9 +30,9 @@ class ListItem extends Component {
     constructor(props) {
         super(props);
     }
-
     render() {
         var style= {animation: "htmlAnimation 0.5s linear",animationDelay:+parseFloat(this.props.index*0.2)+"s",animationFillMode:"both" }
+
         let item = this.props;
         return (
             <Link to={{pathname:`/resDetail/${item.id}`,query:{name:"htmlRes"}}} style={style}>

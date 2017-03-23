@@ -21,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="htmlRes.jsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="htmlRes.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dev/Components/list/htmlRes.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.56427014">
-              <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -34,7 +34,7 @@
       <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dev/Components/list/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.7580647">
+            <state vertical-scroll-proportion="-8.209678">
               <caret line="220" column="8" selection-start-line="220" selection-start-column="1" selection-end-line="220" selection-end-column="8" />
               <folding />
             </state>
@@ -44,8 +44,38 @@
       <file leaf-file-name="HtmlRes.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dev/Pages/res/HtmlRes.jsx">
           <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.1">
+              <caret line="50" column="134" selection-start-line="50" selection-start-column="134" selection-end-line="50" selection-end-column="134" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JsRes.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev/Pages/res/JsRes.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.766666">
+              <caret line="45" column="138" selection-start-line="45" selection-start-column="124" selection-end-line="45" selection-end-column="138" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jsRes.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev/Components/list/jsRes.jsx">
+          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="28" selection-start-line="40" selection-start-column="7" selection-end-line="41" selection-end-column="28" />
+              <caret line="16" column="25" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PageList.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dev/MTUI/PageList.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.37790698">
+              <caret line="152" column="38" selection-start-line="152" selection-start-column="38" selection-end-line="152" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -54,8 +84,8 @@
       <file leaf-file-name="htmlRes.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dev/actions/htmlRes.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="57" selection-start-line="40" selection-start-column="57" selection-end-line="40" selection-end-column="57" />
+            <state vertical-scroll-proportion="-15.833333">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -65,7 +95,7 @@
         <entry file="file://$PROJECT_DIR$/dev/reducers/htmlRes.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="30" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="30" />
+              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -109,14 +139,11 @@
         <option value="$PROJECT_DIR$/dev/Components/Comment/comment.jsx" />
         <option value="$PROJECT_DIR$/dev/Pages/Conf/Conf.jsx" />
         <option value="$PROJECT_DIR$/dev/Components/htmlRes/style.scss" />
-        <option value="$PROJECT_DIR$/dev/constants/actionConstant.jsx" />
         <option value="$PROJECT_DIR$/dev/reducers/user.jsx" />
         <option value="$PROJECT_DIR$/dev/Components/Comment/commentList.jsx" />
-        <option value="$PROJECT_DIR$/dev/MTUI/PageList.jsx" />
         <option value="$PROJECT_DIR$/dev/Pages/Common/Footer.jsx" />
         <option value="$PROJECT_DIR$/dev/Pages/Common/loading.jsx" />
         <option value="$PROJECT_DIR$/dev/Pages/Common/style.scss" />
-        <option value="$PROJECT_DIR$/dev/actions/htmlRes.jsx" />
         <option value="$PROJECT_DIR$/dev/Pages/htmlRes/Index.jsx" />
         <option value="$PROJECT_DIR$/dev/Pages/htmlRes/Detail.jsx" />
         <option value="$PROJECT_DIR$/dev/Pages/Common/Menu.jsx" />
@@ -130,13 +157,16 @@
         <option value="$PROJECT_DIR$/dev/Pages/User/Login.jsx" />
         <option value="$PROJECT_DIR$/dev/Pages/User/register.jsx" />
         <option value="$PROJECT_DIR$/dev/Pages/User/style.scss" />
-        <option value="$PROJECT_DIR$/dev/Pages/res/JsRes.jsx" />
-        <option value="$PROJECT_DIR$/dev/Components/list/jsRes.jsx" />
         <option value="$PROJECT_DIR$/dev/Components/list/style.scss" />
         <option value="$PROJECT_DIR$/dev/Components/list/item.jsx" />
-        <option value="$PROJECT_DIR$/dev/Pages/res/HtmlRes.jsx" />
-        <option value="$PROJECT_DIR$/dev/reducers/htmlRes.jsx" />
         <option value="$PROJECT_DIR$/dev/Components/list/htmlRes.jsx" />
+        <option value="$PROJECT_DIR$/dev/constants/actionConstant.jsx" />
+        <option value="$PROJECT_DIR$/dev/actions/htmlRes.jsx" />
+        <option value="$PROJECT_DIR$/dev/Components/list/jsRes.jsx" />
+        <option value="$PROJECT_DIR$/dev/reducers/htmlRes.jsx" />
+        <option value="$PROJECT_DIR$/dev/Pages/res/JsRes.jsx" />
+        <option value="$PROJECT_DIR$/dev/Pages/res/HtmlRes.jsx" />
+        <option value="$PROJECT_DIR$/dev/MTUI/PageList.jsx" />
       </list>
     </option>
   </component>
@@ -178,6 +208,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -225,47 +256,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="store" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mtui-react-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-router" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="reducers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mtui-react-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="react-router" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mtui-react-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="react-router" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -309,31 +318,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mtui-react-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="react-router" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="actions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../GankReactAnt-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../React-router-master" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
@@ -344,19 +334,19 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Apache\htdocs\reactProject\react-router\dev\Components\commont" />
-      <recent name="E:\Apache\htdocs\reactProject\react-router\dev\Pages" />
-      <recent name="E:\Apache\htdocs\reactProject\react-router\dev\Components\htmlRes" />
-      <recent name="E:\Apache\htdocs\reactProject\react-router\dev\Components" />
-      <recent name="E:\Apache\htdocs\reactProject\react-router\dev\containers" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Apache\htdocs\reactProject\react-router\dev\Components\list" />
       <recent name="E:\Apache\htdocs\reactProject\react-router\dev\Pages\res" />
       <recent name="E:\Apache\htdocs\reactProject\react-router\dev\img" />
       <recent name="E:\Apache\htdocs\reactProject\react-router\build\img" />
       <recent name="E:\Apache\htdocs\reactProject\react-router\build\libs\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Apache\htdocs\reactProject\react-router\dev\Components\commont" />
+      <recent name="E:\Apache\htdocs\reactProject\react-router\dev\Pages" />
+      <recent name="E:\Apache\htdocs\reactProject\react-router\dev\Components\htmlRes" />
+      <recent name="E:\Apache\htdocs\reactProject\react-router\dev\Components" />
+      <recent name="E:\Apache\htdocs\reactProject\react-router\dev\containers" />
     </key>
   </component>
   <component name="RunManager">
@@ -430,7 +420,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -466,6 +456,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/dev/reducers/htmlRes.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="30" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/build/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5068154">
@@ -554,13 +552,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/store/configureStore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dev/Config/Config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -576,13 +567,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/constants/actionConstant.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build/js/917d0568.index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3438202">
@@ -595,14 +579,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/MTUI/PageList.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="9.74138">
-          <caret line="190" column="0" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -672,7 +648,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="59" column="105" selection-start-line="59" selection-start-column="105" selection-end-line="59" selection-end-column="105" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -680,7 +655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3267974">
           <caret line="48" column="18" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -726,7 +700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.0">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -734,7 +707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.4097744">
           <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -758,7 +730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.27233115">
           <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -766,7 +737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="41" column="51" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -774,23 +744,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="36" column="41" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/Pages/res/JsRes.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="61" column="14" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/Components/list/jsRes.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -798,14 +751,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3540305">
           <caret line="77" column="50" selection-start-line="77" selection-start-column="40" selection-end-line="77" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/store/configureStore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3540305">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="21" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/Components/list/htmlRes.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dev/Components/list/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.7580647">
+        <state vertical-scroll-proportion="-8.209678">
           <caret line="220" column="8" selection-start-line="220" selection-start-column="1" selection-end-line="220" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/constants/actionConstant.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24509804">
+          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
           <folding />
         </state>
       </provider>
@@ -813,31 +789,47 @@
     <entry file="file://$PROJECT_DIR$/dev/reducers/htmlRes.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="30" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="30" />
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dev/actions/htmlRes.jsx">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.833333">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/Components/list/jsRes.jsx">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="57" selection-start-line="40" selection-start-column="57" selection-end-line="40" selection-end-column="57" />
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/Pages/res/JsRes.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.766666">
+          <caret line="45" column="138" selection-start-line="45" selection-start-column="124" selection-end-line="45" selection-end-column="138" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dev/Pages/res/HtmlRes.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="28" selection-start-line="40" selection-start-column="7" selection-end-line="41" selection-end-column="28" />
+        <state vertical-scroll-proportion="-7.1">
+          <caret line="50" column="134" selection-start-line="50" selection-start-column="134" selection-end-line="50" selection-end-column="134" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/Components/list/htmlRes.jsx">
+    <entry file="file://$PROJECT_DIR$/dev/MTUI/PageList.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56427014">
-          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.37790698">
+          <caret line="152" column="38" selection-start-line="152" selection-start-column="38" selection-end-line="152" selection-end-column="38" />
           <folding />
         </state>
       </provider>
