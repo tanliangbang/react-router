@@ -23,24 +23,23 @@ let initTestList = {
 export default function htmlRes(state = initTestList, action) {
     switch (action.type) {
         case actionConstant.INIT_HTML_LIST:
-/*
             var list = state.htmlList.list.concat(action.list)
-*/
             return Object.assign({}, state, {
                 htmlList:{
                     count:action.count,
-                    list:action.list,
-                    nowpage:state.htmlList.resType==action.resType?action.nowpage:1,
+                    list:list,
+                    nowpage:action.nowpage,
                     pageSize:action.pageSize,
                     resType:action.resType
                 }
             });
 
           case actionConstant.INIT_JS_LIST:
+              var list = state.jsList.list.concat(action.list)
             return Object.assign({}, state, {
                 jsList:{
                     count:action.count,
-                    list:action.list,
+                    list:list,
                     nowpage:action.nowpage,
                     pageSize:action.pageSize,
                 }

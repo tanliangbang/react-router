@@ -21,12 +21,6 @@ body{ overflow-x:hidden;position:relative; background-color: #F5F5F5;width:100%;
 .contents p{ margin: 8px 0; color: #666;}
 
 
-.right{
-    margin-bottom:20px;
-    padding:20px;
-    background:#fff;
-}
-
 
 .none{
     display:none;

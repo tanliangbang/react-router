@@ -14,27 +14,26 @@ export  class jsRes extends Component {
     }
     render() {
         const { List ,actions} = this.props;
-        console.log(this.props)
         return (
             <div className="jsRes-list row" >
                 <div className="col-md-4">
                     {
-                        this.props.list.map((item, index) => {
-                            return index%3==0?<ListItem  actions={actions} key={item.id} index={index} {...item} />:null
+                        this.props.list.map((item, key) => {
+                            return key%3==0?<ListItem  actions={actions} key={key} index={key} {...item} />:null
                         })
                     }
                 </div>
                 <div className="col-md-4">
                     {
-                        this.props.list.map((item, index) => {
-                            return index%3==1?<ListItem  actions={actions} key={item.id} index={index} {...item} />:null
+                        this.props.list.map((item, key) => {
+                            return key%3==1?<ListItem  actions={actions} key={key} index={key} {...item} />:null
                         })
                     }
                 </div>
                 <div className="col-md-4">
                     {
-                        this.props.list.map((item, index) => {
-                            return index%3==2?<ListItem  actions={actions} key={item.id} index={index} {...item} />:null
+                        this.props.list.map((item, key) => {
+                            return key%3==2?<ListItem  actions={actions} key={key} index={key} {...item} />:null
                         })
                     }
                 </div>
@@ -54,7 +53,7 @@ class ListItem extends Component {
 
     render() {
         let item = this.props;
-        var style= {animation: "jsAnimation 0.3s linear",animationDelay:+parseFloat(this.props.index*0.2)+"s",animationFillMode:"both" }
+        var style= {animation: "jsAnimation 0.3s linear",animationDelay:+parseFloat(this.props.index%9*0.2)+"s",animationFillMode:"both" }
 
         return (
             <Link to={{pathname:`/resDetail/${item.id}`,query:{name:"jsRes"}}} >

@@ -14,40 +14,29 @@ import Loading from '../Common/loading'
 export  class jsRes extends Component {
     constructor(props) {
         super(props);
-        this.setCallBack = this.setCallBack.bind(this)
     }
     componentWillMount() {
         window.scrollTo(0,0)
-        const { jsList } = this.props;
-        var nowpage = jsList.nowpage;
-        var pageSize = jsList.pageSize;
-        this.setCallBack(nowpage,pageSize);
+        this.props.actions.getHtmlList(this.props.jsList.nowpage,9,"jsRes");
     }
 
-    //分页回调
-    setCallBack (nowpage,eachPageCount){
-        //模拟ajax请求
-        window.scrollTo(0,0)
-        var start = (nowpage-1)*eachPageCount
-        this.props.actions.getHtmlList(nowpage,9,"jsRes");
-        var count = this.props.jsList.count;
-        this.setState({
-            count : count
-        });
-
+    moreList(){
+        this.props.actions.getHtmlList(this.props.jsList.nowpage+1,9,"jsRes");
     }
     render() {
         const { jsList ,actions,loading} = this.props;
             return (
                     <div className="row mtop60" >
                         <div className="col-md-8" >
-                            <div className={this.props.loading?"":"none"}>
+                            <div>
                                 <List  actions={actions} {...jsList}></List>
-                                <PageList jumpShow={false} selectShow={false}  id="pageList1" count={jsList.count} nowpage={jsList.nowpage}  showPage="5" callback={this.setCallBack.bind(this)}/>
+                                <a className={this.props.loading?"moreBtn":"none"} onClick={this.moreList.bind(this)}>查看更多</a>
+                                <div className={this.props.loading?"none":""}>
+                                    <Loading></Loading>
+                                </div>
+
                             </div>
-                            <div className={this.props.loading?"none":""}>
-                                <Loading></Loading>
-                            </div>
+
 
                         </div>
                         <div className="col-md-4 right">
