@@ -5,27 +5,27 @@ import * as actionConstant from '../constants/actionConstant';
  */
 // 初始化状态
 let initTestList = {
-    htmlList:{
+    resList:{
         count:0,
         list:[],
         nowpage:1,
         pageSize:10,
+        isLoading:true
     },
-    jsList:{
-        count:0,
-        list:[],
-        nowpage:1,
-        pageSize:10,
-    },
-    htmlDetail:null
+    resDetail:null
 }
 
 export default function htmlRes(state = initTestList, action) {
     switch (action.type) {
-        case actionConstant.INIT_HTML_LIST:
-            var list = state.htmlList.list.concat(action.list)
+        case actionConstant.INIT_RESLIST:
+            var list = null;
+            if(state.resList.nowpage==1){
+                list = action.list;
+            }else{
+                list = state.resList.list.concat(action.list)
+            }
             return Object.assign({}, state, {
-                htmlList:{
+                resList:{
                     count:action.count,
                     list:list,
                     nowpage:action.nowpage,
@@ -34,20 +34,11 @@ export default function htmlRes(state = initTestList, action) {
                 }
             });
 
-          case actionConstant.INIT_JS_LIST:
-              var list = state.jsList.list.concat(action.list)
-            return Object.assign({}, state, {
-                jsList:{
-                    count:action.count,
-                    list:list,
-                    nowpage:action.nowpage,
-                    pageSize:action.pageSize,
-                }
-            });
+
 
         case actionConstant.INIT_HTML_DETAIL:
             return Object.assign({}, state, {
-                htmlDetail:action.htmlDetail
+                resDetail:action.resDetail
             });
         default : return state;
 

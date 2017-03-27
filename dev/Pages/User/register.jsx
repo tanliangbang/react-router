@@ -7,7 +7,7 @@ import {browserHistory } from 'react-router';
 
 import { Tool, merged } from '../../Tool';
 import * as userAction from '../../actions/user';
-import * as htmlResAction from '../../actions/htmlRes';
+import * as htmlResAction from '../../actions/res';
 
 import {registerTextInput} from '../../components/form';
 

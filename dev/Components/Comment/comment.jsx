@@ -29,7 +29,6 @@ export  class comments extends Component {
         if(this.props.commentSuccess){
             this.refs.commentTextarea.value="";
         }
-        console.log(this.props)
     }
 
     componentDidMount() {

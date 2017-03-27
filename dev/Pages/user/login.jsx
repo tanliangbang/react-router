@@ -7,7 +7,7 @@ import LoadingBox from '../../MTUI/LoadingBox'
 import { Tool, merged } from '../../Tool';
 import * as userAction from '../../actions/user';
 import Mask from '../../BUI/Mask';
-import * as htmlResAction from '../../actions/htmlRes';
+import * as htmlResAction from '../../actions/res';
 import {nomalTextInput} from '../../components/form';
 
 

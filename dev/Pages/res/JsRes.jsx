@@ -3,13 +3,15 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { Router, Route, IndexRoute, browserHistory, Link } from 'react-router';
 import { Tool, merged } from '../../Tool';
-import * as htmlResAction from '../../actions/htmlRes';
+import * as htmlResAction from '../../actions/res';
 import * as userAction from '../../actions/user';
 import List from '../../Components/list/jsRes';
 import {PageList} from '../../MTUI/index';
 import PageListDom from '../Components/plus/PageListDom'
 import conf from '../Conf/Conf'
 import Loading from '../Common/loading'
+import Right_recommend from '../../Components/right/right_nomal';
+
 
 export  class jsRes extends Component {
     constructor(props) {
@@ -39,12 +41,9 @@ export  class jsRes extends Component {
 
 
                         </div>
-                        <div className="col-md-4 right">
-                            <img className="advertiseImg" src="img/3.jpg" />
-                            <img className="advertiseImg" src="img/3.jpg" />
-                            <img className="advertiseImg" src="img/3.jpg" />
-                            <img className="advertiseImg" src="img/3.jpg" />
-                            <img className="advertiseImg" src="img/3.jpg" />
+                        <div className="col-md-4">
+                            <Right_recommend resType="jsRes" rightType="readyNum"></Right_recommend>
+                            <Right_recommend resType="jsRes" rightType="recommend"></Right_recommend>
                         </div>
                     </div>
             );

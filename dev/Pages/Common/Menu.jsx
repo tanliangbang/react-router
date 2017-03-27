@@ -56,8 +56,11 @@ class Menu extends Component {
                 </div>
                 <div className="navbar-collapse collapse" role="navigation" aria-expanded="false" >
                     <ul className="nav navbar-nav">
-                        <li><Link onlyActiveOnIndex={true} activeClassName="active" to={HOME_PATH+"/htmlRes"}>html资源</Link></li>
-                        <li><Link onlyActiveOnIndex={true} activeClassName="active" to={HOME_PATH+"/jsRes"}>js资源 </Link></li>
+                        <li><Link onlyActiveOnIndex={true} activeClassName="active" to={HOME_PATH+"/res/htmlRes"}>html资源</Link></li>
+                        <li><Link onlyActiveOnIndex={true} activeClassName="active" to={HOME_PATH+"/res/jsRes"}>js资源 </Link></li>
+                        <li><Link onlyActiveOnIndex={true} activeClassName="active" to={HOME_PATH+"/res/cssRes"}>css资源 </Link></li>
+                        <li><Link onlyActiveOnIndex={true} activeClassName="active" to={HOME_PATH+"/res/webFrameRes"}>前端框架 </Link></li>
+
                     </ul>
                     <ul className="navbar-right loginBtn">
                         {loginNav}

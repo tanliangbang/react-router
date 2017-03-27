@@ -21,8 +21,8 @@ export  class commentList extends Component {
                     <div className="commentListTitle">评论列表</div>
                     <ul>
                         {
-                            this.props.commentList.list.map((item, index) => {
-                                return <ListItem  {...this.props}   actions={actions} key={item.id} {...item} />
+                            this.props.commentList.list.map((item, key) => {
+                                return <ListItem  {...this.props} key={key}   actions={actions}  {...item} />
                             })
                         }
                     </ul>
@@ -126,13 +126,12 @@ class ReplyList extends Component {
     render() {
         const {list,topic_id} = this.props;
         const {reply_id,from_uid,to_user,curr_id} = this.state;
-        console.log(this.state);
         return (
                <div>
                    {
-                      list.map((item, index) => {
+                      list.map((item, key) => {
                            return (
-                               <div className="reply">
+                               <div key={key} className="reply">
                                    <div className="top">
                                        <div className="fl">{item.user.userName+" 回复: "+ item.to_user.userName}</div>
                                        <div className="fr">{Tool.formatDate(item.cTime)}</div>

@@ -13,7 +13,7 @@ export  class jsRes extends Component {
 
     }
     render() {
-        const { List ,actions} = this.props;
+        const { list ,actions} = this.props;
         return (
             <div className="jsRes-list row" >
                 <div className="col-md-4">
@@ -53,10 +53,10 @@ class ListItem extends Component {
 
     render() {
         let item = this.props;
-        var style= {animation: "jsAnimation 0.3s linear",animationDelay:+parseFloat(this.props.index%9*0.2)+"s",animationFillMode:"both" }
+        var style= {animation: "htmlAnimation 0.5s linear",animationDelay:+parseFloat(this.props.index%10*0.05)+"s",animationFillMode:"both" }
 
         return (
-            <Link to={{pathname:`/resDetail/${item.id}`,query:{name:"jsRes"}}} >
+            <Link to={{pathname:`/resDetail/${item.id}`,query:{resType:"jsRes"}}} >
                 <div  className="jsItem" style={style}>
                     <div>
                       <img  src ={item.content.titleImg} />

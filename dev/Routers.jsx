@@ -6,9 +6,7 @@ import Index from './Pages/Index/Index';
 //开始
 import Start from './Pages/Start/Index';
 
-import jsRes  from './Pages/res/jsRes';
-
-import htmlRes  from './Pages/res/HtmlRes';
+import Res  from './Pages/res/Res';
 import Detail   from './Pages/res/Detail';
 import Register   from './Pages/User/Register';
 //redux案例展示
@@ -40,11 +38,11 @@ export const routes = {
 		path: '/index',
 		component: Index,
 	}, {
-		path: '/htmlRes',
-		component: htmlRes
+		path: '/Res',
+		component: Res
 	},{
-		path: '/jsRes',
-		component: jsRes
+		path: '/Res/:id',
+		component: Res
 	}, {
 		path: 'resDetail/:id',
 		component: Detail

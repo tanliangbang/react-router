@@ -12,11 +12,11 @@ export  class htmlRes extends Component {
     }
 
     render() {
-        const { htmlList ,actions} = this.props;
+        const { list ,actions} = this.props;
         return (
                     <ul className="htmlRes" >
                         {
-                            this.props.htmlList.list.map((item, key) => {
+                            this.props.list.map((item, key) => {
                                 return <ListItem   actions={actions} key={key} index={key} {...item} />
                             })
                         }
@@ -31,10 +31,10 @@ class ListItem extends Component {
         super(props);
     }
     render() {
-        var style= {animation: "htmlAnimation 0.5s linear",animationDelay:+parseFloat(this.props.index%10*0.2)+"s",animationFillMode:"both" }
+        var style= {animation: "htmlAnimation 0.5s linear",animationDelay:+parseFloat(this.props.index%10*0.05)+"s",animationFillMode:"both" }
         let item = this.props;
         return (
-            <Link to={{pathname:`/resDetail/${item.id}`,query:{name:"htmlRes"}}} style={style}>
+            <Link to={{pathname:`/resDetail/${item.id}`,query:{resType:"htmlRes"}}} style={style}>
                 <div  className="testItem row my_class" >
                     <div className="item">
                         <div className="row">
