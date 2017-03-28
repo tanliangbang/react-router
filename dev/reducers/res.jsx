@@ -10,8 +10,8 @@ let initTestList = {
         list:[],
         nowpage:1,
         pageSize:10,
-        isLoading:true
     },
+    isLoading:false,
     resDetail:null
 }
 
@@ -19,10 +19,10 @@ export default function htmlRes(state = initTestList, action) {
     switch (action.type) {
         case actionConstant.INIT_RESLIST:
             var list = null;
-            if(state.resList.nowpage==1){
+            if(action.nowpage==1){
                 list = action.list;
             }else{
-                list = state.resList.list.concat(action.list)
+                list = state.resList. list.concat(action.list)
             }
             return Object.assign({}, state, {
                 resList:{
@@ -39,6 +39,10 @@ export default function htmlRes(state = initTestList, action) {
         case actionConstant.INIT_HTML_DETAIL:
             return Object.assign({}, state, {
                 resDetail:action.resDetail
+            });
+        case actionConstant.RES_LOADING:
+            return Object.assign({}, state, {
+                isLoading:action.isLoading
             });
         default : return state;
 

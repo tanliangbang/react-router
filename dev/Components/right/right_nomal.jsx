@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import { Router, Route, IndexRoute, browserHistory, Link } from 'react-router';
 import { Tool, merged } from '../../Tool';
 import * as rightAction from '../../actions/right';
+import Loading from '../../Pages/Common/loading'
 
 export  class right_recommend extends Component {
     constructor(props) {
@@ -37,18 +38,25 @@ export  class right_recommend extends Component {
     }
 
     render() {
-        const {recommendList,resType,actions,readyRankList} = this.props;
+        const {recommendList,resType,actions,readyRankList,recommentLoading,readyRankLoading} = this.props;
         if(this.props.rightType=="readyNum"){
             return (
                 <div className="right_recommend">
                     <div>
                         阅读排行
                     </div>
-                    {
-                        readyRankList.map((item, key) => {
-                            return  <RightItem resType = {resType} actions={actions} key={key} index={key} {...item} />
-                        })
-                    }
+                    <div className={readyRankLoading?"":"none"}>
+                        <Loading/>
+
+                    </div>
+                    <div className={readyRankLoading?"none":""}>
+                        {
+                            readyRankList.map((item, key) => {
+                                return  <RightItem resType = {resType} actions={actions} key={key} index={key} {...item} />
+                            })
+                        }
+                    </div>
+
                 </div>
             );
         }else{
@@ -57,11 +65,17 @@ export  class right_recommend extends Component {
                     <div>
                         推荐排行
                     </div>
-                    {
-                        recommendList.map((item, key) => {
-                            return  <RightItem resType = {resType} actions={actions} key={key} index={key} {...item} />
-                        })
-                    }
+                    <div className={recommentLoading?"":"none"}>
+                        <Loading/>
+                    </div>
+                    <div className={recommentLoading?"none":""}>
+                        {
+                            recommendList.map((item, key) => {
+                                return  <RightItem resType = {resType} actions={actions} key={key} index={key} {...item} />
+                            })
+                        }
+                    </div>
+
                 </div>
             );
         }
@@ -77,7 +91,7 @@ class RightItem extends Component {
     render() {
         const {id,content,createTime,resType} = this.props
         var style= {};
-        if(resType=="htmlRes"){
+        if(resType=="htmlRes"||resType=="cssRes"){
             style= {animation: "htmlAnimation 0.5s linear",animationDelay:+parseFloat(this.props.index%10*0.05)+"s",animationFillMode:"both" }
         }else{
             style= {animation: "jsAnimation 0.3s linear",animationDelay:+parseFloat(this.props.index%9*0.05)+"s",animationFillMode:"both" }
@@ -103,7 +117,9 @@ class RightItem extends Component {
 export default  connect((state)=>{
     return {
         recommendList:state.right.recommendList,
-        readyRankList:state.right.readyRankList
+        readyRankList:state.right.readyRankList,
+        recommentLoading:state.right.recommentLoading,
+        readyRankLoading:state.right.readyRankLoading
     }
 }, (dispatch)=>{
     const allAction =Object.assign({},rightAction);

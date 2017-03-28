@@ -12,12 +12,12 @@ export  class htmlRes extends Component {
     }
 
     render() {
-        const { list ,actions} = this.props;
+        const { list ,actions,resType} = this.props;
         return (
                     <ul className="htmlRes" >
                         {
                             this.props.list.map((item, key) => {
-                                return <ListItem   actions={actions} key={key} index={key} {...item} />
+                                return <ListItem resType={resType}  actions={actions} key={key} index={key} {...item} />
                             })
                         }
                     </ul>
@@ -34,7 +34,7 @@ class ListItem extends Component {
         var style= {animation: "htmlAnimation 0.5s linear",animationDelay:+parseFloat(this.props.index%10*0.05)+"s",animationFillMode:"both" }
         let item = this.props;
         return (
-            <Link to={{pathname:`/resDetail/${item.id}`,query:{resType:"htmlRes"}}} style={style}>
+            <Link to={{pathname:`/resDetail/${item.id}`,query:{resType:this.props.resType}}} style={style}>
                 <div  className="testItem row my_class" >
                     <div className="item">
                         <div className="row">

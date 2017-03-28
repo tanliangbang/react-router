@@ -12,8 +12,9 @@ export  class comments extends Component {
         this.commentSubmit = this.commentSubmit.bind(this);
     }
     commentSubmit(){
-        let topic_id = this.props.htmlDetail.id;
+        let topic_id = this.props.resDetail.id;
         let from_uid = this.props.from_uid?this.props.from_uid:0;
+        let resType = this.props.resType;
         if(this.props.userInfo==null){
             this.props.actions.isShowLogin(true);
         }
@@ -21,7 +22,7 @@ export  class comments extends Component {
             return;
         }
         let reply_id = this.props.reply_id?this.props.reply_id:0
-        this.props.actions.comment(topic_id,this.refs.commentTextarea.value,from_uid,reply_id);
+        this.props.actions.comment(topic_id,this.refs.commentTextarea.value,from_uid,reply_id,resType);
 
     }
 

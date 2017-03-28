@@ -5,7 +5,9 @@ export const SET_LOGIN_MASK = 'SET_LOGIN_MASK';
 export const SET_LOGIN_FAIL = 'SET_LOGIN_FAIL';
 export const SET_REGISTER_FAIL = 'SET_REGISTER_FAIL';
 
-export const LOADING = 'LOADING';
+export const RES_LOADING = 'RES_LOADING';
+export const RECOMMED_LOADING = 'RECOMMED_LOADING'
+export const READYRANK_LOADING = 'READYRANK_LOADING'
 
 
 //评论

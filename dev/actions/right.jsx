@@ -16,11 +16,23 @@ export const initRightReadyRank = (res) => ({
     readyRankList: res.data,
 })
 
+export const setRecommendLoading = (isLoading) => ({
+    type: actionConstant.RECOMMED_LOADING,
+    recommentLoading: isLoading,
+})
+
+export const setReadyRankLoading = (isLoading) => ({
+    type: actionConstant.READYRANK_LOADING,
+    readyRankLoading:isLoading,
+})
+
 
 export const getRightRecommend = (name) => {
     return dispatch => {
+        dispatch(setRecommendLoading(true))
         Tool.get(`/api/res/recommend`, {name:name,size:5}, (res) => {
             dispatch(initRightRcommend(res))
+            dispatch(setRecommendLoading(false))
         }, (error) => {
             console.log('error: ', error)
         });
@@ -30,8 +42,11 @@ export const getRightRecommend = (name) => {
 
 export const getRightReadyRank = (name) => {
     return dispatch => {
+        dispatch(setReadyRankLoading(true))
         Tool.get(`/api/res/readyRank`, {name:name,size:5}, (res) => {
             dispatch(initRightReadyRank(res))
+            dispatch(setReadyRankLoading(false))
+
         }, (error) => {
             console.log('error: ', error)
         });

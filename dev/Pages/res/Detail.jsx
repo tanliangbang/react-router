@@ -26,14 +26,14 @@ export class Detail extends Component {
     componentWillReceiveProps(nextProps) {
         if (nextProps.params.id != this.props.params.id) {
             this.props.actions.getResDetail(nextProps.params.id,this.state.resType);
-            this.props.actions.getCommentList(this.props.params.id)
+            this.props.actions.getCommentList(nextProps.params.id,this.state.resType)
         }
     }
 
     componentDidMount() {
         window.scrollTo(0,0);
         this.props.actions.getResDetail(this.props.params.id,this.state.resType);
-        this.props.actions.getCommentList(this.props.params.id)
+        this.props.actions.getCommentList(this.props.params.id,this.state.resType)
     }
 
     render() {
@@ -48,11 +48,11 @@ export class Detail extends Component {
                  <div className="mtop60 row" >
                      <div className="col-lg-8 htmlResDetail">
                          <div className="htmlResTitle">{content.title}</div>
-
+                         <hr/>
                          <div className="detailContent"  dangerouslySetInnerHTML={{__html: content.content}}></div>
                          <hr/>
-                         <Comments {...this.props}></Comments>
-                         <CommentList {...this.props} ></CommentList>
+                         <Comments {...this.props} resType={this.state.resType}></Comments>
+                         <CommentList {...this.props} resType={this.state.resType}></CommentList>
                      </div>
                      <div className="col-lg-4">
                          <Right_nomal resType={this.state.resType} rightType="readyNum"></Right_nomal>

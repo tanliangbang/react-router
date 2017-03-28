@@ -13,27 +13,27 @@ export  class jsRes extends Component {
 
     }
     render() {
-        const { list ,actions} = this.props;
+        const { list ,actions,resType} = this.props;
         return (
             <div className="jsRes-list row" >
                 <div className="col-md-4">
                     {
                         this.props.list.map((item, key) => {
-                            return key%3==0?<ListItem  actions={actions} key={key} index={key} {...item} />:null
+                            return key%3==0?<ListItem  resType={resType} actions={actions} key={key} index={key} {...item} />:null
                         })
                     }
                 </div>
                 <div className="col-md-4">
                     {
                         this.props.list.map((item, key) => {
-                            return key%3==1?<ListItem  actions={actions} key={key} index={key} {...item} />:null
+                            return key%3==1?<ListItem resType={resType}  actions={actions} key={key} index={key} {...item} />:null
                         })
                     }
                 </div>
                 <div className="col-md-4">
                     {
                         this.props.list.map((item, key) => {
-                            return key%3==2?<ListItem  actions={actions} key={key} index={key} {...item} />:null
+                            return key%3==2?<ListItem resType={resType}  actions={actions} key={key} index={key} {...item} />:null
                         })
                     }
                 </div>
@@ -53,10 +53,10 @@ class ListItem extends Component {
 
     render() {
         let item = this.props;
-        var style= {animation: "htmlAnimation 0.5s linear",animationDelay:+parseFloat(this.props.index%10*0.05)+"s",animationFillMode:"both" }
+        var style= {animation: "jsAnimation 0.5s linear",animationDelay:+parseFloat(this.props.index%10*0.05)+"s",animationFillMode:"both" }
 
         return (
-            <Link to={{pathname:`/resDetail/${item.id}`,query:{resType:"jsRes"}}} >
+            <Link to={{pathname:`/resDetail/${item.id}`,query:{resType:this.props.resType}}} >
                 <div  className="jsItem" style={style}>
                     <div>
                       <img  src ={item.content.titleImg} />

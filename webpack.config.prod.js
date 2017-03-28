@@ -32,7 +32,7 @@ module.exports = {
                 }
             },
             {test: /\.(woff|eot|ttf)$/i, loader: 'url?limit=10000&name=fonts/[hash:8].[name].[ext]'},
-            //{test: /\.scss$/, loader: ExtractTextPlugin.extract("style","css!autoprefixer!sass")},
+            {test: /\.scss$/, loader: ExtractTextPlugin.extract("style","css!autoprefixer!sass")},
             {test: /\.less$/, loader: ExtractTextPlugin.extract("style","css!autoprefixer!less")},
             {test:/\.css$/, loader: ExtractTextPlugin.extract("style","css!autoprefixer")},
             {test: /\.(png|jpg|gif)$/, loader: "url-loader?limit=8192&name=./img/[hash].[ext]"}

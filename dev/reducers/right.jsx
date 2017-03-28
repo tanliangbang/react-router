@@ -5,7 +5,9 @@ import * as actionConstant from '../constants/actionConstant';
 //初始化数据
 const initialState = {
     recommendList:[],
-    readyRankList:[]
+    readyRankList:[],
+    recommentLoading:false,
+    readyRankLoading:false,
 }
 
 
@@ -19,6 +21,14 @@ export default function user(state = initialState, action) {
         case actionConstant.RIGHT_READYRANK:
             return Object.assign({}, state, {
                 readyRankList:action.readyRankList
+            });
+        case actionConstant.RECOMMED_LOADING:
+            return Object.assign({}, state, {
+                recommentLoading:action.recommentLoading
+            });
+        case actionConstant.READYRANK_LOADING:
+            return Object.assign({}, state, {
+                readyRankLoading:action.readyRankLoading
             });
         default : return state;
     }

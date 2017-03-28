@@ -22,8 +22,8 @@ export const initHtmlDetail = (response) => ({
 
 
 export const setLoading = (isLoading) => ({
-    type: actionConstant.LOADING,
-    loading: isLoading
+    type: actionConstant.RES_LOADING,
+    isLoading: isLoading
 })
 
 

@@ -15,14 +15,14 @@ export  class commentList extends Component {
 
 
     render() {
-        const { commentList ,actions} = this.props;
-            return (
+        const { commentList,resType } = this.props;
+        return (
                 <div className="commentList" >
                     <div className="commentListTitle">评论列表</div>
                     <ul>
                         {
                             this.props.commentList.list.map((item, key) => {
-                                return <ListItem  {...this.props} key={key}   actions={actions}  {...item} />
+                                return <ListItem   {...this.props} key={key}    {...item} />
                             })
                         }
                     </ul>
@@ -57,9 +57,8 @@ class ListItem extends Component {
         })
     }
     render() {
-            const {cTime,content,user,actions,id,reply} = this.props;
+            const {cTime,content,user,actions,id,reply,resType} = this.props;
             const {reply_id,from_uid,to_user,curr_id} = this.state;
-
         if(this.props.topic_id==this.props.params.id) {
                 return (
                     <li>
@@ -77,7 +76,7 @@ class ListItem extends Component {
                                 </div>
                                     {
                                         curr_id==id?(
-                                            <Comments {...this.props} id={id} reply_id ={reply_id} from_uid={from_uid} to_user={to_user} ></Comments>
+                                            <Comments {...this.props} resType={resType} id={id} reply_id ={reply_id} from_uid={from_uid} to_user={to_user} ></Comments>
                                         ):(
                                             null
                                         )
