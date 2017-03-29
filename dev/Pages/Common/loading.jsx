@@ -9,7 +9,7 @@ export  class Loading extends Component {
     render() {
         return (
             <div className="loading_div">
-                <img src="../../img/loading.gif"/>
+                <img src="./img/loading.gif"/>
             </div>
         );
     }
