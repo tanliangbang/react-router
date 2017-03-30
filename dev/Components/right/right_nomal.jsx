@@ -16,7 +16,9 @@ export  class right_recommend extends Component {
         window.scrollTo(0,0);
         var resType = this.props.resType?this.props.resType:"htmlRes";
         var rightType = this.props.rightType?this.props.rightType:"readyNum";
-         if(rightType=="readyNum"){
+        console.log(resType,rightType)
+
+        if(rightType=="readyNum"){
              this.props.actions.getRightReadyRank(resType)
 
          }else{
@@ -98,15 +100,16 @@ class RightItem extends Component {
         }
         return (
             <Link  className="row" to={{pathname:`/resDetail/${id}`,query:{resType:resType}}} style={style}>
-                <div className="col-lg-3">
+                <div className="right_img">
                     <img src={content.titleImg}/>
                 </div>
-                <div className="col-lg-9">
+                <div className="right_content">
                     <p>{content.title}</p>
                     <div className="promit">
                         {content.from} 发表于 {Tool.formatDate(createTime)}
                     </div>
                 </div>
+                <br className="clear"/>
             </Link>
         );
     }

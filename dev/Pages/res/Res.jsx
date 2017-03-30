@@ -19,6 +19,7 @@ export  class htmlRes extends Component {
         this.state={
             resType:this.props.params.id
         }
+        console.log("aaaaaaaaaaaaaaaaaaaaaa")
 
     }
 
@@ -26,6 +27,7 @@ export  class htmlRes extends Component {
         this.props.actions.getResList(this.props.resList.nowpage+1,10,this.state.resType);
     }
     componentWillMount() {
+        console.log(this.state.resType)
         this.props.actions.getResList(1,10,this.state.resType);
     }
     componentWillReceiveProps(nextProps) {
@@ -67,10 +69,10 @@ export  class htmlRes extends Component {
                         <div className="col-md-4 right">
                             <Right_nomal resType={this.state.resType} rightType="readyNum"></Right_nomal>
                             <Right_nomal resType={this.state.resType} rightType="recommend"></Right_nomal>
-                            <img className="advertiseImg" src="../img/3.jpg" />
-                            <img className="advertiseImg" src="../img/3.jpg" />
-                            <img className="advertiseImg" src="../img/3.jpg" />
-                            <img className="advertiseImg" src="../img/3.jpg" />
+                            <img className="advertiseImg" src="./img/3.jpg" />
+                            <img className="advertiseImg" src="./img/3.jpg" />
+                            <img className="advertiseImg" src="./img/3.jpg" />
+                            <img className="advertiseImg" src="./img/3.jpg" />
                         </div>
                     </div>
             );

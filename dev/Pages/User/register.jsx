@@ -85,7 +85,7 @@ export  class Register extends Component {
         }else{
             return(
                 <div className="register mtop60 t-align">
-                    <img className="registSuccessImg" src="../img/timg.jpg" />
+                    <img className="registSuccessImg" src="./img/timg.jpg" />
                     <div className="toOtherPromit">{time}秒后自动跳转</div>
                 </div>
             )

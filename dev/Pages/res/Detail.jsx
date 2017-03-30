@@ -20,6 +20,7 @@ export class Detail extends Component {
         this.state ={
             resType:type
         }
+        console.log("aaaaaaaaaaaaaaaaaaaaaaaaaaa")
     }
 
 
@@ -32,6 +33,7 @@ export class Detail extends Component {
 
     componentDidMount() {
         window.scrollTo(0,0);
+        console.log(this.state.resType)
         this.props.actions.getResDetail(this.props.params.id,this.state.resType);
         this.props.actions.getCommentList(this.props.params.id,this.state.resType)
     }
@@ -57,9 +59,9 @@ export class Detail extends Component {
                      <div className="col-lg-4">
                          <Right_nomal resType={this.state.resType} rightType="readyNum"></Right_nomal>
                          <Right_nomal resType={this.state.resType} rightType="recommend"></Right_nomal>
-                         <img className="advertiseImg" src="../img/3.jpg" />
+                         <img className="advertiseImg" src="./img/3.jpg" />
 
-                         <img className="advertiseImg" src="../img/3.jpg" />
+                         <img className="advertiseImg" src="./img/3.jpg" />
 
                      </div>
                  </div>
