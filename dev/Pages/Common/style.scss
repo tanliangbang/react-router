@@ -3,9 +3,18 @@
     top:0px;
     width:100%;
     z-index:1000;
-    background:#005387;
     margin-bottom: 0px;
     border:none;
+    background: url("../../img/nv.png") no-repeat 0 0;
+    background-size:100% 100%;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color:#fff;
+    font-size:15px;
+}
+.navbar-inverse .navbar-brand {
+    color: #fff;
 }
 
 .navbar a:hover {
@@ -19,10 +28,10 @@
 
 .loginBtn{
     line-height:50px;
-    color:#eeeeee;
+    color:#fff;
 }
 .loginBtn a{
-    color:#eeeeee;
+    color:#fff;
     cursor: pointer;
 }
 

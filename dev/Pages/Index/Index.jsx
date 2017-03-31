@@ -9,8 +9,7 @@ const Index = React.createClass({
     return (
         <div className="index mtop60" style={{ minHeight: this.state.height+"px",background:'#27303e'}}>
           <div className="index-box">
-            <div className="logoMax"></div>
-            <h1 className="index-head">MTUI React Version 1.0</h1>
+            <h1 className="index-head">BANGBANG Vesion1</h1>
           </div>
         </div>
     );

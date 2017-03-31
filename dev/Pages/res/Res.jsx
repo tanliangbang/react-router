@@ -19,7 +19,6 @@ export  class htmlRes extends Component {
         this.state={
             resType:this.props.params.id
         }
-        console.log("aaaaaaaaaaaaaaaaaaaaaa")
 
     }
 
@@ -27,7 +26,6 @@ export  class htmlRes extends Component {
         this.props.actions.getResList(this.props.resList.nowpage+1,10,this.state.resType);
     }
     componentWillMount() {
-        console.log(this.state.resType)
         this.props.actions.getResList(1,10,this.state.resType);
     }
     componentWillReceiveProps(nextProps) {

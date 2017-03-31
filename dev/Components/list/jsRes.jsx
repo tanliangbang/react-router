@@ -53,7 +53,7 @@ class ListItem extends Component {
 
     render() {
         let item = this.props;
-        var style= {animation: "jsAnimation 0.5s linear",animationDelay:+parseFloat(this.props.index%10*0.05)+"s",animationFillMode:"both" }
+        var style= {animation: "jsAnimation 0.3s linear",animationDelay:+parseFloat(this.props.index%10*0.05)+"s",animationFillMode:"both" }
 
         return (
             <Link to={{pathname:`/resDetail/${item.id}`,query:{resType:this.props.resType}}} >

@@ -37,9 +37,6 @@ export const routes = {
 	childRoutes: [{
 		path: '/index',
 		component: Index,
-	}, {
-		path: '/Res',
-		component: Res
 	},{
 		path: '/Res/:id',
 		component: Res

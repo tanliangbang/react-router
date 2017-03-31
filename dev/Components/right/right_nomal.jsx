@@ -16,8 +16,6 @@ export  class right_recommend extends Component {
         window.scrollTo(0,0);
         var resType = this.props.resType?this.props.resType:"htmlRes";
         var rightType = this.props.rightType?this.props.rightType:"readyNum";
-        console.log(resType,rightType)
-
         if(rightType=="readyNum"){
              this.props.actions.getRightReadyRank(resType)
 
@@ -92,12 +90,7 @@ class RightItem extends Component {
     }
     render() {
         const {id,content,createTime,resType} = this.props
-        var style= {};
-        if(resType=="htmlRes"||resType=="cssRes"){
-            style= {animation: "htmlAnimation 0.5s linear",animationDelay:+parseFloat(this.props.index%10*0.05)+"s",animationFillMode:"both" }
-        }else{
-            style= {animation: "jsAnimation 0.3s linear",animationDelay:+parseFloat(this.props.index%9*0.05)+"s",animationFillMode:"both" }
-        }
+        var style= {animation: "htmlAnimation 0.5s linear",animationDelay:+parseFloat(this.props.index%10*0.05)+"s",animationFillMode:"both" }
         return (
             <Link  className="row" to={{pathname:`/resDetail/${id}`,query:{resType:resType}}} style={style}>
                 <div className="right_img">
