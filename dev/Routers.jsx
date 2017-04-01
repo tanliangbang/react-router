@@ -6,6 +6,7 @@ import Index from './Pages/Index/Index';
 //开始
 import Start from './Pages/Start/Index';
 
+import Community  from './Pages/Community/Community';
 import Res  from './Pages/res/Res';
 import Detail   from './Pages/res/Detail';
 import Register   from './Pages/User/Register';
@@ -44,6 +45,11 @@ export const routes = {
 		path: 'resDetail/:id',
 		component: Detail
 	},
+		{
+			path: 'Community',
+			component: Community
+		},
+
 	{
 		path: 'register',
 		component: Register

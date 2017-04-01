@@ -3,7 +3,6 @@ import React, { Component, PropTypes } from 'react'
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { Router, Route, IndexRoute, browserHistory, Link } from 'react-router';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group' // ES6
 import { Tool, merged } from '../../Tool';
 
 export  class htmlRes extends Component {
@@ -38,12 +37,12 @@ class ListItem extends Component {
                 <div  className="testItem row my_class" >
                     <div className="item">
                         <div className="row">
-                            <div className="col-md-5 list1_left currImg">
+                            <div className="col-md-3 list1_left currImg">
                                 <div>
                                     <img  src ={item.content.titleImg} />
                                 </div>
                             </div>
-                            <div className="col-md-7 list1_right">
+                            <div className="col-md-9 list1_right">
                                 <p className="title">{item.content.title}</p>
                                 <p className="content">{item.content.breif}</p>
                                 <div className="bottom_left">

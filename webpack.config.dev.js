@@ -29,7 +29,7 @@ module.exports = {
                 loaders: ['react-hot', 'babel?presets[]=react,presets[]=es2015']
             },
             {test: /\.(woff|eot|ttf)$/i, loader: 'url?limit=10000&name=fonts/[hash:8].[name].[ext]'},
-            //{test: /\.scss$/, loader: "style!css!sass"},
+            {test: /\.scss$/, loader: "style!css!sass"},
             {test: /\.less$/, loader: "style!css!less"},
             {test:/\.css$/, loader: "style!css"},
             {test: /\.(png|jpg|gif)$/, loader: "url-loader?limit=8192&name=./img/[hash].[ext]"}

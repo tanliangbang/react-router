@@ -1,3 +1,5 @@
+@import "../../style/var.scss";
+
 .navbar{
     position:fixed;
     top:0px;
@@ -5,33 +7,33 @@
     z-index:1000;
     margin-bottom: 0px;
     border:none;
-    background: url("../../img/nv.png") no-repeat 0 0;
+    background:#fff;
     background-size:100% 100%;
 }
 
 .navbar-inverse .navbar-nav>li>a {
-    color:#fff;
+    color: $commonFontColor;
     font-size:15px;
 }
 .navbar-inverse .navbar-brand {
-    color: #fff;
+    color: $commonFontColor;
 }
 
 .navbar a:hover {
-    color: #fdd922 !important;
+    color: $commonMainColor !important;
 }
 
 .navbar li .active {
-    color: #fdd922 !important;
-    background: #003454 !important;
+    color: #fff !important;
+    background: $commonMainColor !important;
 }
 
 .loginBtn{
     line-height:50px;
-    color:#fff;
+    color: $commonFontColor;
 }
 .loginBtn a{
-    color:#fff;
+    color: $commonFontColor;
     cursor: pointer;
 }
 

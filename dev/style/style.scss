@@ -7,13 +7,12 @@ body{
     width:100%;
     height:100%;
 
-
 }
 
 
 
 /*小图标*/
-.ico{ display: inline-block; width: 30px; height: 30px; overflow: hidden; vertical-align: middle; background: url(./img/icons.png) no-repeat;}
+.ico{ display: inline-block; width: 30px; height: 30px; overflow: hidden; vertical-align: middle; background: url(../img/icons.png) no-repeat;}
 .ico-basic{ background-position: 0 0;}
 .ico-yed{ background-position: 0 -30px;}
 .ico-map{ background-position: 0 -60px;}

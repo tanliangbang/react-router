@@ -16,8 +16,11 @@ import Right_nomal from '../../Components/right/right_nomal';
 export  class htmlRes extends Component {
     constructor(props) {
         super(props);
+        var index = Tool.getQueryString(this.props.location.search,"index");
+        index = index!==null?index:0
         this.state={
-            resType:this.props.params.id
+            resType:this.props.params.id,
+            index:index
         }
 
     }
@@ -32,8 +35,11 @@ export  class htmlRes extends Component {
        if(nextProps.params.id!==this.state.resType){
            window.scrollTo(0,0)
            this.props.actions.getResList(1,10,nextProps.params.id);
+           console.log(nextProps)
+           var index = Tool.getQueryString(nextProps.location.search,"index");
            this.setState({
-               resType:nextProps.params.id
+               resType:nextProps.params.id,
+               index:index
            })
        }
     }
@@ -42,10 +48,10 @@ export  class htmlRes extends Component {
     render() {
         const {resList,loading} = this.props
         var templete = "";
-        if(this.state.resType=="htmlRes"||this.state.resType=="cssRes"){
-            templete = <HtmlRes  list={resList.list} resType={this.state.resType}></HtmlRes>;
-        }else if(this.state.resType=="jsRes"||this.state.resType=="webFrameRes"){
+        if(this.state.index%2!==0){
             templete = <JsRes  list={resList.list} resType={this.state.resType}></JsRes>;
+        }else{
+            templete = <HtmlRes  list={resList.list} resType={this.state.resType}></HtmlRes>;
         }
         return (
                     <div className="row mtop60" >

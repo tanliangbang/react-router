@@ -26,6 +26,12 @@ export const setLoading = (isLoading) => ({
     isLoading: isLoading
 })
 
+export const initMenu = (response) => ({
+    type: actionConstant.INIT_MENU,
+    menuList: response.data
+})
+
+
 
 
 export const getResList = (nowpage,size,name) => {
@@ -46,6 +52,17 @@ export const getResDetail = (id,name) => {
     return dispatch => {
         Tool.get(`/api/res/getResContentById`, {name:name,id:id}, (response) => {
             dispatch(initHtmlDetail(response.data[0]))
+        }, (error) => {
+            console.log('error: ', error)
+        });
+    }
+}
+
+
+export const getMenu = (res_type) => {
+    return dispatch => {
+        Tool.get(`/api/res/getResListByType`, {res_type:res_type}, (res) => {
+            dispatch(initMenu(res))
         }, (error) => {
             console.log('error: ', error)
         });

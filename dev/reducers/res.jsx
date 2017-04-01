@@ -11,6 +11,7 @@ let initTestList = {
         nowpage:1,
         pageSize:10,
     },
+    menuList:[],
     isLoading:false,
     resDetail:null
 }
@@ -39,6 +40,10 @@ export default function htmlRes(state = initTestList, action) {
         case actionConstant.INIT_HTML_DETAIL:
             return Object.assign({}, state, {
                 resDetail:action.resDetail
+            });
+        case actionConstant.INIT_MENU:
+            return Object.assign({}, state, {
+                menuList:action.menuList
             });
         case actionConstant.RES_LOADING:
             return Object.assign({}, state, {

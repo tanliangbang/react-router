@@ -1,0 +1,37 @@
+@import "../../style/var.scss";
+.CommunityList{
+   margin-top:20px;
+   border-bottom: 1px solid #f0f0f0;
+  padding-bottom:20px;
+  position:relative;
+   .content{
+      padding-right:180px;
+     .avatar{
+       width:48px;
+       height:48px;
+       border-radius: 50%;
+       margin-right:15px;
+     }
+     .title{
+       margin:10px 0 8px;
+       display: inherit;
+       font-size: 18px;
+       font-weight: 700;
+       line-height: 1.5;
+       color:$commonMainColor;
+     }
+     .bottom{
+       margin-top:10px;
+       font-size:13px;
+       color:$litterGray;
+     }
+   }
+  .breifImg{
+     width:150px;
+    height:120px;
+    position:absolute;
+    right:0px;
+    top:50%;
+    margin-top:-60px;
+  }
+}

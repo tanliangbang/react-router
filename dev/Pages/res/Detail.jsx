@@ -20,7 +20,6 @@ export class Detail extends Component {
         this.state ={
             resType:type
         }
-        console.log("aaaaaaaaaaaaaaaaaaaaaaaaaaa")
     }
 
 
@@ -33,7 +32,6 @@ export class Detail extends Component {
 
     componentDidMount() {
         window.scrollTo(0,0);
-        console.log(this.state.resType)
         this.props.actions.getResDetail(this.props.params.id,this.state.resType);
         this.props.actions.getCommentList(this.props.params.id,this.state.resType)
     }

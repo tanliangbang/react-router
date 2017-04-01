@@ -5,6 +5,9 @@ export const SET_LOGIN_MASK = 'SET_LOGIN_MASK';
 export const SET_LOGIN_FAIL = 'SET_LOGIN_FAIL';
 export const SET_REGISTER_FAIL = 'SET_REGISTER_FAIL';
 
+//菜单
+export const INIT_MENU = 'INIT_MENU';
+
 export const RES_LOADING = 'RES_LOADING';
 export const RECOMMED_LOADING = 'RECOMMED_LOADING'
 export const READYRANK_LOADING = 'READYRANK_LOADING'

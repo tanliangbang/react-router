@@ -11,8 +11,8 @@
     "react plugin"
   ],
   "devDependencies": {
-    "axios": "^0.14.0",
     "autoprefixer-loader": "^3.2.0",
+    "axios": "^0.14.0",
     "babel": "~6.3.26",
     "babel-core": "^6.6.4",
     "babel-loader": "~6.2.1",
@@ -20,13 +20,15 @@
     "babel-preset-react": "~6.3.13",
     "babel-preset-stage-0": "~6.3.13",
     "bundle-loader": "^0.5.4",
-    "css-loader": "^0.23.0",
+    "sass-loader": "^4.1.1",
+    "node-sass": "^4.3.0",
+    "css-loader": "^0.25.0",
     "extract-text-webpack-plugin": "^1.0.1",
     "html-webpack-plugin": "^2.9.0",
     "jsx-loader": "^0.13.2",
     "less": "^2.6.1",
     "less-loader": "^2.2.0",
-    "node-sass": "^3.4.2",
+    "node-sass": "^3.13.1",
     "obj-merged": "^1.0.5",
     "react": "^0.14.3",
     "react-dom": "^0.14.0",
@@ -36,13 +38,13 @@
     "react-router-redux": "^4.0.0",
     "redux": "^3.6.0",
     "redux-devtools": "^3.1.1",
-    "redux-logger": "2.0.4",
     "redux-devtools-dock-monitor": "^1.1.0",
     "redux-devtools-log-monitor": "^1.0.5",
     "redux-devtools-monitor-dock": "0.0.4",
+    "redux-form": "^6.5.0",
+    "redux-logger": "2.0.4",
     "redux-thunk": "^2.0.1",
-    "redux-form" : "^6.5.0",
-    "sass-loader": "^3.0.0",
+    "sass-loader": "^3.2.3",
     "style-loader": "^0.13.0",
     "swiper": "^3.3.1",
     "url-loader": "^0.5.6",
@@ -53,8 +55,8 @@
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.old.js --hot --inline --port 5000",
     "server": "node server.js",
-    "hot":"webpack --config webpack.config.dev.js --display-error-details --progress --colors --watch",
-    "build":"set NODE_ENV=production && webpack -p --config webpack.config.prod.js --progress --colors"
+    "hot": "webpack --config webpack.config.dev.js --display-error-details --progress --colors --watch",
+    "build": "set NODE_ENV=production && webpack -p --config webpack.config.prod.js --progress --colors"
   },
   "directories": {
     "example": "example"
