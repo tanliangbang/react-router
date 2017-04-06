@@ -20,6 +20,10 @@ export class Detail extends Component {
     componentDidMount() {
     }
 
+    publishFn(){
+        console.log(this.props.history)
+        // this.props.history.push('/publishArticle')
+    }
     render() {
             var tabsData = {
                 className : 'modelTableOpear',
@@ -50,12 +54,15 @@ export class Detail extends Component {
                             </ul>
 
                       <Tabs {...tabsData}>
-                          <div title="时间" className='communityList'><CommunityList></CommunityList></div>
+                          <div title="时间" className='communityList'>
+                              <CommunityList></CommunityList>
+                              <div onClick={this.publishFn()} className="publishBtn">我要发文</div>
+
+                          </div>
                           <div title="评论" className='communityList'>拆菊东篱loading...</div>
                           <div title="热门" className='communityList'>古道西风loading...</div>
                           <div title="其他" className='communityList'>其他loading...</div>
                       </Tabs>
-
                     </div>
                     <div className="col-lg-4">
                         <img className="advertiseImg" src="./img/3.jpg" />

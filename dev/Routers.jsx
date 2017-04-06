@@ -10,6 +10,11 @@ import Community  from './Pages/Community/Community';
 import Res  from './Pages/res/Res';
 import Detail   from './Pages/res/Detail';
 import Register   from './Pages/User/Register';
+
+
+import PublishArticle   from './Pages/Community/PublishArticle';
+
+
 //redux案例展示
 import ReduxDom   from './Pages/ReduxDom/ReduxDom';
 
@@ -45,11 +50,14 @@ export const routes = {
 		path: 'resDetail/:id',
 		component: Detail
 	},
-		{
-			path: 'Community',
-			component: Community
-		},
-
+	{
+		path: 'community',
+		component: Community
+	},
+	{
+		path: 'publishArticle',
+		component: PublishArticle
+	},
 	{
 		path: 'register',
 		component: Register

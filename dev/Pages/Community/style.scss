@@ -49,4 +49,39 @@
     }
   }
 
+  .myTabs{
+    position:relative;
+  }
+  .publishBtn{
+    position:absolute;
+    right:0px;
+    top:0px;
+    width:80px;
+    text-align: center;
+    height:30px;
+    background:$commonMainColor;
+    color:#fff;
+    line-height: 30px;
+    cursor: pointer;
+  }
+
+}
+
+.publishArticle{
+  .nomal{
+    width:50%;
+    margin:auto;
+  }
+  .publishInput{
+    >div:nth-child(1){
+      float:left;
+      width:10%;
+    }
+    >div:nth-child(2){
+      float:left;
+
+      width:90%;
+    }
+  }
+
 }

@@ -9,7 +9,7 @@ import { Tool, merged } from '../../Tool';
 import * as userAction from '../../actions/user';
 import * as htmlResAction from '../../actions/res';
 
-import {registerTextInput} from '../../components/form';
+import {registerTextInput} from '../../Components/form/form';
 
 
 

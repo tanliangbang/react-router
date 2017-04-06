@@ -1,0 +1,29 @@
+@import "../../style/var.scss";
+
+
+.imgPreview{
+  width: 50%;
+  border:1px solid #eeeeee;
+  background:#fff;
+  text-align: center;
+  margin:20px 25% 10px;
+  cursor: pointer;
+  text-align: center;
+  >img{
+    width:100%;
+  }
+  .imgIcon{
+    margin: 50px 0px;
+  }
+}
+
+.upLoadBtn{
+  width:80px;
+  height:35px;
+  background:$commonMainColor;
+  color:#fff;
+  text-align: center;
+  line-height: 35px;
+  margin:0px auto 10px;
+  cursor: pointer;
+}
