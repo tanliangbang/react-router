@@ -39,9 +39,6 @@ export class UpLoadImg extends Component {
     }
 
 
-    componentDidMount() {
-
-    }
     getImgDate(e){
         var file =  e.target.files[0];
         var _this = this;
@@ -61,6 +58,16 @@ export class UpLoadImg extends Component {
         }
     }
 
+    uploadImg(){
+        var _this = this;
+        Tool.uploadImg(function(data){
+            _this.props.callback(data)
+            _this.setState({
+                btnShow:false
+            })
+        });
+    }
+
     clickFile(){
        this.refs.fileInput.click();
     }
@@ -74,8 +81,8 @@ export class UpLoadImg extends Component {
                         <img ref="imgIcon"  className={addIconShow?"imgIcon":"imgIcon none"} src="./../../img/addImgIcon.jpg"/>
                     </div>
                 </div>
-                <input ref="fileInput"  name="fileSelect" accept="image/*" onChange={(e)=>this.getImgDate(e)} className="fileInput none" type="file"/>
-                <div ref="uploadBtn" className={btnShow?"upLoadBtn":"upLoadBtn none"}>上&nbsp;传</div>
+                <input ref="fileInput" id="resImg"  name="resImg" accept="image/*" onChange={(e)=>this.getImgDate(e)} className="fileInput none" type="file"/>
+                <div ref="uploadBtn" onClick={this.uploadImg.bind(this)} className={btnShow?"upLoadBtn":"upLoadBtn none"}>上&nbsp;传</div>
             </div>
         )
     }

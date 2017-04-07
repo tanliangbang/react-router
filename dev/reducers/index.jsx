@@ -8,6 +8,7 @@ import res from './res'
 import user from './user'
 import comment from './comment'
 import right from './right'
+import community from './community.jsx'
 
 //使用redux的combineReducers方法将所有reducer打包起来
 const rootReducer = combineReducers({
@@ -15,6 +16,7 @@ const rootReducer = combineReducers({
 	user, //用户的一些信息
 	comment,
 	right,
+	community,
 	form: formReducer,
 	routing: routerReducer //整合路由
 })

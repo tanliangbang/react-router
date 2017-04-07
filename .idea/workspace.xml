@@ -2,533 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="435dbe2d-eb66-4d03-875f-416713071fb6" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/10.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/11.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/12.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/13.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/14.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/15.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/16.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/17.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/18.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/19.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/20.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/21.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/22.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/23.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/24.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/25.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/26.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/27.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/28.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/29.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/30.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/31.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/32.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/33.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/34.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/35.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/36.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/37.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/38.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/39.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/4.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/40.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/41.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/42.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/43.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/44.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/45.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/46.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/47.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/48.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/49.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/5.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/50.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/51.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/52.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/53.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/54.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/55.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/56.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/57.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/58.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/59.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/6.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/60.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/61.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/62.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/63.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/64.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/65.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/66.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/67.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/68.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/69.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/7.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/70.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/71.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/72.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/73.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/74.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/75.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/8.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/arclist/9.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/banner.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/ck_closebg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/logo2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/nv.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/sprites.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/img/timg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/attachment/fileTypeImages/icon_chm.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/attachment/fileTypeImages/icon_default.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/attachment/fileTypeImages/icon_exe.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/attachment/fileTypeImages/icon_jpg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/attachment/fileTypeImages/icon_mp3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/attachment/fileTypeImages/icon_mv.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/attachment/fileTypeImages/icon_pdf.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/attachment/fileTypeImages/icon_ppt.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/attachment/fileTypeImages/icon_psd.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/attachment/fileTypeImages/icon_rar.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/attachment/fileTypeImages/icon_txt.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/attachment/images/alignicon.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/attachment/images/alignicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/attachment/images/bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/attachment/images/file-icons.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/attachment/images/file-icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/attachment/images/icons.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/attachment/images/icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/attachment/images/image.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/attachment/images/progress.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/attachment/images/success.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/attachment/images/success.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/background/images/bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/background/images/success.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/charts/images/charts0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/charts/images/charts1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/charts/images/charts2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/charts/images/charts3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/charts/images/charts4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/charts/images/charts5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/emotion/images/0.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/emotion/images/bface.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/emotion/images/cface.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/emotion/images/fface.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/emotion/images/jxface2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/emotion/images/neweditor-tab-bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/emotion/images/tface.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/emotion/images/wface.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/emotion/images/yface.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/image/images/alignicon.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/image/images/bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/image/images/icons.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/image/images/icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/image/images/image.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/image/images/progress.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/image/images/success.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/image/images/success.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/scrawl/images/addimg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/scrawl/images/brush.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/scrawl/images/delimg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/scrawl/images/delimgH.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/scrawl/images/empty.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/scrawl/images/emptyH.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/scrawl/images/eraser.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/scrawl/images/redo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/scrawl/images/redoH.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/scrawl/images/scale.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/scrawl/images/scaleH.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/scrawl/images/size.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/scrawl/images/undo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/scrawl/images/undoH.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/table/dragicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/template/images/bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/template/images/pre0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/template/images/pre1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/template/images/pre2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/template/images/pre3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/template/images/pre4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/video/images/bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/video/images/center_focus.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/video/images/file-icons.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/video/images/file-icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/video/images/icons.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/video/images/icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/video/images/image.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/video/images/left_focus.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/video/images/none_focus.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/video/images/progress.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/video/images/right_focus.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/video/images/success.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/video/images/success.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/wordimage/fClipboard_ueditor.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/wordimage/imageUploader.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/jsp/lib/commons-codec-1.9.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/jsp/lib/commons-fileupload-1.3.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/jsp/lib/commons-io-2.4.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/jsp/lib/json.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/jsp/lib/ueditor-1.1.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/lang/en/images/addimage.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/lang/en/images/alldeletebtnhoverskin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/lang/en/images/alldeletebtnupskin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/lang/en/images/background.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/lang/en/images/button.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/lang/en/images/copy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/lang/en/images/deletedisable.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/lang/en/images/deleteenable.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/lang/en/images/listbackground.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/lang/en/images/localimage.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/lang/en/images/music.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/lang/en/images/rotateleftdisable.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/lang/en/images/rotateleftenable.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/lang/en/images/rotaterightdisable.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/lang/en/images/rotaterightenable.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/lang/en/images/upload.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/lang/zh-cn/images/copy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/lang/zh-cn/images/localimage.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/lang/zh-cn/images/music.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/lang/zh-cn/images/upload.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/themes/default/images/anchor.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/themes/default/images/arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/themes/default/images/arrow_down.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/themes/default/images/arrow_up.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/themes/default/images/button-bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/themes/default/images/cancelbutton.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/themes/default/images/charts.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/themes/default/images/cursor_h.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/themes/default/images/cursor_h.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/themes/default/images/cursor_v.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/themes/default/images/cursor_v.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/themes/default/images/dialog-title-bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/themes/default/images/filescan.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/themes/default/images/highlighted.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/themes/default/images/icons-all.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/themes/default/images/icons.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/themes/default/images/icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/themes/default/images/loaderror.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/themes/default/images/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/themes/default/images/lock.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/themes/default/images/neweditor-tab-bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/themes/default/images/pagebreak.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/themes/default/images/scale.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/themes/default/images/sortable.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/themes/default/images/spacer.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/themes/default/images/sparator_v.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/themes/default/images/table-cell-align.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/themes/default/images/tangram-colorpicker.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/themes/default/images/toolbar_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/themes/default/images/unhighlighted.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/themes/default/images/upload.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/themes/default/images/videologo.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/themes/default/images/word.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/themes/default/images/wordpaste.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/snapscreen/UEditorSnapscreen.exe" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/video-js/font/vjs.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/video-js/font/vjs.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/video-js/font/vjs.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/video-js/video-js.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/webuploader/Uploader.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/zeroclipboard/ZeroClipboard.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/MTUI/img/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/img/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/img/bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/img/ck_closebg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/img/icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/img/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/img/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/img/logo2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/img/nv.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/img/sprites.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/img/timg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/npm-debug.log.2499003253" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/react_router_node_modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/react-router.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/css/5516ca8e.styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/js/5516ca8e.common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/js/5516ca8e.index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/codemirror/codemirror.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/codemirror/codemirror.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/codemirror/css.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/codemirror/javascript.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/codemirror/monokai.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/css/amazeui.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/css/animate.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/js/jQuery.md5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/js/jquery-2.1.1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/js/jquery.qqFace.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/js/tether.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/anchor/anchor.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/attachment/attachment.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/attachment/attachment.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/attachment/attachment.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/background/background.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/background/background.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/background/background.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/charts/chart.config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/charts/charts.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/charts/charts.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/charts/charts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/emotion/emotion.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/emotion/emotion.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/emotion/emotion.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/gmap/gmap.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/help/help.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/help/help.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/help/help.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/image/image.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/image/image.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/image/image.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/insertframe/insertframe.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/internal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/link/link.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/map/map.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/map/show.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/music/music.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/music/music.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/music/music.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/preview/preview.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/scrawl/scrawl.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/scrawl/scrawl.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/scrawl/scrawl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/searchreplace/searchreplace.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/searchreplace/searchreplace.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/snapscreen/snapscreen.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/spechars/spechars.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/spechars/spechars.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/table/edittable.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/table/edittable.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/table/edittable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/table/edittd.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/table/edittip.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/template/config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/template/template.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/template/template.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/template/template.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/video/video.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/video/video.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/video/video.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/webapp/webapp.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/wordimage/tangram.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/wordimage/wordimage.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/wordimage/wordimage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/jsp/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/jsp/controller.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/lang/en/en.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/lang/zh-cn/zh-cn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/themes/default/css/ueditor.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/themes/default/css/ueditor.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/themes/default/dialogbase.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/themes/iframe.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/SyntaxHighlighter/shCore.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/SyntaxHighlighter/shCoreDefault.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/codemirror/codemirror.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/codemirror/codemirror.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/highcharts/adapters/mootools-adapter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/highcharts/adapters/mootools-adapter.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/highcharts/adapters/prototype-adapter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/highcharts/adapters/prototype-adapter.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/highcharts/adapters/standalone-framework.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/highcharts/adapters/standalone-framework.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/highcharts/highcharts-more.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/highcharts/highcharts-more.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/highcharts/highcharts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/highcharts/highcharts.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/highcharts/modules/annotations.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/highcharts/modules/annotations.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/highcharts/modules/canvas-tools.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/highcharts/modules/canvas-tools.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/highcharts/modules/data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/highcharts/modules/data.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/highcharts/modules/drilldown.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/highcharts/modules/drilldown.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/highcharts/modules/exporting.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/highcharts/modules/exporting.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/highcharts/modules/funnel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/highcharts/modules/funnel.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/highcharts/modules/heatmap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/highcharts/modules/heatmap.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/highcharts/modules/map.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/highcharts/modules/map.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/highcharts/modules/no-data-to-display.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/highcharts/modules/no-data-to-display.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/highcharts/themes/dark-blue.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/highcharts/themes/dark-green.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/highcharts/themes/gray.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/highcharts/themes/grid.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/highcharts/themes/skies.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/jquery-1.10.2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/jquery-1.10.2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/jquery-1.10.2.min.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/video-js/font/vjs.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/video-js/video-js.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/video-js/video-js.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/video-js/video.dev.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/video-js/video.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/webuploader/webuploader.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/webuploader/webuploader.custom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/webuploader/webuploader.custom.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/webuploader/webuploader.flashonly.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/webuploader/webuploader.flashonly.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/webuploader/webuploader.html5only.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/webuploader/webuploader.html5only.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/webuploader/webuploader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/webuploader/webuploader.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/webuploader/webuploader.withoutimage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/webuploader/webuploader.withoutimage.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/zeroclipboard/ZeroClipboard.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/third-party/zeroclipboard/ZeroClipboard.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/ueditor.all.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/ueditor.all.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/ueditor.config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/ueditor.parse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/libs/plugins/ueditor/ueditor.parse.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/BUI/Mask.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/BUI/Tabs.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/BUI/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Components/Comment/comment.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Components/Comment/commentList.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Components/Comment/style.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Components/community/communityList.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Components/community/style.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Components/form/form.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Components/form/style.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Components/list/htmlRes.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Components/list/jsRes.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Components/list/style.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Components/right/right_nomal.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Components/right/style.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Config/Config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/MTUI/Checkbox.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/MTUI/DateBox.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/MTUI/DateInput.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/MTUI/DateInputs.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/MTUI/Input.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/MTUI/Loading.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/MTUI/LoadingBox.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/MTUI/Mixins/dateMixin.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/MTUI/Mixins/mtuiMixins.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/MTUI/Modal.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/MTUI/ModalShow.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/MTUI/PageList.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/MTUI/Popover.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/MTUI/Popup.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/MTUI/RadioGroup.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/MTUI/Selected.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/MTUI/SliderActive.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/MTUI/Swicth.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/MTUI/Tabs.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/MTUI/TreeMenu.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/MTUI/Upload.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/MTUI/Validate.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/MTUI/index.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/MTUI/language/Language.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/MTUI/language/en_US.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/MTUI/language/zh_CN.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/MTUI/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Mixins/setCode.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Mixins/setMinHeight.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/App.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Common/Footer.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Common/Menu.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Common/codemirror.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Common/loading.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Common/style.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Community/Community.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Community/PublishArticle.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Community/style.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Components/Common/LeftMenu.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Components/Forms.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Components/Htmls.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Components/HtmlsBtn.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Components/HtmlsTable.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Components/Icons.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Components/Index.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Components/Language.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Components/Plus.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Components/forms/CheckboxDom.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Components/forms/InputDom.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Components/forms/RadioDom.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Components/forms/SelectDom.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Components/forms/SwicthDom.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Components/plus/DateDom.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Components/plus/LoadDom.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Components/plus/ModalShowDom.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Components/plus/PageListDom.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Components/plus/PopoverDom.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Components/plus/PopupDom.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Components/plus/SliderDom.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Components/plus/TabDom.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Components/plus/TreeDom.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Components/plus/UploadDom.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Components/plus/ValidateDom.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Components/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Conf/Conf.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Help/Index.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Help/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Index/Index.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Index/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/ReduxDom/ReduxDom.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/ReduxDom/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Start/Index.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/Start/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/User/register.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/User/style.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/res/Detail.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/res/Res.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Pages/user/login.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Routers.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/Tool.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/actions/comment.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/actions/res.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/actions/right.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/actions/user.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/constants/actionConstant.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/index.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/index_dev.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/reducers/comment.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/reducers/index.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/reducers/res.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/reducers/right.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/reducers/user.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/store/configureStore.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/style/style.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/style/var.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/utils/fetchData.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/start-build.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/start-dev-hot.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/start-dev-old.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/start.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webpack.config.dev.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webpack.config.old.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webpack.config.prod.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/新建文本文档.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/说明文档.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/Components/form/form.jsx" afterPath="$PROJECT_DIR$/dev/Components/form/form.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/Pages/Community/Community.jsx" afterPath="$PROJECT_DIR$/dev/Pages/Community/Community.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/Pages/Community/PublishArticle.jsx" afterPath="$PROJECT_DIR$/dev/Pages/Community/PublishArticle.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/Pages/Community/style.scss" afterPath="$PROJECT_DIR$/dev/Pages/Community/style.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/Tool.jsx" afterPath="$PROJECT_DIR$/dev/Tool.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/constants/actionConstant.jsx" afterPath="$PROJECT_DIR$/dev/constants/actionConstant.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/index.html" afterPath="$PROJECT_DIR$/dev/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/reducers/index.jsx" afterPath="$PROJECT_DIR$/dev/reducers/index.jsx" />
     </list>
     <ignored path="react-router.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -552,8 +34,38 @@
       <file leaf-file-name="Community.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dev/Pages/Community/Community.jsx">
           <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.033334">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev/reducers/index.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-16.071428">
+              <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="actionConstant.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dev/constants/actionConstant.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5648038">
+              <caret line="19" column="30" selection-start-line="19" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="res.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev/reducers/res.jsx">
+          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+              <caret line="45" column="40" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -563,47 +75,47 @@
         <entry file="file://$PROJECT_DIR$/dev/Pages/Community/PublishArticle.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+              <caret line="39" column="159" selection-start-line="39" selection-start-column="159" selection-end-line="39" selection-end-column="159" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tool.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev/Tool.jsx">
+      <file leaf-file-name="community.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev/actions/community.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="227" column="0" selection-start-line="227" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
+              <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="form.jsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="res.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev/actions/res.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="47" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="right.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev/actions/right.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="form.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dev/Components/form/form.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40087146">
-              <caret line="68" column="34" selection-start-line="68" selection-start-column="34" selection-end-line="68" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev/Components/form/style.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.887096">
-              <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev/Pages/Community/style.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="12" selection-start-line="18" selection-start-column="4" selection-end-line="24" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -623,7 +135,6 @@
         <option value="$PROJECT_DIR$/dev/style/var.scss" />
         <option value="$PROJECT_DIR$/dev/Components/list/style.scss" />
         <option value="$PROJECT_DIR$/dev/reducers/res.jsx" />
-        <option value="$PROJECT_DIR$/dev/constants/actionConstant.jsx" />
         <option value="$PROJECT_DIR$/dev/actions/res.jsx" />
         <option value="$PROJECT_DIR$/dev/Pages/res/Detail.jsx" />
         <option value="$PROJECT_DIR$/dev/Pages/res/Res.jsx" />
@@ -631,17 +142,21 @@
         <option value="$PROJECT_DIR$/dev/Components/community/communityList.jsx" />
         <option value="$PROJECT_DIR$/dev/Components/community/style.scss" />
         <option value="$PROJECT_DIR$/dev/Components/form.jsx" />
-        <option value="$PROJECT_DIR$/dev/index.html" />
         <option value="$PROJECT_DIR$/build/libs/plugins/ueditor/ueditor.config.js" />
         <option value="$PROJECT_DIR$/dev/Components/list/htmlRes.jsx" />
         <option value="$PROJECT_DIR$/dev/Routers.jsx" />
-        <option value="$PROJECT_DIR$/dev/Pages/Community/Community.jsx" />
-        <option value="$PROJECT_DIR$/dev/Pages/Community/PublishArticle.jsx" />
-        <option value="$PROJECT_DIR$/dev/Tool.jsx" />
         <option value="$PROJECT_DIR$/dev/style/style.scss" />
-        <option value="$PROJECT_DIR$/dev/Pages/Community/style.scss" />
         <option value="$PROJECT_DIR$/dev/Components/form/style.scss" />
+        <option value="$PROJECT_DIR$/dev/index.html" />
+        <option value="$PROJECT_DIR$/dev/Tool.jsx" />
         <option value="$PROJECT_DIR$/dev/Components/form/form.jsx" />
+        <option value="$PROJECT_DIR$/dev/Pages/Community/style.scss" />
+        <option value="$PROJECT_DIR$/dev/Pages/Community/PublishArticle.jsx" />
+        <option value="$PROJECT_DIR$/dev/constants/actionConstant.jsx" />
+        <option value="$PROJECT_DIR$/dev/reducers/community.jsx" />
+        <option value="$PROJECT_DIR$/dev/reducers/index.jsx" />
+        <option value="$PROJECT_DIR$/dev/actions/community.jsx" />
+        <option value="$PROJECT_DIR$/dev/Pages/Community/Community.jsx" />
       </list>
     </option>
   </component>
@@ -653,10 +168,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="-19" />
+    <option name="y" value="19" />
     <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="height" value="979" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="添加" />
@@ -665,7 +180,7 @@
     <OptionsSetting value="true" id="更新" />
     <OptionsSetting value="true" id="状态" />
     <OptionsSetting value="true" id="编辑" />
-    <ConfirmationsSetting value="0" id="添加" />
+    <ConfirmationsSetting value="1" id="添加" />
     <ConfirmationsSetting value="0" id="移除" />
   </component>
   <component name="ProjectView">
@@ -683,8 +198,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -731,7 +244,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="style" />
+              <option name="myItemId" value="constants" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-router" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-router" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="right" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -753,37 +288,26 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="react-router" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="react-router" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../bangbang_web/nodeInterface" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Apache\htdocs\reactProject\react-router\dev\Components\form" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Apache\htdocs\reactProject\react-router\build\libs\js" />
       <recent name="E:\Apache\htdocs\reactProject\react-router\build\libs\plugs" />
       <recent name="E:\Apache\htdocs\reactProject\react-router\dev\Components\community" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Apache\htdocs\reactProject\react-router\dev\Components\form" />
     </key>
   </component>
   <component name="RunManager">
@@ -850,10 +374,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="false" />
+    <frame x="-19" y="19" width="1936" height="979" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -886,56 +410,18 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/dev/Tool.jsx</url>
+          <line>222</line>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dev/Pages/Components/plus/TabDom.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="5" selection-start-line="6" selection-start-column="3" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/BUI/Tabs.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="121" selection-start-line="23" selection-start-column="117" selection-end-line="23" selection-end-column="131" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/Components/community/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/Pages/Common/Menu.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="69" column="110" selection-start-line="69" selection-start-column="110" selection-end-line="69" selection-end-column="110" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/Pages/res/Detail.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="63" column="27" selection-start-line="48" selection-start-column="20" selection-end-line="63" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/Pages/User/register.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webpack.config.old.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -985,34 +471,6 @@
         <state vertical-scroll-proportion="-4.435484">
           <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/reducers/res.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="40" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/actions/res.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7625272">
-          <caret line="64" column="33" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/Components/right/right_nomal.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="53" column="33" selection-start-line="52" selection-start-column="24" selection-end-line="56" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/constants/actionConstant.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -1081,22 +539,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/Components/Comment/commentList.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/Components/list/jsRes.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5718954">
-          <caret line="21" column="73" selection-start-line="21" selection-start-column="73" selection-end-line="21" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dev/Components/community/communityList.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.40087146">
@@ -1143,13 +585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.088235">
-          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build/libs/plugins/ueditor/ueditor.all.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1170,7 +605,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="67" column="20" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1188,9 +622,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="34" column="24" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="24" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1218,14 +649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/Pages/Community/Community.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dev/style/style.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.55490655">
@@ -1234,10 +657,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/Pages/Community/PublishArticle.jsx">
+    <entry file="file://$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/image/image.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+        <state vertical-scroll-proportion="-7.1067414">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/libs/js/ajaxfileupload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.1437908">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13348417">
+          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -1245,41 +683,135 @@
     <entry file="file://$PROJECT_DIR$/dev/Tool.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="227" column="0" selection-start-line="227" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/Pages/Community/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <caret line="239" column="31" selection-start-line="239" selection-start-column="31" selection-end-line="239" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dev/Components/form/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.887096">
+        <state vertical-scroll-proportion="0.76635516">
           <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/libs/plugins/ueditor/dialogs/image/image.js">
+    <entry file="file://$PROJECT_DIR$/dev/Pages/Community/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1067414">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="17" />
-          <folding>
-            <marker date="1482719335175" expanded="true" signature="3008:3018" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="-11.790322">
+          <caret line="87" column="23" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dev/Components/form/form.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40087146">
-          <caret line="68" column="34" selection-start-line="68" selection-start-column="34" selection-end-line="68" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="12" selection-start-line="18" selection-start-column="4" selection-end-line="24" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/actions/right.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/reducers/res.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="40" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/reducers/community.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3812636">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/actions/res.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="47" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/Pages/Community/PublishArticle.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="159" selection-start-line="39" selection-start-column="159" selection-end-line="39" selection-end-column="159" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/actions/community.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/reducers/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.071428">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/Components/list/jsRes.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.1593342">
+          <caret line="21" column="32" selection-start-line="19" selection-start-column="19" selection-end-line="23" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/Components/Comment/comment.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.09988109">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/Components/Comment/commentList.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.29132">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/Components/right/right_nomal.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41617122">
+          <caret line="30" column="14" selection-start-line="26" selection-start-column="3" selection-end-line="37" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/Pages/Community/Community.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.033334">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/constants/actionConstant.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5648038">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>

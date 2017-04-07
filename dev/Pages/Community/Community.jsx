@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { Router, Route, IndexRoute, browserHistory, Link } from 'react-router';
 import { Tool, merged } from '../../Tool';
 import { getData, postData } from '../../utils/fetchData'
-import * as testAction from '../../actions/res';
+import * as communityAction from '../../actions/community';
 import * as userAction from '../../actions/user';
 import Tabs from '../../BUI/Tabs.jsx';
 import CommunityList from '../../Components/community/communityList';
@@ -14,17 +14,29 @@ import CommunityList from '../../Components/community/communityList';
 export class Detail extends Component {
     constructor(props) {
         super(props);
+
     }
 
 
-    componentDidMount() {
+    componentWillMount() {
+        this.props.actions.getCommunityList();
     }
 
     publishFn(){
-        console.log(this.props.history)
-        // this.props.history.push('/publishArticle')
+         this.props.history.pushState(null,'/publishArticle')
     }
+
+    componentWillReceiveProps(nextProps) {
+       if(nextProps.communityList.lenght>0){
+
+       }
+    }
+
+
+
+
     render() {
+            const {communityList} =  this.props;
             var tabsData = {
                 className : 'modelTableOpear',
                 defaultVal : 0,
@@ -41,22 +53,18 @@ export class Detail extends Component {
                    </div>
                     <div className="col-lg-8">
                             <ul className="modelList">
-                                <li>java开发</li>
-                                <li>web开发</li>
-                                <li>web开发</li>
-                                <li>java开发</li>
-                                <li>web开发</li>
-                                <li>web开发</li>
-                                <li>java开发</li>
-                                <li>web开发</li>
-                                <li>web开发</li>
+                                {
+                                    this.props.communityList.map((item, key) => {
+                                        return <li>{item.cname}</li>
+                                    })
+                                }
                                 <br className="clear"/>
                             </ul>
 
                       <Tabs {...tabsData}>
                           <div title="时间" className='communityList'>
                               <CommunityList></CommunityList>
-                              <div onClick={this.publishFn()} className="publishBtn">我要发文</div>
+                              <div onClick={this.publishFn.bind(this)} className="publishBtn">我要发文</div>
 
                           </div>
                           <div title="评论" className='communityList'>拆菊东篱loading...</div>
@@ -81,10 +89,11 @@ export class Detail extends Component {
 const mapStateToProps= function mapStateToProps(state) {
     return {
         userInfo:state.user.userInfo,
+        communityList:state.community.communityList
     }
 }
 const  mapDispatchToProps = function mapDispatchToProps(dispatch) {
-    const allAction =Object.assign({},userAction);
+    const allAction =Object.assign({},userAction,communityAction);
     return {
         actions: bindActionCreators(allAction, dispatch)
     }

@@ -6,7 +6,7 @@ import {reduxForm,Field} from 'redux-form';
 import { Router, Route, IndexRoute, browserHistory, Link } from 'react-router';
 import { Tool, merged } from '../../Tool';
 import { getData, postData } from '../../utils/fetchData'
-import * as testAction from '../../actions/res';
+import * as communityAction from '../../actions/community';
 import * as userAction from '../../actions/user';
 import Tabs from '../../BUI/Tabs.jsx';
 import CommunityList from '../../Components/community/communityList';
@@ -16,6 +16,9 @@ import {nomalTextInput,UpLoadImg} from '../../Components/form/form';
 export class PublishArticle extends Component {
     constructor(props) {
         super(props);
+        this.state = {
+            url:""
+        }
     }
 
 
@@ -23,8 +26,18 @@ export class PublishArticle extends Component {
         var ue = UE.getEditor('editor');
     }
 
-    clickFile(){
-        console.log(this)
+    getUrl(url){
+        this.setState({
+            url:url
+        })
+    }
+
+    publish(){
+        if(this.refs.title.value==""){
+            alert("请填写标题")
+            return;
+        }
+        this.props.actions.publishArticle(this.refs.title.value,this.refs.breif.value,this.state.url,UE.getEditor("editor").getContent(),this.props.userInfo.id)
     }
 
     render() {
@@ -32,17 +45,20 @@ export class PublishArticle extends Component {
         return(
             <div className="mtop60 publishArticle" >
                 <div className="nomal" >
-                    <Field  name="title"  type="text" component={nomalTextInput} label="标题"/>
+                         <input ref="title" className="form-control" placeholder="标题"  type="text" />
                 </div>
-
+                <div className="nomal" >
+                    <input ref="breif" className="form-control" placeholder="简介"  type="text" />
+                </div>
                 <div>
-                   <UpLoadImg></UpLoadImg>
+                   <UpLoadImg callback={this.getUrl}></UpLoadImg>
                 </div>
 
-                <div>
-                    <script id="editor" type="text/plain" style={{height:"500px"}}></script>
+                <div className="editor">
+                    <script  id="editor" type="text/plain" style={{height:"500px"}}></script>
                 </div>
 
+                <div  onClick={this.publish.bind(this)} className="upLoadBtn">发&nbsp;布</div>
 
             </div>
         )
@@ -55,7 +71,7 @@ export default  connect((state)=>{
         userInfo:state.user.userInfo,
     }
 }, (dispatch)=>{
-    const allAction =Object.assign({},userAction);
+    const allAction =Object.assign({},userAction,communityAction);
     return {
         actions: bindActionCreators(allAction, dispatch)
     }
