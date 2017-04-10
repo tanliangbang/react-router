@@ -10,6 +10,21 @@ export const initCommunityList = (res) => ({
     communityList: res.data,
 })
 
+export const initCommunityArticleList = (res) => ({
+    type: actionConstant.GET_COMMUNITYARTICLE_LIST,
+    communityArticleList: res.data,
+})
+
+
+export const getCommunityArticleList = (name) => {
+    return dispatch => {
+        Tool.get(`/api/res/getResContentList`, {name:name,start:0,size:10}, (res) => {
+            dispatch(initCommunityArticleList(res))
+        }, (error) => {
+            console.log('error: ', error)
+        });
+    }
+}
 
 export const getCommunityList = () => {
     return dispatch => {
@@ -22,10 +37,10 @@ export const getCommunityList = () => {
 }
 
 
-export const publishArticle = (title,breif,url,content,uid) => {
+export const publishArticle = (title,breif,url,content,uid,resType) => {
     var content = {title:title,titleImg:url,from:uid,breif:breif,content:content}
     return dispatch => {
-        Tool.post(`/api/res/addResContent`, {onLine:"1",content:JSON.stringify(content),name:"javacommunity"}, (res) => {
+        Tool.post(`/api/res/addResContent`, {onLine:"1",content:JSON.stringify(content),name:resType}, (res) => {
              console.log(res)
         }, (error) => {
             console.log('error: ', error)

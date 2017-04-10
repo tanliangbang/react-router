@@ -17,14 +17,20 @@ export class PublishArticle extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            url:""
+            url:"",
+            resType:Tool.getQueryString(this.props.location.search,"resType")
         }
+        if(this.props.userInfo==null){
+            this.props.history.pushState(null,'/community')
+        }
+
     }
 
 
     componentDidMount() {
         var ue = UE.getEditor('editor');
     }
+
 
     getUrl(url){
         this.setState({
@@ -33,11 +39,18 @@ export class PublishArticle extends Component {
     }
 
     publish(){
+
         if(this.refs.title.value==""){
             alert("请填写标题")
             return;
         }
-        this.props.actions.publishArticle(this.refs.title.value,this.refs.breif.value,this.state.url,UE.getEditor("editor").getContent(),this.props.userInfo.id)
+        var title = this.refs.title.value;
+        var breif = this.refs.breif.value;
+        var url = this.state.url;
+        var content = UE.getEditor("editor").getContent();
+        var uid = this.props.userInfo.id;
+        var resType = this.state.resType;
+        this.props.actions.publishArticle(title,breif,url,content,uid,resType)
     }
 
     render() {
@@ -51,7 +64,7 @@ export class PublishArticle extends Component {
                     <input ref="breif" className="form-control" placeholder="简介"  type="text" />
                 </div>
                 <div>
-                   <UpLoadImg callback={this.getUrl}></UpLoadImg>
+                   <UpLoadImg callback={this.getUrl.bind(this)}></UpLoadImg>
                 </div>
 
                 <div className="editor">

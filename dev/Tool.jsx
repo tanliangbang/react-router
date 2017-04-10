@@ -244,6 +244,7 @@ Tool.uploadImg = function(callbak){
             },
             error: function (data, status, e)//服务器响应失败处理函数
             {
+                console.log(e)
                 alert("上传失败，请重新上传");
             }
         }

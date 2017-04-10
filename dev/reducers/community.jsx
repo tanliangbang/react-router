@@ -6,6 +6,7 @@ import * as actionConstant from '../constants/actionConstant';
 // 初始化状态
 let initTestList = {
     communityList:[],
+    communityArticleList:[]
 }
 
 export default function htmlRes(state = initTestList, action) {
@@ -13,6 +14,10 @@ export default function htmlRes(state = initTestList, action) {
         case actionConstant.GET_COMMUNITY_LIST:
             return Object.assign({}, state, {
                 communityList:action.communityList
+            });
+        case actionConstant.GET_COMMUNITYARTICLE_LIST:
+            return Object.assign({}, state, {
+                communityArticleList:action.communityArticleList
             });
 
         default : return state;
