@@ -10,6 +10,7 @@ import Community  from './Pages/Community/Community';
 import Res  from './Pages/res/Res';
 import Detail   from './Pages/res/Detail';
 import Register   from './Pages/User/Register';
+import UserInfo   from './Pages/User/UserInfo';
 
 
 import PublishArticle   from './Pages/Community/PublishArticle';
@@ -57,6 +58,10 @@ export const routes = {
 	{
 		path: 'publishArticle',
 		component: PublishArticle
+	},
+	{
+		path: 'userInfo',
+		component: UserInfo
 	},
 	{
 		path: 'register',

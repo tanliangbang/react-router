@@ -40,7 +40,7 @@ class Menu extends Component {
       }else{
           loginNav  = (
               <li>
-                  <span><a>{userInfo.username}</a></span>/
+                  <span><Link   to={HOME_PATH+"/userInfo"}>{userInfo.username} </Link></span>/
                  <span>
                       <a onClick={this.loginOut}>退出</a>
                  </span>

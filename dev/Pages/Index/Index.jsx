@@ -7,7 +7,7 @@ const Index = React.createClass({
   render: function() {
 
     return (
-        <div className="index mtop60" style={{ minHeight: this.state.height+"px",background:'#27303e'}}>
+        <div className="index pageMg" style={{ minHeight: this.state.height+"px",background:'#27303e'}}>
           <div className="index-box">
             <h1 className="index-head">BANGBANG Vesion1</h1>
           </div>

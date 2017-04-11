@@ -40,7 +40,12 @@ export class Detail extends Component {
                 res_type:nextProps.communityList[0].name,
                 currModel:nextProps.communityList[0].id
             })
-       }
+       }else if(this.state.currModel==0){
+            this.setState({
+                res_type:nextProps.communityList[0].name,
+                currModel:nextProps.communityList[0].id
+            })
+        }
     }
 
     toModel(item){
@@ -64,7 +69,7 @@ export class Detail extends Component {
                 }
             }
             return(
-                <div className="mtop60 row community" >
+                <div className="pageMg row community" >
                    <div className="scrollBanner">
                        <img src="./img/banner.jpg"/>
                    </div>

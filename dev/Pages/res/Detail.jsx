@@ -45,7 +45,7 @@ export class Detail extends Component {
              content = this.props.resDetail.content;
              id = this.props.resDetail.id;
              return(
-                 <div className="mtop60 row" >
+                 <div className="pageMg row" >
                      <div className="col-lg-8 htmlResDetail">
                          <div className="htmlResTitle">{content.title}</div>
                          <hr/>

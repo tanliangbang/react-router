@@ -64,7 +64,7 @@ export  class Register extends Component {
         const {time} = this.state;
         if(this.props.registerState==0||this.props.registerState==2||this.props.registerState==3){
             return (
-                <div  className="register mtop60">
+                <div  className="register pageMg">
                     <div className="reTitle">填写用户信息</div>
                     <hr/>
                     <form onSubmit={handleSubmit(this.registerSubmit)}>

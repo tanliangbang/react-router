@@ -54,7 +54,7 @@ export  class htmlRes extends Component {
             templete = <HtmlRes  list={resList.list} resType={this.state.resType}></HtmlRes>;
         }
         return (
-                    <div className="row mtop60" >
+                    <div className="row pageMg" >
                         <div className="col-md-8" >
                             <div >
 

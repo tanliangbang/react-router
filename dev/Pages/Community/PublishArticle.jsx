@@ -21,7 +21,7 @@ export class PublishArticle extends Component {
             resType:Tool.getQueryString(this.props.location.search,"resType")
         }
         if(this.props.userInfo==null){
-            this.props.history.pushState(null,'/community')
+            //this.props.history.pushState(null,'/community')
         }
 
     }
@@ -56,19 +56,43 @@ export class PublishArticle extends Component {
     render() {
 
         return(
-            <div className="mtop60 publishArticle" >
-                <div className="nomal" >
-                         <input ref="title" className="form-control" placeholder="标题"  type="text" />
+            <div className="pageMg publishArticle" >
+                <div className="row" >
+                    <div className="col-lg-1 ptitle">
+                           标题
+                    </div>
+                    <div className="col-lg-10">
+                        <input ref="title" className="form-control" placeholder="标题"  type="text" />
+                    </div>
                 </div>
-                <div className="nomal" >
-                    <input ref="breif" className="form-control" placeholder="简介"  type="text" />
-                </div>
+                    <div className="row" >
+                        <div className="col-lg-1 ptitle">
+                            简介
+                        </div>
+                        <div className="col-lg-10">
+                            <input ref="breif" className="form-control" placeholder="简介"  type="text" />
+                        </div>
+                    </div>
                 <div>
-                   <UpLoadImg callback={this.getUrl.bind(this)}></UpLoadImg>
+                    <div className="row" >
+                        <div className="col-lg-1 ptitle">
+                            图片
+                        </div>
+                        <div className="col-lg-11">
+                            <UpLoadImg callback={this.getUrl.bind(this)}></UpLoadImg>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="editor">
-                    <script  id="editor" type="text/plain" style={{height:"500px"}}></script>
+                    <div className="row" >
+                        <div className="col-lg-1 ptitle">
+                            内容
+                        </div>
+                        <div className="col-lg-11">
+                            <script  id="editor" type="text/plain" style={{height:"500px"}}></script>
+                        </div>
+                    </div>
                 </div>
 
                 <div  onClick={this.publish.bind(this)} className="upLoadBtn">发&nbsp;布</div>
