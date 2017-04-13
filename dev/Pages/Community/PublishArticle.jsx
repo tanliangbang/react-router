@@ -28,7 +28,9 @@ export class PublishArticle extends Component {
 
 
     componentDidMount() {
-        var ue = UE.getEditor('editor');
+         UE.getEditor('editor').destroy();
+         UE.getEditor('editor');
+
     }
 
 

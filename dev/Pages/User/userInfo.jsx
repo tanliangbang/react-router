@@ -67,7 +67,7 @@ export  class Login extends Component {
                              <div title="其他" className='communityList'>其他loading...</div>
                          </Tabs>
                      </div>
-                     <div className="col-lg-4 pdt_28">
+                     <div className="col-lg-4">
                          <img className="advertiseImg" src="./img/3.jpg" />
                          <img className="advertiseImg" src="./img/3.jpg" />
                      </div>
