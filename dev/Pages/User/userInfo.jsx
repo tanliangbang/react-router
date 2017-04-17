@@ -11,10 +11,13 @@ import Tabs from '../../BUI/Tabs.jsx';
 import * as communityAction from '../../actions/community';
 import CommunityList from '../../Components/community/communityList';
 
+import { ChangeUser } from '../../pages/User/changeUser';
 
-export  class Login extends Component {
+
+export  class UserInfo extends Component {
     constructor(props) {
         super(props);
+        this.showChangeUser = this.showChangeUser.bind(this)
     }
 
     componentWillMount() {
@@ -22,10 +25,12 @@ export  class Login extends Component {
 
     }
     componentDidMount() {
-
     }
 
 
+    showChangeUser(){
+       this.refs.changeUser.show()
+    }
 
 
     render() {
@@ -42,16 +47,18 @@ export  class Login extends Component {
         }
         return (
             <div   className="userInfo pageMg">
+
+                 <ChangeUser name="change" {...this.props} ref="changeUser"></ChangeUser>
                  <div className="utop">
                      <div className="fl">
                          <img className="userAavar" src="./../../img/userImg.jpg"/>
                      </div>
                      <div className="fl simpleInfo">
                          <div>谭亮邦</div>
-                         <div>web前端工程师</div>
-                         <div>个人名言:哲人无忧，智者常乐。并不是因为所爱的一切他都拥有了，而是所拥有的一切他都爱。</div>
+                         <div>web前端工程师<span className="line">|</span>中国-上海-虹口区<span className="line">|</span>男</div>
+                         <div>哲人无忧，智者常乐。并不是因为所爱的一切他都拥有了，而是所拥有的一切他都爱。</div>
                      </div>
-                     <div className="fr changeInfoBtn">修改信息</div>
+                     <div className="fr changeInfoBtn" onClick={this.showChangeUser}>修改信息</div>
                  </div>
 
                  <div className="row pdcontent">
@@ -90,7 +97,7 @@ export default  connect((state)=>{
     return {
         actions: bindActionCreators(allAction, dispatch)
     }
-})(Login)
+})(UserInfo)
 
 
 

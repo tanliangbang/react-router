@@ -73,26 +73,21 @@ export class Detail extends Component {
                    <div className="scrollBanner">
                        <img src="./img/banner.jpg"/>
                    </div>
-                    <div className="col-lg-8">
-                            <ul className="modelList">
-                                {
-                                    this.props.communityList.map((item, key) => {
-                                        return <li key={key} onClick={this.toModel.bind(this,item)} className={item.id==this.state.currModel?"modelActive":""}>{item.cname}</li>
-                                    })
-                                }
-                                <br className="clear"/>
-                            </ul>
 
-                      <Tabs {...tabsData}>
-                          <div title="时间" className='communityList'>
-                              <CommunityList {...communityArticleList}  res_type={this.state.res_type}></CommunityList>
-                              <div onClick={this.publishFn.bind(this)} className="publishBtn">我要发文</div>
+                    <div>
+                        <ul className="modelList">
+                            {
+                                this.props.communityList.map((item, key) => {
+                                    return <li key={key} onClick={this.toModel.bind(this,item)} className={item.id==this.state.currModel?"modelActive":""}>{item.cname}</li>
+                                })
+                            }
+                            <div onClick={this.publishFn.bind(this)} className="publishBtn">我要发文</div>
+                            <br className="clear"/>
+                        </ul>
+                    </div>
 
-                          </div>
-                          <div title="评论" className='communityList'>拆菊东篱loading...</div>
-                          <div title="热门" className='communityList'>古道西风loading...</div>
-                          <div title="其他" className='communityList'>其他loading...</div>
-                      </Tabs>
+                    <div className="col-lg-8 bgColor contentList">
+                        <CommunityList {...communityArticleList}  res_type={this.state.res_type}></CommunityList>
                     </div>
                     <div className="col-lg-4">
                         <img className="advertiseImg" src="./img/3.jpg" />

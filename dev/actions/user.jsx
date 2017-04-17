@@ -63,6 +63,18 @@ export const login = (username,password) => {
     }
 }
 
+export const changeUserInfo = (user) => {
+    return dispatch => {
+        Tool.post(`/api/users/changeUserInfo`, user, (res) => {
+            if(res.statusCode==200){
+               console.log(res)
+            }
+        }, (error) => {
+
+        });
+    }
+}
+
 
 export const register = (user) => {
     return dispatch => {

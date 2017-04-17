@@ -11,7 +11,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius:8px;
     .top{
         text-align: center;
         font-size:20px;
@@ -193,12 +192,31 @@
       margin-left:30px;
       div:nth-child(1){
           margin-top:40px;
+          font-size: 24px;
+          color: #333;
+          font-weight: normal;
+      }
+      .line{
+          font-size: 14px;
+          color: #999;
+          padding: 0 15px;
       }
       div:nth-child(2){
-          margin-top:30px;
+          font-size: 16px;
+          color: #333;
+          margin-top: 10px;
+
       }
       div:nth-child(3){
-          margin-top:30px;
+          overflow: hidden;
+          font-size: 14px;
+          color: #999;
+          border-top: 1px solid #f0f0f0;
+          padding-top: 8px;
+          margin-top: 10px;
+          line-height: 22px;
+          word-wrap: break-word;
+          word-break: break-all;
       }
   }
 
@@ -242,6 +260,73 @@
     .pdt_28{
         padding-top:28px;
     }
+}
 
 
+
+.changeUser{
+    position: fixed;
+    z-index: 1000;
+    width: 90%;
+    max-width: 400px;
+    min-height: 320px;
+    background: white;
+    top: 50%;
+    left: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    >form{
+        padding:0px 20px;
+    }
+    text-align: center;
+    .avarHeard{
+        text-align: center;
+        margin-bottom:20px;
+        img{
+            width:120px;
+            height:120px;
+            border-radius:50%;
+            cursor: pointer;
+        }
+    }
+    .sexSelect{
+        font-size:16px;
+      >div{
+          float:right;
+          width: 280px;
+          height: 32px;
+          font-size: 14px;
+          padding-left: 10px;
+          text-align: left;
+          >input{
+              width:15px;
+              height:15px;
+              vertical-align: -3px;
+          }
+      }
+    }
+}
+
+.selfDesc{
+    height: 87px;
+    color: #666;
+    font-size: 14px;
+    padding-top: 11px;
+    padding-left: 14px;
+    border: 1px solid #dcdcdc;
+    vertical-align: top;
+    width:280px;
+}
+
+.change_user{
+    width:70%;
+    height:35px;
+    line-height: 30px;
+    text-align: center;
+    background:$commonMainColor;
+    font-size:16px;
+    margin:0px auto 20px;
+    color:#fff;
+    cursor: pointer;
 }

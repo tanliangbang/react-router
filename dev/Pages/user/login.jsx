@@ -69,7 +69,7 @@ export  class Login extends Component {
         return (
             <div ref="loginBox"  className="login-box">
                 <Mask ref="mask"/>
-                <div className="top">
+                <div className="maskCommonTop">
                     <label className="loginTitle">登入</label>
                     <a onClick={this.closeLoginBox}></a>
                 </div>
