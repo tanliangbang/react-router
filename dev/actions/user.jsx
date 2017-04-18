@@ -22,6 +22,15 @@ export function isShowLogin(isShowLogin) {
     }
 }
 
+export function setChangeUser(showChangeUser) {
+    return {
+        type: actionConstant.SHOW_CHANGE_USER,
+        showChangeUser :showChangeUser
+    }
+}
+
+
+
 export function loginFail(isFail) {
     return {
         type: actionConstant.SET_LOGIN_FAIL,
@@ -38,6 +47,12 @@ export function registerFail(state) {
     }
 }
 
+
+export const showChangeUser = (showChangeUser) => {
+    return dispatch => {
+        dispatch(setChangeUser(showChangeUser))
+    }
+}
 
 export const setLoginMask = (isShowLogin) => {
     return dispatch => {
@@ -67,7 +82,7 @@ export const changeUserInfo = (user) => {
     return dispatch => {
         Tool.post(`/api/users/changeUserInfo`, user, (res) => {
             if(res.statusCode==200){
-               console.log(res)
+                dispatch(setUserInfo(res.data))
             }
         }, (error) => {
 
@@ -97,6 +112,7 @@ export const getUserInfo = () => {
     return dispatch => {
         Tool.get(`/api/users/getUserInfo`, {}, (res) => {
             if(res.statusCode==200){
+                console.log(res);
                 dispatch(setUserInfo(res.data))
             }
         }, (error) => {

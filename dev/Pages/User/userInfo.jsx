@@ -11,7 +11,7 @@ import Tabs from '../../BUI/Tabs.jsx';
 import * as communityAction from '../../actions/community';
 import CommunityList from '../../Components/community/communityList';
 
-import { ChangeUser } from '../../pages/User/changeUser';
+import  ChangeUser from '../../pages/User/changeUser';
 
 
 export  class UserInfo extends Component {
@@ -29,13 +29,12 @@ export  class UserInfo extends Component {
 
 
     showChangeUser(){
-       this.refs.changeUser.show()
+        this.props.actions.showChangeUser(true)
     }
 
 
     render() {
-        const {communityArticleList} =  this.props;
-
+        const {communityArticleList,userInfo} =  this.props;
         var tabsData = {
             className : 'modelTableOpear',
             defaultVal : 0,
@@ -45,18 +44,20 @@ export  class UserInfo extends Component {
                 console.log("title为：",title);
             }
         }
+        if(!userInfo){
+            return(<div></div>);
+        }
         return (
             <div   className="userInfo pageMg">
-
-                 <ChangeUser name="change" {...this.props} ref="changeUser"></ChangeUser>
+                 <ChangeUser name="change"  ref="changeUser"></ChangeUser>
                  <div className="utop">
                      <div className="fl">
-                         <img className="userAavar" src="./../../img/userImg.jpg"/>
+                         <img className="userAavar" src={userInfo.userAavar?userInfo.userAavar:"./../../img/userImg.jpg"}/>
                      </div>
                      <div className="fl simpleInfo">
-                         <div>谭亮邦</div>
-                         <div>web前端工程师<span className="line">|</span>中国-上海-虹口区<span className="line">|</span>男</div>
-                         <div>哲人无忧，智者常乐。并不是因为所爱的一切他都拥有了，而是所拥有的一切他都爱。</div>
+                         <div>{userInfo.nick}</div>
+                         <div>{userInfo.job}<span className="line">|</span>{userInfo.address}<span className="line">|</span>{userInfo.sex==1?"男":"女"}</div>
+                         <div>{userInfo.userBreif}</div>
                      </div>
                      <div className="fr changeInfoBtn" onClick={this.showChangeUser}>修改信息</div>
                  </div>
@@ -89,6 +90,7 @@ export  class UserInfo extends Component {
 
 export default  connect((state)=>{
     return {
+        userInfo:state.user.userInfo,
         communityArticleList:state.community.communityArticleList,
         path: state.routing.locationBeforeTransitions.pathname
     }

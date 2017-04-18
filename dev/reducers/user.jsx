@@ -8,6 +8,7 @@ const initialState = {
   isShowLogin:false,
   loginFail:false,
   registerState:0,
+  showChangeUser:true
 }
 
 
@@ -21,6 +22,10 @@ export default function user(state = initialState, action) {
 		case actionConstant.SET_LOGIN_MASK:
 			return Object.assign({}, state, {
 				isShowLogin:action.isShowLogin
+			});
+		case actionConstant.SHOW_CHANGE_USER:
+			return Object.assign({}, state, {
+				showChangeUser:action.showChangeUser
 			});
 		case actionConstant.SET_LOGIN_FAIL:
 			return Object.assign({}, state, {

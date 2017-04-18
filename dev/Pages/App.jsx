@@ -26,7 +26,7 @@ class App extends Component {
 			return (
 				<div className="app">
 					<Menu />
-					<Login isShowLogin={this.props.isShowLogin}/>
+					<Login />
 					{this.props.children}
 					<Footer/>
 				</div>
