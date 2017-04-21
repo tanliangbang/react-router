@@ -11,7 +11,7 @@ import { connect } from 'react-redux';
 import Menu from './Common/Menu'
 import Footer from './Common/Footer'
 
-import Login from './User/Login';
+import LoginAndRegist from './User/loginAndRegist';
 import  * as userAction from '../actions/user'
 
 
@@ -26,7 +26,7 @@ class App extends Component {
 			return (
 				<div className="app">
 					<Menu />
-					<Login />
+					<LoginAndRegist />
 					{this.props.children}
 					<Footer/>
 				</div>

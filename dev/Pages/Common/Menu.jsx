@@ -19,8 +19,8 @@ class Menu extends Component {
     componentWillMount() {
         this.props.actions.getMenu("myArticle");
     }
-    loginClick (){
-        this.props.actions.isShowLogin(true);
+    loginClick (str){
+        this.props.actions.showLoginOrRegist(str);
     }
     loginOut(){
         this.props.actions.loginOut();
@@ -31,9 +31,9 @@ class Menu extends Component {
       if(userInfo==null){
           loginNav  = (
              <li>
-                <span><a onClick={this.loginClick}>登入</a></span>/
+                <span><a onClick={this.loginClick.bind(this,'login')}>登入</a></span>/
                  <span>
-                      <Link  to={HOME_PATH+"/register"}>注册</Link>
+                      <Link  onClick={this.loginClick.bind(this,'regist')}>注册</Link>
                  </span>
              </li>
           )

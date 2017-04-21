@@ -22,7 +22,6 @@ export  class UserInfo extends Component {
 
     componentWillMount() {
         this.props.actions.getCommunityArticleList("javacommunity");
-
     }
     componentDidMount() {
     }

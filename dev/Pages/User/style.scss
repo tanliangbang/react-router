@@ -1,15 +1,20 @@
 @import "../../style/var.scss";
-.login-box{
+.loginAndRegist{
     position: fixed;
-    z-index: 1000;
+    z-index: 10001;
     width:90%;
-    max-width: 400px;
+    max-width: 350px;
     min-height: 320px;
-    background: white;
+    background-color: #fff;
+    border: 1px solid #999;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 6px;
+    -webkit-box-shadow: 0 3px 9px rgba(0,0,0,0.5);
+    box-shadow: 0 3px 9px rgba(0,0,0,0.5);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
     top:50%;
     left:50%;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
     .top{
         text-align: center;
@@ -18,27 +23,11 @@
         height:50px;
         line-height:50px;
         position:relative;
-        a{
-            position: absolute;
-            width: 21px;
-            height: 20px;
-            right: 18px;
-            top: 18px;
-            cursor: pointer;
-            background: url("../../img/ck_closebg.png") no-repeat 0 0;
-        }
-        .loginTitle{
-            color:#00a5eb;
-            float:left;
-            font-size:18px;
-            margin-left:10px;
-            margin-bottom:0px;
-
-        }
     }
     .content{
         padding:0px 20px 20px;
     }
+
 }
 
 

@@ -1,9 +1,9 @@
 export const INIT_RESLIST = 'INIT_RESLIST';
 export const INIT_HTML_DETAIL = 'INIT_HTML_DETAIL';
 export const SET_USER_INFO = 'SET_USER_INFO';
-export const SET_LOGIN_MASK = 'SET_LOGIN_MASK';
+export const SET_LOGINANDREGIST_MASK = 'SET_LOGINANDREGIST_MASK';
 export const SET_LOGIN_FAIL = 'SET_LOGIN_FAIL';
-export const SET_REGISTER_FAIL = 'SET_REGISTER_FAIL';
+export const SET_REGIST_FAIL = 'SET_REGIST_FAIL';
 
 //菜单
 export const INIT_MENU = 'INIT_MENU';

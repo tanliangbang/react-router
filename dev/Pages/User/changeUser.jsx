@@ -9,10 +9,13 @@ import * as userAction from '../../actions/user';
 import Mask from '../../BUI/Mask';
 import {nomalTextInput} from '../../Components/form/form';
 
+
+
+
 export  class ChangeUser extends Component {
     constructor(props) {
         super(props);
-        this.saveBtn = this.saveBtn.bind(this)
+        this.changeUser = this.changeUser.bind(this)
         this.state = {
             sex:1,
             addImg:false
@@ -26,13 +29,12 @@ export  class ChangeUser extends Component {
 
 
     componentDidUpdate(){
-        console.log("tttttttttttt")
         if(this.props.showChangeUser){
             this.refs.mask.showMask();
             this.refs.changeUserDiv.style.display = "block"
         }else{
             this.refs.mask.closeMask();
-            this.refs.changeUserDiv.style.display = "block"
+            this.refs.changeUserDiv.style.display = "none"
         }
     }
 
@@ -43,7 +45,7 @@ export  class ChangeUser extends Component {
     }
 
     openFile(){
-        this.refs.avarInput.click();
+        this.refs.imgPreview.nextElementSibling.click();
     }
 
     getImgDate(e){
@@ -63,31 +65,18 @@ export  class ChangeUser extends Component {
             alert("请选择正确的图片");
         }
     }
-    handleGender(e){
-        var sex = e.target.value;
-        this.setState({
-           male: sex
-        });
-    }
 
-    saveBtn(){
+
+    changeUser(formProps){
         var _this = this;
-        var user = {
-            nick:this.refs.nick.value,
-            phone:this.refs.phone.value,
-            job:this.refs.job.value,
-            address:this.refs.address.value,
-            userBreif:this.refs.userBreif.value,
-            sex : this.state.sex,
-            userAvar:this.props.userInfo.userAvar
-        }
         if(this.state.addImg){
             Tool.uploadImg(function(data){
-                user.userAvar = data
-                _this.props.actions.changeUserInfo(user);
+                formProps.userAavar = data
+                _this.props.actions.changeUserInfo(formProps);
+                _this.state.addImg = false;
             });
         }else{
-             _this.props.actions.changeUserInfo(user);
+             _this.props.actions.changeUserInfo(formProps);
         }
 
     }
@@ -95,7 +84,7 @@ export  class ChangeUser extends Component {
 
 
     render() {
-        const {userInfo} = this.props
+        const {userInfo,handleSubmit} = this.props;
         return (
             <div ref="changeUserDiv"  className="changeUser">
                 <Mask ref="mask"/>
@@ -104,47 +93,55 @@ export  class ChangeUser extends Component {
                     <a onClick={this.closeChangeUserBox.bind(this)}></a>
                 </div>
                 <hr className="loginLine" />
-                <form>
+                <form onSubmit={handleSubmit(this.changeUser)}>
                       <div>
                           <div className="avarHeard" ref="imgPreview" onClick={this.openFile.bind(this)}>
-                              <img src={"./../../img/userImg.jpg"} />
+                              <img src={userInfo&&userInfo.userAavar?userInfo.userAavar:"./../../img/userImg.jpg"} />
                           </div>
-                          <input id="resImg" type="file" onChange={(e)=>this.getImgDate(e)} ref="avarInput" name="resImg" className="none"/>
+
+                          <Field id="resImg" type="file" onChange={(e)=>this.getImgDate(e)}  name="resImg" className="none" component="input"    />
+
                       </div>
                        <div className="nomalInput">
                              昵称：
-                           <Field  ref="nick"  name="nick" component="input" type="text"  maxlen="20"  />
-                        </div>
+                           <Field ref="nick" name="nick" component="input" type="text"   />
+
+                       </div>
                     <div className="nomalInput">
                         电话：
-                        <input ref="phone"/* value={userInfo.phone}*/  type="text" placeholder="" maxlen="20"  />
+                        <Field ref="phone" name="phone" component="input" type="text"   />
+
                     </div>
                     <div className="nomalInput">
                         职业：
-                        <input ref="job" /*value={userInfo.job}*/  type="text" placeholder="" maxlen="20"  />
+                        <Field ref="job" name="job" component="input" type="text"   />
                     </div>
 
                     <div className="sexSelect">
                           性别：
                            <div>
-                               男:&nbsp; &nbsp; <input   name="sex" value="1"   type="radio"   checked={this.state.sex=='1'} onChange={this.handleGender.bind(this)} />
+                               男:&nbsp; &nbsp;
+                               <Field  name="sex" value="1" component="input" type="radio"   />
                                &nbsp; &nbsp; &nbsp; &nbsp;
-                               女:&nbsp; &nbsp;<input checked={this.state.sex=='2'} onChange={this.handleGender.bind(this)} value="2"  name="sex"  type="radio"    />
+                               女:&nbsp; &nbsp;
+                               <Field  name="sex" value="2" component="input" type="radio"   />
+
+
                            </div>
                           <br className="clear" />
                     </div>
 
                     <div className="nomalInput">
                          地区：
-                        <input ref="address" /*value={userInfo.address}*/  type="text" placeholder="" maxlen="20"  />
+                        <Field ref="address" name="address" component="input" type="text"   />
                     </div>
 
                     <div className="nomalInput">
                         简介：
-                        <textarea ref="userBreif" /*value={userInfo.userBreif}*/ placeholder="300字以内" className="selfDesc" ></textarea>
+                        <Field ref="userBreif" name="userBreif"  placeholder="300字以内" className="selfDesc"  component="textarea" type="text"   />
                     </div>
 
-                    <div  className="change_user" onClick={this.saveBtn}  >修&nbsp;&nbsp;&nbsp;&nbsp;改</div>
+                    <button type="submit" className="change_user">修&nbsp;&nbsp;&nbsp;&nbsp;改</button>
 
                 </form>
 
@@ -155,11 +152,13 @@ export  class ChangeUser extends Component {
 
 }
 
-
 export default  connect((state)=>{
+
     return {
         showChangeUser:state.user.showChangeUser,
-        path: state.routing.locationBeforeTransitions.pathname,
+        userInfo:state.user.userInfo,
+        initialValues: state.user.userInfo,
+        path: state.routing.locationBeforeTransitions.pathname
     }
 }, (dispatch)=>{
     const allAction =Object.assign({},userAction);
@@ -167,21 +166,8 @@ export default  connect((state)=>{
         actions: bindActionCreators(allAction, dispatch)
     }
 })(reduxForm({
-    form: 'loginForm'
+    form: 'changeForm',
 })(ChangeUser))
 
 
-/*export default  connect((state)=>{
-    return {
-        userInfo:state.user.userInfo,
-        showChangeUser:state.user.showChangeUser,
-        path: state.routing.locationBeforeTransitions.pathname,
-    }
-}, (dispatch)=>{
-    const allAction =Object.assign({},userAction);
-    return {
-        actions: bindActionCreators(allAction, dispatch)
-    }
-})(reduxForm({
-    form: 'changeForm'
-})(ChangeUser))*/
+

@@ -21,7 +21,7 @@ export  class CommunityList extends Component {
                             return (
                                     <div key={key}  className="content">
                                         <div className="top">
-                                            <img className="avatar" src="./../../img/userImg.jpg"/>
+                                            <img className="avatar" src={item.from_user.userAavar?item.from_user.userAavar:"./../../img/userImg.jpg"}/>
                                             <span>{item.from_user.userName}</span>
                                         </div>
                                         <p className="title">

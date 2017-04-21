@@ -15,10 +15,10 @@ export function setLoading(isLoading) {
     }
 }
 
-export function isShowLogin(isShowLogin) {
+export function showLoginOrRegist(loginOrRegist) {
     return {
-        type: actionConstant.SET_LOGIN_MASK,
-        isShowLogin :isShowLogin
+        type: actionConstant.SET_LOGINANDREGIST_MASK,
+        loginOrRegist :loginOrRegist
     }
 }
 
@@ -40,10 +40,10 @@ export function loginFail(isFail) {
 
 
 //sate 1 注册成功 2  用户名已存在  3 注册失败
-export function registerFail(state) {
+export function registerFail(isFail) {
     return {
-        type: actionConstant.SET_REGISTER_FAIL,
-        registerState :state
+        type: actionConstant.SET_REGIST_FAIL,
+        registFail :isFail
     }
 }
 
@@ -65,7 +65,7 @@ export const login = (username,password) => {
         Tool.post(`/api/users/login`, {username:username,password:password}, (res) => {
             if(res.statusCode==200){
                dispatch(setUserInfo(res.data))
-               dispatch(isShowLogin(false))
+               dispatch(showLoginOrRegist(false))
             }else if(res.statusCode==500) {
                 dispatch(loginFail(true));
                 setTimeout(()=>{
@@ -83,6 +83,7 @@ export const changeUserInfo = (user) => {
         Tool.post(`/api/users/changeUserInfo`, user, (res) => {
             if(res.statusCode==200){
                 dispatch(setUserInfo(res.data))
+                dispatch(setChangeUser(false))
             }
         }, (error) => {
 
@@ -91,19 +92,17 @@ export const changeUserInfo = (user) => {
 }
 
 
-export const register = (user) => {
+export const register = (username,password) => {
     return dispatch => {
-        Tool.post(`/api/users/register`, user, (res) => {
+        Tool.post(`/api/users/register`,{username:username,password:password} , (res) => {
             if(res.statusCode==200){
-                dispatch(registerFail(1));
-                dispatch(setUserInfo(res.data));
+                dispatch(setUserInfo(res.data))
+                dispatch(showLoginOrRegist(false))
             }else if(res.statusCode==511) {
-                dispatch( registerFail(2))
-            }else{
-                dispatch( registerFail(3))
+                dispatch(registerFail(true))
             }
         }, (error) => {
-               dispatch( registerFail(3))
+               dispatch(registerFail(true))
         });
     }
 }

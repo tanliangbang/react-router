@@ -5,10 +5,11 @@ import * as actionConstant from '../constants/actionConstant';
 //初始化数据
 const initialState = {
   userInfo:null,
-  isShowLogin:false,
+	SET_LOGINANDREGIST_MASK:'login',
   loginFail:false,
+  registFail:false,
   registerState:0,
-  showChangeUser:true
+  showChangeUser:false,
 }
 
 
@@ -19,9 +20,9 @@ export default function user(state = initialState, action) {
 			return Object.assign({}, state, {
 				userInfo:action.userInfo
 			});
-		case actionConstant.SET_LOGIN_MASK:
+		case actionConstant.SET_LOGINANDREGIST_MASK:
 			return Object.assign({}, state, {
-				isShowLogin:action.isShowLogin
+				loginOrRegist:action.loginOrRegist
 			});
 		case actionConstant.SHOW_CHANGE_USER:
 			return Object.assign({}, state, {
@@ -30,6 +31,10 @@ export default function user(state = initialState, action) {
 		case actionConstant.SET_LOGIN_FAIL:
 			return Object.assign({}, state, {
 				loginFail:action.loginFail
+			});
+		case actionConstant.SET_REGIST_FAIL:
+			return Object.assign({}, state, {
+				registFail:action.registFail
 			});
 		case actionConstant.SET_REGISTER_FAIL:
 			return Object.assign({}, state, {
