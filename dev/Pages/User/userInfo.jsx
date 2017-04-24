@@ -55,8 +55,8 @@ export  class UserInfo extends Component {
                      </div>
                      <div className="fl simpleInfo">
                          <div>{userInfo.nick}</div>
-                         <div>{userInfo.job}<span className="line">|</span>{userInfo.address}<span className="line">|</span>{userInfo.sex==1?"男":"女"}</div>
-                         <div>{userInfo.userBreif}</div>
+                         <div>{userInfo.job?userInfo.job:'未填写职业'}<span className="line">|</span>{userInfo.address?userInfo.address:"未填写地址"}<span className="line">|</span>{userInfo.sex==1?"男":"女"}</div>
+                         <div>{userInfo.userBreif?userInfo.userBreif:"未填写简介"}</div>
                      </div>
                      <div className="fr changeInfoBtn" onClick={this.showChangeUser}>修改信息</div>
                  </div>

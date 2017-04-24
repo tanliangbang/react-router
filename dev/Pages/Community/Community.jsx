@@ -27,7 +27,7 @@ export class Detail extends Component {
 
     publishFn(){
         if(this.props.userInfo==null){
-            this.props.actions.isShowLogin(true);
+            this.props.actions.showLoginOrRegist("login");
             return;
         }
          this.props.history.pushState(null,'/publishArticle?resType='+this.state.res_type)

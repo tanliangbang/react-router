@@ -21,18 +21,18 @@ export class PublishArticle extends Component {
             resType:Tool.getQueryString(this.props.location.search,"resType")
         }
         if(this.props.userInfo==null){
-            //this.props.history.pushState(null,'/community')
+            this.props.history.pushState(null,'/community')
         }
 
     }
 
 
     componentDidMount() {
-         UE.getEditor('editor').destroy();
          UE.getEditor('editor');
-
     }
-
+    componentWillUnmount(){
+        UE.getEditor('editor').destroy();
+    }
 
     getUrl(url){
         this.setState({

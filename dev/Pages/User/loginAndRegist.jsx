@@ -61,7 +61,6 @@ export  class LoginAndRegist extends Component {
 
 
     render() {
-         console.log(this.state.loginOrRegist)
         return (
             <div ref="loginAndRegist"  className="loginAndRegist">
                 <Mask ref="mask"/>
