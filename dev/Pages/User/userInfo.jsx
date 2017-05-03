@@ -64,19 +64,19 @@ export  class UserInfo extends Component {
                  <div className="row pdcontent">
                      <div className="col-lg-8">
                          <Tabs {...tabsData}>
-                             <div title="时间" className='communityList'>
+                             <div title="我的文章" className='communityList'>
                                  <div>
                                      <CommunityList {...communityArticleList}  res_type="javacommunity"></CommunityList>
                                  </div>
                              </div>
-                             <div title="评论" className='communityList'>拆菊东篱loading...</div>
-                             <div title="热门" className='communityList'>古道西风loading...</div>
-                             <div title="其他" className='communityList'>其他loading...</div>
+                             <div title="评论" className='communityList'>正在开发，敬请期待!</div>
+                             <div title="关注" className='communityList'>正在开发，敬请期待!</div>
+                             <div title="收藏" className='communityList'>正在开发，敬请期待!</div>
                          </Tabs>
                      </div>
                      <div className="col-lg-4">
-                         <img className="advertiseImg" src="./img/3.jpg" />
-                         <img className="advertiseImg" src="./img/3.jpg" />
+                         <img className="advertiseImg" src="./img/right1.jpg" />
+                         <img className="advertiseImg" src="./img/right1.jpg" />
                      </div>
                  </div>
 

@@ -72,11 +72,9 @@ export  class htmlRes extends Component {
                         </div>
                         <div className="col-md-4 right">
                             <Right_nomal resType={this.state.resType} rightType="readyNum"></Right_nomal>
+                            <img className="advertiseImg" src="./img/right1.jpg" />
                             <Right_nomal resType={this.state.resType} rightType="recommend"></Right_nomal>
-                            <img className="advertiseImg" src="./img/3.jpg" />
-                            <img className="advertiseImg" src="./img/3.jpg" />
-                            <img className="advertiseImg" src="./img/3.jpg" />
-                            <img className="advertiseImg" src="./img/3.jpg" />
+
                         </div>
                     </div>
             );

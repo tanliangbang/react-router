@@ -1,1 +1,1 @@
-export const target = process.env.NODE_ENV !== 'production' ? '' : 'http://119.29.237.158'; //目标网站
+export const target = process.env.NODE_ENV !== 'production' ? '' : 'http://118.89.161.150'; //目标网站
