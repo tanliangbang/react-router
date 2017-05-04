@@ -41,7 +41,6 @@ export class PublishArticle extends Component {
     }
 
     publish(){
-
         if(this.refs.title.value==""){
             alert("请填写标题")
             return;
