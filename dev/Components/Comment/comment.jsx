@@ -16,7 +16,7 @@ export  class comments extends Component {
         let from_uid = this.props.from_uid?this.props.from_uid:0;
         let resType = this.props.resType;
         if(this.props.userInfo==null){
-            this.props.actions.isShowLogin(true);
+            this.props.actions.showLoginOrRegist("login");
         }
         if(this.refs.commentTextarea.value==""){
             return;

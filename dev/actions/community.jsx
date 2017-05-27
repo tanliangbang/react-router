@@ -37,16 +37,17 @@ export const getCommunityList = () => {
 }
 
 
-export const publishArticle = (title,breif,url,content,uid,resType) => {
+export const publishArticle = (resolve,title,breif,url,content,uid,resType) => {
     var content = {title:title,titleImg:url,from:uid,breif:breif,content:content}
     return dispatch => {
         Tool.post(`/api/res/addResContent`, {onLine:"1",content:JSON.stringify(content),name:resType}, (res) => {
-             console.log(res)
+            resolve(res);
         }, (error) => {
             console.log('error: ', error)
         });
     }
 }
+
 
 
 

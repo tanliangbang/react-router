@@ -21,7 +21,7 @@ export class PublishArticle extends Component {
             resType:Tool.getQueryString(this.props.location.search,"resType")
         }
         if(this.props.userInfo==null){
-            this.props.history.pushState(null,'/community')
+            browserHistory.push("community")
         }
 
     }
@@ -51,7 +51,16 @@ export class PublishArticle extends Component {
         var content = UE.getEditor("editor").getContent();
         var uid = this.props.userInfo.id;
         var resType = this.state.resType;
-        this.props.actions.publishArticle(title,breif,url,content,uid,resType)
+        var _this = this;
+        new Promise(function(resolve, reject){
+             _this.props.actions.publishArticle(resolve,title,breif,url,content,uid,resType)
+        }).then(function(res){
+            if(res.statusCode==200){
+                browserHistory.push("community")
+            }
+        });
+
+
     }
 
     render() {

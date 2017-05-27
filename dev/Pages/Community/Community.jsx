@@ -30,7 +30,7 @@ export class Detail extends Component {
             this.props.actions.showLoginOrRegist("login");
             return;
         }
-         this.props.history.pushState(null,'/publishArticle?resType='+this.state.res_type)
+        browserHistory.push('publishArticle?resType='+this.state.res_type)
     }
 
     componentWillReceiveProps(nextProps) {
